@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Special+Gothic+Expanded+One&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 *{
 margin: 0;
 padding: 0;
 list-style:none;
 box-sizing: border-box;
+font-family: "Lexend", sans-serif;
 }
 :root{
 --white-color: #fff;
