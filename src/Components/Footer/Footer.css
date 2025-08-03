@@ -1,0 +1,180 @@
+/* --black11-color: #1C1C1C;
+--offwhite-90-color: #E4E4E7;
+--green60-color: #caff33;
+--gray15-color: #262626;
+--gray70-color: #B3B3B3; */
+footer {
+    padding-left: 162px;
+    padding-right: 162px;
+    background-color: var(--black11-color);
+    .MA-container {
+        width: 83.125vw;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        ul {
+            padding-top: 50px;
+            list-style: none;
+            display: flex;
+            gap: 26px;
+            li {
+                a {
+                    text-decoration: none;
+                    color: var(--offwhite-90-color);
+                    font-size: 18px;
+                }
+            }
+        }
+        .MA-contanct {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 0px;
+            margin: 50px 0px;
+            border-top: 1px solid var(--gray15-color);
+            border-bottom: 1px solid var(--gray15-color);
+            a {
+                display: flex;
+                gap: 6px;
+                color: var(--offwhite-90-color);
+                font-size: 18px;
+                text-decoration: none;
+            }
+        }
+        .MA-bottom {
+            border: 1px solid var(--gray15-color);
+            width: 100%;
+            padding: 16px 30px 16px 16px;
+            border-radius: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--gray10-color);
+            .MA-socail {
+                display: flex;
+                gap: 14px;
+                background-color: var(--gray10-color);
+                div {
+                    width: 52px;
+                    height: 52px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: var(--green60-color);
+                    cursor: pointer;
+                }
+            }
+            .MA-rights, .MA-terms {
+                color: var(--gray70-color);
+                font-size: 18px;
+                font-weight: 300;
+            }
+            .MA-terms {
+                display: flex;
+                gap: 12px;
+                p:first-child {
+                    border-right: 1px solid var(--gray70-color);
+                    padding-right: 12px;
+                }
+            }
+        }
+    }
+}
+
+
+/* laptop */
+@media screen and (max-width: 1439px) {
+    footer {
+        padding-left: 80px;
+        padding-right: 80px;
+        .MA-container {
+            width: 100%;
+            padding-top: 60px;
+            padding-bottom: 30px;
+            ul {
+                padding-top: 40px;
+                gap: 14px;
+                li {
+                    a {
+                        font-size: 16px;
+                    }
+                }
+            }
+            .MA-contanct {
+                padding: 40px 0px;
+                a {
+                    font-size: 16px;
+                }
+            }
+            .MA-bottom {
+                padding: 12px 24px 12px 12px;
+                .MA-socail {
+                    gap: 8px;
+                    div {
+                        width: 44px;
+                        height: 44px;
+                    }
+                }
+                .MA-rights, .MA-terms {
+                    font-size: 14px;
+                }
+                .MA-terms {
+                    gap: 8px;
+                    p:first-child {
+                        padding-right: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+/* mobile */
+@media screen and (max-width: 767px) {
+    footer {
+        padding-left: 16px;
+        padding-right: 16px;
+        .MA-container {
+            width: 100%;
+            padding-top: 50px;
+            ul {
+                padding-top: 24px;
+                li {
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+            .MA-contanct {
+                flex-wrap: wrap;
+                padding: 30px 0px;
+                margin: 30px 0px;
+                a {
+                    font-size: 14px;
+                }
+            }
+            .MA-bottom {
+                padding: 12px;
+                border-radius: 12px;
+                flex-direction: column;
+                position: relative;
+                .MA-socail {
+                    gap: 8px;
+                    position: absolute;
+                    top: 0;
+                    transform: translateY(-50%);
+                }
+                .MA-rights {
+                    margin: 26px 0 20px;
+                }
+                .MA-terms {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
