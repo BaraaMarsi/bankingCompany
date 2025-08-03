@@ -1,0 +1,32 @@
+.Na-linkbutton {
+    display: inline-block;
+    width: 183px;
+    padding: 18px 30px;
+    background-color: var(--green60-color);
+    color: var(--black11-color);
+    border-radius: 82px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    gap: 10px; 
+    transition: background-color 0.3s ease;
+}
+
+.Na-linkbutton:hover {
+    background-color: #b5e62d; 
+}
+@media screen and (max-width: 1439px) {
+ .Na-linkbutton{
+    width: 136px;
+    padding: 14px 30px;
+    font-size: 14px;
+ }
+
+} 
+@media screen and (max-width: 767px) {
+  .Na-linkbutton{
+    width: 144px;
+    padding: 14px 24px;
+    font-size: 14px;
+ }  
+} 
