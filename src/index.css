@@ -55,3 +55,36 @@ font-family: "Lexend", sans-serif;
   padding-right: 4.1025%;
    padding-left: 4.1025%;}
    } 
+
+:root{
+--white-color: #fff;
+--black-color: #000;
+
+--green60-color: #caff33;
+--green65-color: #d1ff4c;
+--green70-color: #d8ff66;
+--green80-color: #e5ff99;
+
+--light-green-90-color: #f2ffcc;
+--light-green-95-color: #f2ffe5;
+--gray35-color: #fbfff0;
+--light-green-99-color: #fefffa;
+
+--offwhite-90-color: #E4E4E7;
+--offwhite-95-color: #F1F1F3;
+--offwhite-97-color: #F7F7F8;
+--offwhite-99-color: #FCFCFD;
+
+--black10-color: #191919;
+--black11-color: #1C1C1C;
+
+--gray10-color: #1A1A1A;
+--gray15-color: #262626;
+--gray20-color: #333333;
+--gray30-color: #4C4C4D;
+--gray35-color: #59595A;
+--gray40-color: #656567;
+--gray60-color: #98989A;
+--gray70-color: #B3B3B3;
+--gray75-color: #BFBFBF;
+}
