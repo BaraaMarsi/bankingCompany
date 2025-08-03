@@ -1,11 +1,4 @@
-/* --black11-color: #1C1C1C;
---offwhite-90-color: #E4E4E7;
---green60-color: #caff33;
---gray15-color: #262626;
---gray70-color: #B3B3B3; */
 footer {
-    padding-left: 162px;
-    padding-right: 162px;
     background-color: var(--black11-color);
     .MA-container {
         width: 83.125vw;
@@ -17,7 +10,6 @@ footer {
         flex-direction: column;
         ul {
             padding-top: 50px;
-            list-style: none;
             display: flex;
             gap: 26px;
             li {
@@ -90,8 +82,6 @@ footer {
 /* laptop */
 @media screen and (max-width: 1439px) {
     footer {
-        padding-left: 80px;
-        padding-right: 80px;
         .MA-container {
             width: 100%;
             padding-top: 60px;
@@ -107,6 +97,7 @@ footer {
             }
             .MA-contanct {
                 padding: 40px 0px;
+                margin: 40px 0;
                 a {
                     font-size: 16px;
                 }
@@ -136,8 +127,6 @@ footer {
 /* mobile */
 @media screen and (max-width: 767px) {
     footer {
-        padding-left: 16px;
-        padding-right: 16px;
         .MA-container {
             width: 100%;
             padding-top: 50px;
@@ -163,7 +152,6 @@ footer {
                 flex-direction: column;
                 position: relative;
                 .MA-socail {
-                    gap: 8px;
                     position: absolute;
                     top: 0;
                     transform: translateY(-50%);
