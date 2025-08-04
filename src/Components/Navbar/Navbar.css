@@ -1,0 +1,162 @@
+.Am-navbar {
+  top: 50px;
+  background-color: #1C1C1C;
+  color: #FFFFFF;
+  padding: 24px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-radius: 100px;
+}
+
+.Am-logo {
+  font-size: small;
+}
+
+.Am-links-large {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.Am-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.Am-nav-links a {
+  font-family: Lexend;
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.2s ease;
+}
+
+.Am-nav-links .Am-active-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffff;
+  font-weight: bold;
+  background-color: #262626;
+  width: 100px;
+  height: 51px;
+  border-radius: 82px;
+  padding-top: 12px 24px;
+  gap: 10px;
+}
+
+.Am-button {
+  display: flex;
+  gap: 30px;
+}
+
+.Am-btn-outline {
+  background-color: #1C1C1C;
+  padding: 8px 16px;
+  border: none;
+  color: #ffff;
+  cursor: pointer;
+}
+
+.Am-btn-outline:hover {
+  background: #c5ff00;
+  color: #000;
+}
+
+.Am-btn-filled {
+  width: 109px;
+  height: 55px;
+  background-color: #cAFF33;
+  color: #333;
+  border: none;
+  border-radius: 82px;
+  padding: 14px 30px;
+  font-weight: bold;
+  font-style: 16px;
+  cursor: pointer;
+}
+
+.Am-btn-filled:hover {
+  background: #baff00;
+}
+
+.Am-burger {
+  align-items: center;
+  justify-content: center;
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+  border-radius: 82px;
+  width: 82px;
+  height: 55px;
+  background-color: #cAFF33;
+}
+
+.Am-nav-mobile {
+  align-items: center;
+  display: none;
+  flex-direction: column;
+  background-color: #1C1C1C;
+  position: absolute;
+  top: 104px;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  border-radius: 60px;
+  gap: 15px;
+  z-index: 100;
+}
+
+.Am-nav-mobile a {
+  font-family: Lexend;
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.2s ease;
+  display: block;
+  padding: 10px 0;
+}
+
+.Am-nav-mobile .Am-active-link {
+  color: #fff;
+  font-weight: bold;
+  background-color: #444444;
+  border-radius: 30px;
+  padding: 10px 15px;
+}
+
+.Am-button-mobile {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.Am-nav-mobile.Am-active {
+  display: flex;
+}
+
+@media screen and (max-width: 992px) {
+  .Am-logo_img{
+   width: 101px;
+  }
+  
+  .Am-links-large {
+    display: none;
+  }
+
+  .Am-burger {
+    width: 56px;
+    display: flex;
+  }
+
+  .Am-button-large {
+    display: none;
+  }
+}
