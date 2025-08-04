@@ -1,0 +1,158 @@
+.BL-formContainer {
+    max-width: 69.0625vw;
+    padding: 100px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image:
+        linear-gradient(#121212E6, #121212E6),
+        url('./FormIcons/formBackground.png');
+    background-size: cover;
+    border-radius: 16px;
+}
+
+.BL-formContainer::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 342px;
+    height: 325px;
+    background-image: url('/startpic.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+}
+
+.BL-formHeader {
+    text-align: center;
+    max-width: 77.3755%;
+    margin-bottom: 80px;
+
+}
+
+.BL-formHeader h1 {
+    color: var(--green60-color);
+    font-size: 48px;
+    padding-bottom: 20px;
+}
+
+.BL-formHeader p {
+    color: var(--gray70-color);
+    text-align: center;
+    font-size: 18px;
+}
+
+.BL-form {
+    max-width: 77.3755%;
+    display: flex;
+    flex-direction: column;
+}
+
+.BL-formInput {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+.BL-formInput .BL-nameInput {
+    display: flex;
+    gap: 30px;
+}
+
+.BL-formInput .BL-emailInput {
+    display: flex;
+    gap: 30px;
+}
+
+.BL-formInput input[type="text"],
+.BL-formInput input[type="email"],
+.BL-formInput input[type="password"] {
+    width: 48.5380%;
+    height: 75px;
+    background-color: var(--gray15-color);
+    border: 1px solid var(--gray20-color);
+    border-radius: 50px;
+    color: var(--white-color);
+    font-size: 18px;
+    outline: none;
+    padding: 24px;
+}
+
+.BL-formInput input::placeholder {
+    color: var(--gray60-color);
+}
+
+.BL-formInput input:focus {
+    border-color: var(--green60-color);
+}
+
+.BL-passwordInput {
+    position: relative;
+    display: flex;
+}
+
+.BL-formInput input[type="password"] {
+    width: 100%;
+}
+
+.BL-passwordIcon {
+    position: absolute;
+    top: 25%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.BL-buttonGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.BL-button {
+    width: 518px;
+}
+
+
+.BL-separator {
+    margin-top: 24px;
+}
+
+.BL-separator span {
+    color: var(--gray60-color);
+    text-align: center;
+    font-size: 18px;
+}
+
+.BL-social {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.BL-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 94px;
+    height: 94px;
+    background-color: linear-gradient(#CAFF33, #CAFF33);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.BL-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.BL-icon:hover {
+    background-color: linear-gradient(#CAFF33, #CAFF33);
+    box-shadow: 0 0 15px #CAFF33;
+}
