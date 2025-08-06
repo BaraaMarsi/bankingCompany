@@ -1,0 +1,28 @@
+.MA-title {
+    background-color: var(--gray10-color);
+}
+
+.MA-title h1{
+    color: var(--white-color);
+}
+
+.MA-title h1 .welcome {
+    color: var(--white-color);
+}
+
+.MA-title span {
+    color: var(--green60-color);
+}
+
+.MA-title .desc {
+    color: var(--gray70-color);
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reverse{
+    flex-direction: row-reverse;
+}
