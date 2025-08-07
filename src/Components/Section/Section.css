@@ -1,12 +1,14 @@
-.MA-title {
-    background-color: var(--gray10-color);
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reverse{
+    flex-direction: row-reverse;
 }
 
 .MA-title h1{
-    color: var(--white-color);
-}
-
-.MA-title h1 .welcome {
     color: var(--white-color);
 }
 
@@ -15,14 +17,23 @@
 }
 
 .MA-title .desc {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 150%;
     color: var(--gray70-color);
 }
 
-.flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* laptop */
+@media screen and (max-width: 1439px) {
+    .MA-title .desc {
+        font-size: 16px;
+    }
 }
-.reverse{
-    flex-direction: row-reverse;
+
+/* mobile */
+@media screen and (max-width: 992px) {
+    .MA-title .desc {
+        font-size: 14px;
+        line-height: 150%;
+    }
 }

@@ -21,3 +21,4 @@ const Section = ({welcome, title, titleSpan, secTitle, desc, reverse, flex, imag
 }
 
 export default Section;
+
