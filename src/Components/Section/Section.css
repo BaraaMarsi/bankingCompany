@@ -9,7 +9,7 @@
 }
 
 .MA-title h1{
-    font-weight: 500;
+    color: var(--white-color);
 }
 
 .MA-title span {
@@ -32,10 +32,6 @@
 
 /* mobile */
 @media screen and (max-width: 992px) {
-    .MA-title {
-        text-align: center;
-    }
-
     .MA-title .desc {
         font-size: 14px;
         line-height: 150%;
