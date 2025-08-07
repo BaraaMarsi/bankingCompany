@@ -1,32 +1,77 @@
+/* الكلاس الأساسي المشترك */
 .Na-linkbutton {
-    display: inline-block;
-    width: 183px;
-    padding: 18px 30px;
-    background-color: var(--green60-color);
-    color: var(--black11-color);
-    border-radius: 82px;
-    text-decoration: none;
-    text-align: center;
-    font-size: 18px;
-    gap: 10px; 
-    transition: background-color 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  gap: 10px;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+/* زر تسجيل الدخول */
+.Na-login {
+  width: 109px;
+  padding: 14px 30px;
+  border-radius: 82px;
+  background-color: var(--green60-color);
+  color: var(--black11-color);
+}
+
+/* زر للأفراد */
+.Na-forindividuals {
+  width: 181px;
+  padding: 14px 24px;
+  border-radius: 140px;
+  background-color: var(--green60-color);
+  color: var(--black11-color);
+}
+
+/* زر للشركات */
+.Na-forbusinesses {
+  width: 177px;
+  padding: 14px 24px;
+  border-radius: 140px;
+  background-color: var(--black11-color);
+  color: var(--white-color);
+}
+
+/* زر فتح حساب */
+.Na-openaccount {
+  width: 183px;
+  padding: 18px 30px;
+  border-radius: 82px;
+  background-color: var(--green60-color);
+  color: var(--black11-color);
 }
 
 .Na-linkbutton:hover {
-    background-color: #b5e62d; 
+    background-color: var( --green70-color); 
 }
-@media screen and (max-width: 1439px) {
- .Na-linkbutton{
-    width: 136px;
-    padding: 14px 30px;
+@media screen and (max-width: 1493px) {
+  /* الخصائص المشتركة */
+  .Na-linkbutton {
     font-size: 14px;
- }
+  }
 
-} 
-@media screen and (max-width: 767px) {
-  .Na-linkbutton{
+  /* زر Open Account */
+  .Na-openaccount {
     width: 144px;
     padding: 14px 24px;
-    font-size: 14px;
- }  
-} 
+  }
+
+  /* زر Login */
+  .Na-login {
+    width: 87px;
+    padding: 12px 24px;
+  }
+
+  /* زر Individuals و Businesses */
+  .Na-forindividuals,
+  .Na-forbusinesses {
+    width: 139px;
+    padding: 10px 18px;
+  }
+}

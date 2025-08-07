@@ -1,7 +1,7 @@
 import Button from '../Button/Button.jsx';
 import './Start.css';
 
-const Start = ({ title,titlespan, description, buttonText, buttonTo }) => {
+const Start = ({ title,titlespan, description, buttonText, buttonTo , buttonClass }) => {
   return (
     <div className="Na-container container">
       <div className="Na-start-section">
@@ -12,7 +12,7 @@ const Start = ({ title,titlespan, description, buttonText, buttonTo }) => {
           <p>{description}</p>
         </div>
         <div className="Na-start-right">
-          <Button text={buttonText} to={buttonTo} />
+          <Button text={buttonText} to={buttonTo} className={ buttonClass }/>
         </div>
       </div>
     </div>
