@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
 import './Button.css'
-const Button = ({text , to}) => {
+const Button = ({text , to , className }) => {
+    const combinedClass = `Na-linkbutton ${className}`;
     return (
         <div>
-            <Link to = {to} className="Na-linkbutton">
+            <Link to = {to} className={combinedClass}>
                 {text}
             </Link>
         </div>

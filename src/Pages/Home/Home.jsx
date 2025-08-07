@@ -1,6 +1,10 @@
 import Section from "../../Components/Section/Section";
 import Start from "../../Components/Start/Start";
-
+import TestData from '../../Data/TestData';
+import Testimonials from "../../Components/Testimonials/Testimonials";
+if (!localStorage.getItem('Testimonials')) {
+  localStorage.setItem('Testimonials', JSON.stringify(TestData));
+}
 const Home = () => {
     return (
         <div>
@@ -11,7 +15,6 @@ const Home = () => {
             buttonTo="/signup"
             />
         </div>
-        
     );
 }
 
