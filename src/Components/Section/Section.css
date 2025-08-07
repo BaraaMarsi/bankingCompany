@@ -1,0 +1,39 @@
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+.MA-title h1{
+    color: var(--white-color);
+}
+
+.MA-title span {
+    color: var(--green60-color);
+}
+
+.MA-title .desc {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 150%;
+    color: var(--gray70-color);
+}
+
+/* laptop */
+@media screen and (max-width: 1439px) {
+    .MA-title .desc {
+        font-size: 16px;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 992px) {
+    .MA-title .desc {
+        font-size: 14px;
+        line-height: 150%;
+    }
+}
