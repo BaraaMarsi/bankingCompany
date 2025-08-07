@@ -1,3 +1,4 @@
+import Section from "../../Components/Section/Section";
 import Start from "../../Components/Start/Start";
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
             buttonTo="/signup"
             />
         </div>
+        
     );
 }
 
