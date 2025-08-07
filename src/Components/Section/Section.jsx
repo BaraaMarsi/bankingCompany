@@ -1,19 +1,3 @@
-// import "./Section.css"
-// const Section = ({welcome, title, titleSpan, secTitle, desc}) => {
-//     return (
-//         <div className="MA-title">
-//             <h1>
-//                 {welcome && <p className="welcome">{welcome}</p>}
-//                 {title && <>{title}</>}
-//                 {titleSpan && <span>{titleSpan}</span>}
-//                 {secTitle && <>{secTitle}</>}
-//             </h1>
-//             {desc && <p className="desc">{desc}</p>}
-//         </div>
-//     );
-// }
-
-// export default Section;
 import "./Section.css"
 const Section = ({welcome, title, titleSpan, secTitle, desc, reverse, flex, imageUrl, imageAlt, testName}) => {
     return (

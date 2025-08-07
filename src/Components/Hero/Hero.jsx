@@ -2,7 +2,7 @@ import Section from "../Section/Section";
 import "./Hero.css"
 const Hero = ({image, textAlt,yourWelcome, yourTitle, yourTitleSpan, yourSecTitle, yourDesc}) => {
     return (
-        <div className="container padding-bottom">
+        <div className="container">
             <div className="MA-hero">
                 <Section 
                     welcome= {yourWelcome}
