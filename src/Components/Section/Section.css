@@ -23,6 +23,7 @@
     color: var(--gray70-color);
 }
 
+
 /* laptop */
 @media screen and (max-width: 1439px) {
     .MA-title .desc {
