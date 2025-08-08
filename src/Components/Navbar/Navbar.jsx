@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
+import Button from '../Button/Button';
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -26,6 +27,10 @@ const Navbar = () => {
 
     return (
         <div className="container">
+            <div className="Am-NAV">
+
+
+
             <nav className="Am-navbar">
                 <div className="Am-logo">
                     <img className="Am-logo_img" src="./assets/images/Logo.svg" alt="YourBanK Logo" />
@@ -45,11 +50,12 @@ const Navbar = () => {
                         ))}
                     </div>
                 </div>
+<div className="Am-button Am-button-large">
+    <Button text="Sign Up" to="/signup" />
+    <Button text="Login" to="/login" />
+</div>
 
-                <div className="Am-button Am-button-large">
-                    <button className="Am-btn-outline">Sign Up</button>
-                    <button className="Am-btn-filled">Login</button>
-                </div>
+
 
                 <div className={`Am-nav-mobile ${open ? "Am-active" : ""}`}>
                     {links.map(({ to, label }) => (
@@ -62,18 +68,23 @@ const Navbar = () => {
                             {label}
                         </NavLink>
                     ))}
-                    <div className="Am-button-mobile">
-                        <button className="Am-btn-outline" onClick={() => setOpen(false)}>Sign Up</button>
-                        <button className="Am-btn-filled" onClick={() => setOpen(false)}>Login</button>
-                    </div>
+              <div className="Am-button-mobile">
+    <Button text="Sign Up" to="/signup" />
+    <Button text="Login" to="/login" />
+</div>
+
                 </div>
 
                 <div className="Am-burger" onClick={() => setOpen(!open)}>
                     <img src="./assets/images/Burger.svg" alt="Burger" />
                 </div>
             </nav>
+
+    
+</div>
         </div>
     );
 };
 
 export default Navbar;
+ 
