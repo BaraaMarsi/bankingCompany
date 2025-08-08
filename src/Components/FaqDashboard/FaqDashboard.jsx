@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { FaqData } from "./../../Data/FaqData";
-import Button from "../Button/Button";
 
 const FaqDashboard = () => {
     const [faqs, setFaqs] = useState(() => {

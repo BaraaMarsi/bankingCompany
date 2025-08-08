@@ -8,7 +8,7 @@ import About from './Pages/About/About'
 import Security from './Pages/Security/Security'
 import Login from './Pages/Login/Login'
 import SignUp from './Pages/SignUp/SignUp'
-import FaqDashboard from './Components/FaqDashboard/FaqDashboard'
+import FaqDashboard from './Pages/FaqDashboard/FaqDashboard'
 import Faq from './Components/Faq/Faq'
 
 
@@ -23,7 +23,6 @@ function App() {
         <Route path='/security' element={<Security />} />
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<SignUp />} />
-        <Route path='/faq' element={<Faq />} />
         <Route path='dashboard' element={<FaqDashboard />}/>
       </Routes>
       <Footer image="FooterIcons/yourBankLogo.png"
