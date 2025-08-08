@@ -2,6 +2,7 @@ import Hero from "../../Components/Hero/Hero.jsx";
 import "./Careers.css"
 import Section from "../../Components/Section/Section.jsx";
 import Start from "../../Components/Start/Start";
+import Faq from "../../Components/Faq/Faq.jsx";
 
 const Careers = () => {
     // const info = {
@@ -21,18 +22,17 @@ const Careers = () => {
                 yourTitle = "Welcome to "
                 yourTitleSpan= "YourBank "
                 yourSecTitle= "Careers!"
-                yourDesc= "Join our team and embark on a rewarding journey in the banking industry. At YourBank, we are committed to fostering a culture of excellence and providing opportunities for professional growth. With a focus on innovation, customer service, and integrity, we strive to make a positive impact in the lives of our customers and communities. Join us today and be a part of our mission to shape the future of banking."
-                
+                yourDesc= "Join our team and embark on a rewarding journey in the banking industry. At YourBank, we are committed to fostering a culture of excellence and providing opportunities for professional growth. With a focus on innovation, customer service, and integrity, we strive to make a positive impact in the lives of our customers and communities. Join us today and be a part of our mission to shape the future of banking." 
             />
+            <Faq/>
             <div>
                <Start
                 title="Start your financial journey with " titlespan="Your Bank today!"
                 description="Ready to take control of your finances? Join YourBank now, and let us help you achieve your financial goals with our tailored solutions and exceptional customer service"
                 buttonText="Open Account"
                 buttonTo="/signup"
-                buttonClass="Na-openaccount"/>
-                
-            </div>
+                buttonClass="Na-openaccount"/> 
+            </div>        
         </>
     );
 }
