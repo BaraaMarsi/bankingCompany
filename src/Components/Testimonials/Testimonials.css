@@ -1,0 +1,135 @@
+/* القسم الكامل */
+.testimonials-section {
+  background-color: #000;
+  padding: 60px 20px;
+  color: white;
+}
+
+/* رأس القسم */
+.testimonials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  background-color: var(--black11-color);
+}
+
+.header-left {
+  min-width: 250px;
+  flex: 1;
+}
+
+.testimonials-header .MA-title h1 {
+  margin-bottom: 1rem;
+}
+
+.testimonials-header .MA-title .desc {
+  margin-top: 0.5rem;
+}
+
+.header-right {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  min-width: 200px;
+}
+
+/* السلايدر */
+.swiper {
+  min-height: 200px;
+  padding: 40px 0;
+  position: relative;
+}
+
+.swiper::before,
+.swiper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.swiper::before {
+  left: 0;
+  background: linear-gradient(to right, #000, transparent);
+}
+
+.swiper::after {
+  right: 0;
+  background: linear-gradient(to left, #000, transparent);
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* تعديل عناصر Section داخل Card */
+.MA-title {
+  background-color: transparent;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.MA-title img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  z-index: 2;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+/* الوصف */
+.MA-title .desc {
+  font-size: 1rem;
+  color: #ccc;
+  margin-top: 20px;
+}
+
+/* اسم العميل */
+.MA-title .testName {
+  color: var(--green60-color);
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* الأسهم */
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #444;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+  border: none;
+  color: transparent;
+}
+
+.swiper-button-next {
+  background-image: url('/rightarrowicon.png');
+}
+
+.swiper-button-prev {
+  background-image: url('/leftarrowicon.png');
+}
+
+.swiper-pagination-bullet {
+  background: #999;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--green60-color);
+}

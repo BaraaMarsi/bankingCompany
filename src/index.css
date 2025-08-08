@@ -51,6 +51,7 @@ body{
 .padding_Buttom{
   padding-bottom: 150.52px;
 }
+
 @media screen and (max-width: 1439px) {
   .container{
   padding-right: 5.555%;
