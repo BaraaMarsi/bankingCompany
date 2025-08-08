@@ -7,7 +7,13 @@ const Form = ({ isRegister, title, description }) => {
                 <h1>{title}</h1>
                 <p>{description}</p>
             </div>
-            <form className="BL-form">
+
+
+<div className="BL-form">
+
+
+
+<form>
                 <div className='BL-formInput'>
                     {isRegister &&
                         <div className="BL-nameInput">
@@ -23,11 +29,12 @@ const Form = ({ isRegister, title, description }) => {
                         </div>
                     </div>
                 </div>
+                </form>
                 <div className='BL-buttonGroup'>
                     <Button text={'SignUp'} to={'/signup'} />
                     <Button text={'Login'} to={'/login'} />
                 </div>
-            </form>
+            
             <div className="BL-separator">
                 <img src='./FormIcons/line.svg' alt="line" />
                 <span>Or Continue with</span>
@@ -38,6 +45,11 @@ const Form = ({ isRegister, title, description }) => {
                 <div className="BL-icon"><img src="./FormIcons/facebook.svg" alt="facebook" /></div>
                 <div className="BL-icon"><img src="./FormIcons/apple.svg" alt="apple" /></div>
             </div>
+
+
+
+            </div>
+           
         </div>
 
     );

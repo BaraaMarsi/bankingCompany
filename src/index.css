@@ -8,7 +8,9 @@
     box-sizing: border-box;
     font-family: "Lexend", sans-serif;
 }
-
+body{
+  background-color: #1A1A1A;
+}
 :root {
     --white-color: #fff;
     --black-color: #000;
@@ -46,18 +48,25 @@
     padding-right: 8.4375%;
     padding-left: 8.4375%;
 }
-
-
+.padding_Buttom{
+  padding-bottom: 150.52px;
+}
 @media screen and (max-width: 1439px) {
   .container{
   padding-right: 5.555%;
   padding-left: 5.555%;}
+  .padding_Buttom{
+  padding-bottom: 120.73px;
+}
 } 
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 992px) {
 .container{
   padding-right: 4.1025%;
   padding-left: 4.1025%;}
+  .padding_Buttom{
+  padding-bottom: 80px;
+}
   } 
 
 
