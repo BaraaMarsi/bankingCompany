@@ -3,6 +3,8 @@ import Section from "../Section/Section";
 import TitleDev from "../TitleDev/TitleDev";
 import "./Faq.css";
 import { useNavigate } from "react-router-dom";
+import  FaqData  from "./../../Data/FaqData";
+
 
 const Faq = () => {
     const navigate = useNavigate();
@@ -10,13 +12,9 @@ const Faq = () => {
         const storedFaqs = localStorage.getItem('faqs');
         return storedFaqs ? JSON.parse(storedFaqs) : [];
     })
-    const [isExpanded, setIsExpanded] = useState(false);
-
-    const handleShow = () => {
-        setIsExpanded(prevStatus => !prevStatus);
-    }
-    const showFaqs = isExpanded ? faqs : faqs.slice(0, 4);
-    const buttonText = isExpanded ? "Show Less" : "Show More";
+    const [isOpen, setisOpen] = useState(false);
+    const showFaqs = isOpen ? faqs : faqs.slice(0, 4);
+    const buttonText = isOpen ? "Show Less" : "Show More";
 
     const handleContainerClick = () => {
         navigate('/dashboard');
@@ -34,7 +32,7 @@ const Faq = () => {
                         ))
                 }
             </div>
-            <button onClick={handleShow}>{buttonText}</button>
+            <button onClick={() => setisOpen(!isOpen)}>{buttonText}</button>
         </>
 
     );

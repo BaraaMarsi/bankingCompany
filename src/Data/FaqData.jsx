@@ -1,4 +1,4 @@
-export const FaqData = [
+const FaqData = [
     {
         id: 1,
         question: "How do I open an account with YourBank?",
@@ -41,8 +41,8 @@ export const FaqData = [
     },
 
 ]
-
-const faqs = JSON.stringify(FaqData)
-localStorage.setItem('faqs', faqs)
-const lastId = JSON.stringify(FaqData.length)
-localStorage.setItem('faqs_lastId', lastId)
+export default FaqData;
+// const faqs = JSON.stringify(FaqData)
+// localStorage.setItem('faqs', faqs)
+// const lastId = JSON.stringify(FaqData.length)
+// localStorage.setItem('faqs_lastId', lastId)
