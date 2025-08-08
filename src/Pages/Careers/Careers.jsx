@@ -25,12 +25,13 @@ const Careers = () => {
                 
             />
             <div>
-                <Start 
-                title="Start your Career with " titlespan="Your Bank today!"
-                description="Lorem ipsum dolor sit amet consectetur. Blandit odio semper risus pellentesque elit. Pellentesque eget ut imperdiet nulla penatibus. Nascetur viverra arcu sed amet cursus purus."
-                buttonText="Open Accout"
+               <Start
+                title="Start your financial journey with " titlespan="Your Bank today!"
+                description="Ready to take control of your finances? Join YourBank now, and let us help you achieve your financial goals with our tailored solutions and exceptional customer service"
+                buttonText="Open Account"
                 buttonTo="/signup"
-                />
+                buttonClass="Na-openaccount"/>
+                
             </div>
         </>
     );
