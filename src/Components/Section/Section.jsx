@@ -3,7 +3,7 @@ const Section = ({welcome, title, titleSpan, secTitle, desc, reverse, flex, imag
     return (
         <div className="MA-title">
             <div className={`${reverse?'reverse':''} ${flex?'flex':''}`}>
-                {imageUrl && (<img src={imageUrl} alt={imageAlt} />)}
+                {imageUrl && (<img src={imageUrl} alt={imageAlt}  />)}
                 <h1>
                     
                     {welcome && <p className="welcome">{welcome}</p>}

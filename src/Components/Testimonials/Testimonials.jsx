@@ -4,16 +4,33 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import { Pagination } from 'swiper/modules';
 import './Testimonials.css';
-import TestData from '../../Data/TestData';
+import TestiData from '../../Data/TestiData';
 import Button from '../Button/Button';
 import Section from '../Section/Section'
+import Card from '../Card/Card';
 const Testimonials = () => {
-    const Testimonials = TestData;
+    let testimonialsIsData = TestiData;
+    if(typeof window !=='undefined'){
+      const stored = localStorage.getItem('testimonials')
+      if(stored){
+        try{
+          testimonialsIsData = JSON.parse(stored)
+        }
+        catch(error){
+          console.error('error')
+          testimonialsIsData = TestiData
+        }
+        }
+        else{
+          localStorage.setItem('testimonials' , JSON.stringify(TestiData))
+        }
+      }
+    
     return (
-        
+  <div className="testimonials-section">    
   <div className="testimonials container">
   <div className="testimonials-header">
-    <div class="header-left">
+    <div className="header-left">
    <Section
   title="Our"
   titleSpan="Testimonials"
@@ -36,18 +53,22 @@ const Testimonials = () => {
         pagination={{ clickable: true }}
         loop={false}
       >
-        {Testimonials.map((item, index) => (
-          <SwiperSlide key={index}>
-            <div className="testimonial-card">
-              <img src={item.image} alt={item.title} className="testimonial-image" />
-              <h3>{item.title} <span>({item.span})</span></h3>
-              <h4>{item.secondTitle}</h4>
-              <p>{item.desc}</p>
-            </div>
-          </SwiperSlide>
+        {testimonialsIsData.map((item, index) => (
+      <SwiperSlide key={index}>
+          <Card
+            section={{
+              imageUrl: item.imageUrl,
+              imageAlt: item.title,
+              title: item.title,
+              desc: item.desc,
+              testName: item.testName    
+            }}
+          />
+       </SwiperSlide>
         ))}
       </Swiper>
     </div>
+    </div>  
   );
 
 }

@@ -1,10 +1,10 @@
 import Section from "../../Components/Section/Section";
 import Start from "../../Components/Start/Start";
-import TestData from '../../Data/TestData';
+import TestiData from '../../Data/TestiData';
 import Testimonials from "../../Components/Testimonials/Testimonials";
 import Faq from "../../Components/Faq/Faq";
 if (!localStorage.getItem('Testimonials')) {
-  localStorage.setItem('Testimonials', JSON.stringify(TestData));
+  localStorage.setItem('Testimonials', JSON.stringify(TestiData));
 }
 const Home = () => {
     return (
