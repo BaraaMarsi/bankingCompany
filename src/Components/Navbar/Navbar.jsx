@@ -51,9 +51,10 @@ const Navbar = () => {
                     </div>
                 </div>
 <div className="Am-button Am-button-large">
-    <Button text="Sign Up" to="/signup" />
-    <Button text="Login" to="/login" />
+    <Button text="Sign Up" to="/signup" className="Na-signup" />
+    <Button text="Login" to="/login" className="Na-login" />
 </div>
+
 
 
 
@@ -69,8 +70,9 @@ const Navbar = () => {
                         </NavLink>
                     ))}
               <div className="Am-button-mobile">
-    <Button text="Sign Up" to="/signup" />
-    <Button text="Login" to="/login" />
+ <Button text="Sign Up" to="/signup" className="Na-signup" />
+
+  <Button text="Login" to="/login" className="Na-login" />
 </div>
 
                 </div>

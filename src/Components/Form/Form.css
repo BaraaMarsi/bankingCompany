@@ -1,4 +1,5 @@
 .BL-formContainer {
+    gap: 80px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -9,10 +10,8 @@
         url('./FormIcons/formBackground.png');
     background-size: cover; 
     border-radius: 20px;
-
-
+    padding: 100px 150px;
 }
-
 .BL-formContainer::before {
     position: absolute;
     
@@ -24,7 +23,7 @@
 }
 
 .BL-formContainer::before {
-    background-image: url('/startpic.png');
+    background-image: url('/public/FormIcons/startpic.png');
     background-size: cover;
     background-repeat: no-repeat;
     border-top-left-radius: 20px;
@@ -32,7 +31,7 @@
 
 .BL-formHeader {
     text-align: center;
-    max-width: 77.3755%;
+    max-width: 1026px;
     margin-bottom: 60px;
     margin-top: 100px;
 }
@@ -54,41 +53,41 @@
 
 
 
-
-
-
-
-
-
 .BL-form {
+    gap: 40px;
     width: 100%;
     display: flex;
     flex-direction: column;
 justify-content: center;
 align-items: center;
+form{
+    width: 100%;
+}
 }
 
 .BL-formInput {
     flex-wrap: wrap;
     display: flex;
-    flex-direction: column;
+   
     gap: 30px;
     padding-bottom: 40px;
+    width: 100%;
 }
 
 .BL-formInput .BL-nameInput {
     display: flex;
+    width: 100%;
     gap: 30px;
 }
 
 .BL-formInput .BL-emailInput {
     display: flex;
+    width: 100%;
     gap: 30px;
 }
 
 .BL-formInput input[type="text"],
-.BL-formInput input[type="email"],
-.BL-formInput input[type="password"] {
+.BL-formInput input[type="email"] {
     height: 75px;
     background-color: var(--black10-color);
     border: 1px solid var(--gray20-color);
@@ -97,6 +96,7 @@ align-items: center;
     font-size: 18px;
     outline: none;
     padding: 24px;
+    width: 50%!important;
 }
 
 .BL-formInput input::placeholder {
@@ -109,6 +109,18 @@ align-items: center;
 
 .BL-passwordInput {
   position: relative;
+width: 50%;
+}
+.BL-formInput input[type="password"] {
+    height: 75px;
+    background-color: var(--black10-color);
+    border: 1px solid var(--gray20-color);
+    border-radius: 50px;
+    color: var(--white-color);
+    font-size: 18px;
+    outline: none;
+    padding: 24px;
+    width: 100% !important;
 }
 
 .BL-formInput input[type="password"] {
@@ -128,6 +140,72 @@ align-items: center;
     align-items: center;
     gap: 24px;
 }
+
+
+.Am-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+  background-color:var(--black-color);  
+  opacity: 30%;             
+z-index: 1;
+}
+.BL-formHeader,
+.BL-form,
+.BL-buttonGroup,
+.BL-separator,
+.BL-social {
+position: relative;
+  z-index: 2; 
+}
+
+
+
+
+
+
+
+
+.Na-signup_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+width: 518px;
+height: 63px;
+padding: 14px 30px;
+border-radius: 82px;
+background-color: var(--green60-color);
+color: var(--black11-color);
+}
+.Na-login_form{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 518px;
+    height: 63px;
+padding: 14px 30px;
+border-radius: 82px;
+background-color: var(--gray20-color);
+color: var( --white-color);
+
+}
+
+
+.BL-checkmark {
+position: absolute;
+top: 20px;      
+right: 20px;    
+width: 342px;   
+height: 325px;
+z-index: 999;    
+pointer-events: none; 
+
+}
+
+
+
 
 
 
@@ -153,6 +231,8 @@ align-items: center;
 
 .BL-separator {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
     margin-top: 24px;
 }
@@ -160,24 +240,19 @@ align-items: center;
 .BL-separator span {
     color: var(--gray60-color);
     text-align: center;
+    justify-content: center;
     font-size: 18px;
 }
-
-
-
-
-
-
-
+.line{
+    width: 165.5px;
+    height: 0;
+    border: 1px solid var(--gray70-color);
+}
 .BL-social {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
-
-
-
-
 
 .BL-icon {
     display: flex;
@@ -191,8 +266,6 @@ align-items: center;
     transition: all 0.3s ease;
 }
 
-
-
 .BL-icon img {
     width: 30px;
     height: 30px;
@@ -202,3 +275,100 @@ align-items: center;
     background-color: linear-gradient(#CAFF33, #CAFF33);
     box-shadow: 0 0 15px #CAFF33;
 } 
+
+
+
+@media screen and (max-width: 1439px){
+  .BL-formContainer{
+    gap: 60px;
+  }
+  
+.BL-formHeader{
+    max-width: 664px;
+}
+.BL-form{
+    gap: 30px;
+}
+  
+    .BL-checkmark{
+width: 256px; ;
+height:243px ;
+   }
+   
+   
+   
+    .BL-formHeader h1{
+        font-size: 38px
+    }
+    .BL-formHeader p{
+        font-size: 16px;
+    }
+    
+    
+    .Na-signup_form,.Na-login_form {
+width: 404px;
+height: 49px;
+    }
+    
+    .line{
+    
+        width: 129px;
+    }
+    .BL-separator span{
+        font-size: 14px;
+    }
+    .BL-icon{
+        width: 68px;
+        height: 68px;
+    }
+}
+
+
+  @media screen and (max-width: 992px){
+   .BL-formContainer{
+    gap: 40px;
+   }
+   .BL-formHeader{
+    max-width: 298px;
+   }
+   .BL-form{
+    gap: 24px;
+   }
+   
+    .BL-checkmark{
+
+width: 167px;
+height: 159px;
+   }
+
+
+    .BL-formHeader h1{
+        font-size: 28px;
+
+    }
+    .BL-formHeader p{
+        font-size: 14px;
+    }
+   .BL-formInput{
+    gap: 20px;
+   
+   }
+   
+   .BL-formInput .BL-nameInput{
+    flex-wrap: wrap;
+    width: 100%;
+   }
+   
+   
+    .Na-signup_form,.Na-login_form {
+width: 208px;
+
+   }
+   
+   
+    .line{ 
+        width: 76px;
+}
+
+
+}

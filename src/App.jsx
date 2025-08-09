@@ -8,6 +8,8 @@ import About from './Pages/About/About'
 import Security from './Pages/Security/Security'
 import Login from './Pages/Login/Login'
 import SignUp from './Pages/SignUp/SignUp'
+import FaqDashboard from './Pages/FaqDashboard/FaqDashboard'
+import Faq from './Components/Faq/Faq'
 
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
         <Route path='/security' element={<Security />} />
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<SignUp />} />
+        <Route path='dashboard' element={<FaqDashboard />}/>
       </Routes>
       <Footer image="FooterIcons/yourBankLogo.png"
               links={[{url: "/" , content: "Home"}, {url: "/careers" , content: "Careers"}, {url: "/about" , content: "About"}, {url: "/security" , content: "Security"}]}

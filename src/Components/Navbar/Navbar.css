@@ -54,6 +54,20 @@
   display: flex;
   gap: 30px;
 }
+.Na-signup {
+  width: 114px;
+  font-size: 18px;
+  padding: 14px 30px;
+  border-radius: 82px;
+  background-color: var( --black11-color);
+  color: var(--white-color);
+}
+
+.Na-signup:hover {
+  background-color: var(--green70-color);
+  color: var(--black11-color);
+}
+
 
 .Am-btn-outline {
   background-color: #1C1C1C;
