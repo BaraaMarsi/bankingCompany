@@ -1,57 +1,55 @@
 import './Form.css';
 import Button from '../Button/Button';
+
 const Form = ({ isRegister, title, description }) => {
     return (
         <div className="BL-formContainer">
+            <div className='Am-overlay'></div>
+<img src="./public/FormIcons/startpic.png" alt="checkmark" className="BL-checkmark" />
+
+
             <div className='BL-formHeader'>
                 <h1>{title}</h1>
                 <p>{description}</p>
             </div>
 
-
-<div className="BL-form">
-
-
-
-<form>
-                <div className='BL-formInput'>
-                    {isRegister &&
-                        <div className="BL-nameInput">
-                            <input type="text" placeholder="Enter First Name" />
-                            <input type="text" placeholder="Enter Last Name" />
-                        </div>
-                    }
-                    <div className="BL-emailInput">
-                        <input type="email" placeholder="Enter Your Email" />
-                        <div className="BL-passwordInput">
-                            <input type="password" id="password" placeholder="Enter your Password" />
-                            <img src="./FormIcons/password.svg" alt="eye" className="BL-passwordIcon" />
+            <div className="BL-form">
+                <form>
+                    <div className='BL-formInput'>
+                        {isRegister &&
+                            <div className="BL-nameInput">
+                                <input type="text" placeholder="Enter First Name" />
+                                <input type="text" placeholder="Enter Last Name" />
+                            </div>
+                        }
+                        <div className="BL-emailInput">
+                            <input type="email" placeholder="Enter Your Email" />
+                            <div className='BL-passwordInput'>
+                                <input type="password" id="password" placeholder="Enter your Password" />
+                                <img src="./FormIcons/password.svg" alt="eye" className="BL-passwordIcon" />
+                            </div>
                         </div>
                     </div>
-                </div>
                 </form>
+
                 <div className='BL-buttonGroup'>
-                    <Button text={'SignUp'} to={'/signup'} />
-                    <Button text={'Login'} to={'/login'} />
+                    <Button text="Sign Up" to="/signup" className="Na-signup_form" />
+                    <Button text="Login" to="/login" className="Na-login_form" />
                 </div>
-            
-            <div className="BL-separator">
-                <img src='./FormIcons/line.svg' alt="line" />
-                <span>Or Continue with</span>
-                <img src='./FormIcons/line.svg' alt="line" />
-            </div>
-            <div className="BL-social">
-                <div className="BL-icon"><img src="./FormIcons/gmail.svg" alt="gmail" /></div>
-                <div className="BL-icon"><img src="./FormIcons/facebook.svg" alt="facebook" /></div>
-                <div className="BL-icon"><img src="./FormIcons/apple.svg" alt="apple" /></div>
-            </div>
 
+                <div className="BL-separator">
+                    <div className="line"></div>
+                    <span>Or Continue with</span>
+                    <div className="line"></div>
+                </div>
 
-
+                <div className="BL-social">
+                    <div className="BL-icon"><img src="./FormIcons/gmail.svg" alt="gmail" /></div>
+                    <div className="BL-icon"><img src="./FormIcons/facebook.svg" alt="facebook" /></div>
+                    <div className="BL-icon"><img src="./FormIcons/apple.svg" alt="apple" /></div>
+                </div>
             </div>
-           
         </div>
-
     );
 }
 
