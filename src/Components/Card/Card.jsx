@@ -9,13 +9,16 @@ const Card = ({section, titleDev, titleUlBtn}) => {
     <>
       {section &&(
       <Section
+        welcome = {section.welcome}
+        title = {section.title}
+        titleSpan = {section.titleSpan}
+        secTitle = {section.secTitle}
+        desc = {section.desc}
+        reverse = {section.reverse}
+        flex = {section.flex}
         imageUrl = {section.imageUrl}
         imageAlt = {section.imageAlt}
-        title = {section.title}
-        desc = {section.desc}
-        flex = {section.flex}
-        reverse = {section.reverse}
-        testName={section.testName}
+        testName = {section.testName}
       />)}
 
       {titleDev &&(
