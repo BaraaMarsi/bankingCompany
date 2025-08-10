@@ -42,7 +42,3 @@ const FaqData = [
 
 ]
 export default FaqData;
-// const faqs = JSON.stringify(FaqData)
-// localStorage.setItem('faqs', faqs)
-// const lastId = JSON.stringify(FaqData.length)
-// localStorage.setItem('faqs_lastId', lastId)
