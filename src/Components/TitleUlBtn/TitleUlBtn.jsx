@@ -4,7 +4,7 @@ import "./TitleUlBtn.css"
 const TitleUlBtn = ({title, ul, btn}) => {
     return (
         <div className = "Bm-titleUlBtn">
-            <h1>{title}</h1>
+            <h2>{title}</h2>
             <ul>
                 {ul.map((item, index) => {
                     return(

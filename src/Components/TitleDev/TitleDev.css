@@ -3,7 +3,7 @@
     padding-bottom: 50px;
 }
 
-.Bm-titleDev h1{
+.Bm-titleDev h2{
     color: var(--white-color);
     font-size: 30px;
     font-weight: 600;
@@ -28,7 +28,7 @@
     .Bm-titleDev{
         padding-bottom: 40px;
     }
-    .Bm-titleDev h1{
+    .Bm-titleDev h2{
         font-size: 24px;
         padding-bottom: 10px;
     }
@@ -44,7 +44,7 @@
     .Bm-titleDev{
         padding-bottom: 30px;
     }
-    .Bm-titleDev h1{
+    .Bm-titleDev h2{
         font-size: 20px;
     }
     .Bm-titleDev .divs{
