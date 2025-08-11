@@ -4,9 +4,9 @@ import Section from "../Section/Section";
 import "./Card.css"
 
 
-const Card = ({section, titleDev, titleUlBtn}) => {
+const Card = ({section, titleDev, titleUlBtn, customClass}) => {
   return (
-    <>
+    <div className={`${customClass || ""}`}>
       {section &&(
       <Section
         welcome = {section.welcome}
@@ -34,7 +34,7 @@ const Card = ({section, titleDev, titleUlBtn}) => {
         ul = {titleUlBtn.ul}
         btn = {titleUlBtn.btn}
       />)}
-    </>
+    </div>
   );
 }
 
