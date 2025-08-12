@@ -39,7 +39,7 @@
     line-height: 130%;
 }
 
-.MA-hero .MA-title h1 .welcome {
+.MA-hero .MA-title .welcome {
     color: var(--white-color);
     font-size: 20px;
     font-weight: normal;
@@ -74,7 +74,7 @@
         margin-bottom: 20px;
     }
 
-    .MA-hero .MA-title h1 .welcome {
+    .MA-hero .MA-title .welcome {
         font-size: 18px;
     }
 
@@ -112,7 +112,7 @@
         margin-bottom: 14px;
     }
 
-    .MA-hero .MA-title h1 .welcome {
+    .MA-hero .MA-title .welcome {
         font-size: 14px;
     }
 
