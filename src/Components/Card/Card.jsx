@@ -10,6 +10,7 @@ const Card = ({section, titleDev, titleUlBtn, customClass}) => {
       {section &&(
       <Section
         welcome = {section.welcome}
+        welcomeImage={section.welcomeImage}
         title = {section.title}
         titleSpan = {section.titleSpan}
         secTitle = {section.secTitle}
