@@ -21,7 +21,7 @@ const Faq = () => {
     }
     return (
         <>
-            <div className="BL-M container" onClick={handleContainerClick}>
+            <div className="BL-M container " onClick={handleContainerClick}>
                 <Section titleSpan={"Frequently"} secTitle={" Asked Questions"} desc={"Still you have any questions? Contact our Team via support@yourbank.com"} />
                 {
                     showFaqs.length === 0 ?

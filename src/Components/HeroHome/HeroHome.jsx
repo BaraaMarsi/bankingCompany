@@ -5,19 +5,18 @@ import "./HeroHome.css"
 // {transText, image, moneyText}
 const HeroHome = () => {
     return (
-        <div className="container">  
+        <div className="container padding_Buttom">  
             {/* <img src="HeroHome/checked.png" alt="" />heroHome */}
             <div className="MA-herohome flex">
                 <div className="MA-left">
                 <Section
-                    image="HeroHome/checked.png"
-                    altImg="checked icon"
+                    welcomeImage="HeroHome/checked.png"
                     welcome="No LLC Required, No Credit Check."
                     title="Welcome to YourBank Empowering Your "
                     titleSpan="Financial Journey"
                     desc="At YourBank, our mission is to provide comprehensive banking solutions that empower individuals and businesses to achieve their financial goals. We are committed to delivering personalized and innovative services that prioritize our customers' needs."
                 />
-                <Button to="/signup" text="Open Account"/>
+                <Button className="Na-openaccount" to="/signup" text="Open Account"/>
             </div>
             <div className="MA-right">
                 <div className="MA-income">

@@ -11,12 +11,14 @@
 .MA-hero::after {
     content: "";
     position: absolute;
-    background-image: url(FormIcons/startpic.png);
-    width: 200px;
-    height: 200px;
+    background-image: url(startpic.png);
+    width: 505px;
+    height: 505px;
+    background-repeat: no-repeat;
     right: 0px;
     top: 0;
     z-index: -2;
+    transform: rotate(90deg);
 }
 
 .MA-hero .MA-title {
