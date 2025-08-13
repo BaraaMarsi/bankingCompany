@@ -1,12 +1,12 @@
 import "./Section.css"
-const Section = ({welcome, title, titleSpan, secTitle, desc, reverse, flex, imageUrl, imageAlt, testName}) => {
+const Section = ({welcome, image, altImg, title, titleSpan, secTitle, desc, reverse, flex, imageUrl, imageAlt, testName}) => {
     return (
         <div className="MA-title">
             <div className={`${reverse?'reverse':''} ${flex?'flex':''}`}>
                 {imageUrl && (<img src={imageUrl} alt={imageAlt}  />)}
                 <h1>
                     
-                    {welcome && <p className="welcome">{welcome}</p>}
+                    {welcome && <p className="welcome"><img className="ckecked" src={image && image} alt={altImg && altImg}/>{welcome}</p>}
                     {title && <>{title}</>}
                     {titleSpan && <span>{titleSpan}</span>}
                     {secTitle && <>{secTitle}</>}
