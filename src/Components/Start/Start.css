@@ -1,5 +1,5 @@
-
 .Na-start-section {
+  position: relative;
   padding: 60px;
   display: flex;
   align-items: center;
@@ -7,9 +7,26 @@
   height: 288px;
   gap: 150px;
   background-color: var(--black11-color);
-  border: 1px;
   border-radius: 20px;
   font-weight: 400;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.Na-start-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  pointer-events: none;
+  z-index: -1;
+
+  /* توهج متدرج يضيء الحواف بشكل شفافة */
+  background:
+    radial-gradient(circle at top left, rgba(117, 112, 112, 0.05), transparent 90%),
+    radial-gradient(circle at top right, rgba(117, 112, 112, 0.05), transparent 60%),
+    radial-gradient(circle at bottom left, rgba(117, 112, 112, 0.05), transparent 60%),
+    radial-gradient(circle at bottom right, rgba(117, 112, 112, 0.05), transparent 90%);
 }
 .Na-start-left {
   position: relative;
@@ -26,7 +43,7 @@
 .Na-start-left::before {
   content: "";
   position: absolute;
-  top: -50px;
+  top: -10px;
   left: -60px;
   width: 250px;
   height: 250px;
@@ -88,11 +105,8 @@
     height: 200px;
   }
 }
-@media screen and (max-width: 767px) {
-.container{
-  padding-right: 4.1025%;
-   padding-left: 4.1025%;
-  }
+@media screen and (max-width: 992px) {
+
   .Na-start-section {
     flex-direction: column;
     gap: 20px;

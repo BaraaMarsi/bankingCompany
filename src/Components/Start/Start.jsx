@@ -3,7 +3,7 @@ import './Start.css';
 
 const Start = ({ title,titlespan, description, buttonText, buttonTo , buttonClass }) => {
   return (
-    <div className="Na-container container">
+    <div className="Na-container container padding_Buttom">
       <div className="Na-start-section">
         <div className="Na-start-left">
           <h2>{title}
