@@ -3,12 +3,14 @@ import Start from "../../Components/Start/Start";
 import TestiData from '../../Data/TestiData';
 import Testimonials from "../../Components/Testimonials/Testimonials";
 import Faq from "../../Components/Faq/Faq";
+import HeroHome from "../../Components/HeroHome/HeroHome";
 if (!localStorage.getItem('Testimonials')) {
   localStorage.setItem('Testimonials', JSON.stringify(TestiData));
 }
 const Home = () => {
     return (
         <>
+            <HeroHome/>
             <Faq/>
             <Testimonials/>
             <Start 
