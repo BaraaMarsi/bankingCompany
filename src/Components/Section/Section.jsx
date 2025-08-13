@@ -15,7 +15,7 @@ const Section = ({welcome, welcomeImage, title, titleSpan, secTitle, desc, rever
                 </h1>
             </div>
             {desc && <p className="desc">{desc}</p>}
-            {testName && <h1 className="testName">{testName}</h1>}
+            {testName && <h2 className="testName">{testName}</h2>}
         </div>
     );
 }
