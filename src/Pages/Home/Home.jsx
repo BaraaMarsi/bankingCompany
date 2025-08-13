@@ -16,6 +16,7 @@ const Home = () => {
             description="Ready to take control of your finances? Join YourBank now, and let us help you achieve your financial goals with our tailored solutions and exceptional customer service"
             buttonText="Open Account"
             buttonTo="/signup"
+            buttonClass="Na-openaccount"
             />
         </>
     );
