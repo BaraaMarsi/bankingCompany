@@ -3,7 +3,6 @@ import Section from "../Section/Section";
 import TitleDev from "../TitleDev/TitleDev";
 import "./Faq.css";
 import { useNavigate } from "react-router-dom";
-import  FaqData  from "./../../Data/FaqData";
 
 
 const Faq = () => {

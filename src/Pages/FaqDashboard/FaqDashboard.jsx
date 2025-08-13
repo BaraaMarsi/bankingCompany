@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import  FaqData  from "./../../Data/FaqData";
 
 const FaqDashboard = () => {
     const [faqs, setFaqs] = useState(() => {
