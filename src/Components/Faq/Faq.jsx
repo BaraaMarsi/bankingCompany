@@ -13,7 +13,7 @@ const Faq = () => {
     })
     const [isOpen, setisOpen] = useState(false);
     const showFaqs = isOpen ? faqs : faqs.slice(0, 4);
-    const buttonText = isOpen ? "Show Less" : "Show More";
+    const buttonText = isOpen ? "Show Less" : "Load All FAQ's";
 
     const handleContainerClick = () => {
         navigate('/dashboard');

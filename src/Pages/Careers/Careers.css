@@ -1,0 +1,68 @@
+.BL-benefits-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap:50px;
+    margin-top: 80px;
+}
+
+.BL-card {
+    padding: 40px;
+    width: 46.8671%;
+    border: 1px solid linear-gradient(280.49deg, rgba(202, 255, 51, 0.1) 0%, rgba(38, 38, 38, 0) 17.02%, rgba(38, 38, 38, 0) 68.88%, rgba(38, 38, 38, 0.8) 100%);
+    border-radius: 20px;
+    background: linear-gradient(267.5deg, #1C1C1C 40.67%, rgba(28, 28, 28, 0) 99.81%),
+        linear-gradient(106.06deg, rgba(202, 255, 51, 0.05) -29.45%, rgba(202, 255, 51, 0) 27.86%);
+}
+
+.BL-card .MA-title h1 {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.BL-card .MA-title img {
+    width: 34px;
+    height: 34px;
+}
+
+.BL-card .MA-title img:hover {
+    background-color: linear-gradient(#CAFF33, #CAFF33);
+    box-shadow: 0 0 50px #CAFF33;
+}
+
+@media screen and (max-width: 1439px) {
+    .BL-benefits-container .MA-title {
+        gap: 30px;
+        margin-top: 60px
+    }
+
+    .BL-card .MA-title h1 {
+        font-size: 20px;
+    }
+
+    .BL-card .MA-title img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .BL-benefits-container  {
+        flex-direction: column;
+        gap: 48px;
+        margin-top: 60px;
+    }
+
+    .BL-card .MA-title {
+        width: 100%;
+        padding: 24px;
+    }
+
+    .BL-card .MA-title h1 {
+        font-size: 18px;
+    }
+
+    .BL-card .MA-title img {
+        width: 24px;
+        height: 24px;
+    }
+}
