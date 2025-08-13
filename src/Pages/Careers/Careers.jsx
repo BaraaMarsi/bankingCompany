@@ -45,7 +45,7 @@ const Careers = () => {
                                         desc: benefit.desc,
                                         imageUrl: benefit.imageUrl,
                                         imageAlt: `Icon for ${benefit.title}`,
-                                        flex: true,
+                                        flex: 'flex',
                                     }}
                                 />
                             </div>
@@ -53,7 +53,7 @@ const Careers = () => {
                     }
                 </div>
             </div>
-            <Faq />
+            {/* <Faq /> */}
             <div>
                 <Start
                     title="Start your financial journey with " titlespan="Your Bank today!"
