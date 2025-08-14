@@ -68,21 +68,21 @@ const Home = () => {
                         <div className="container0 flex_reverse">
                             <div className="container2">
                                 <Card section={{
-                                    title: "For Individuals",
-                                    desc: "For individuals, our mortgage services pave the way to homeownership, and our flexible personal loans provide vital support during various life milestones. We also prioritize retirement planning, ensuring a financially secure future for our customers"}}
+                                    title: "For Business",
+                                    desc: " For businesses, we empower growth with working capital solutions that optimize cash flow, and our tailored financing options fuel business expansion. Whatever your financial aspirations, YourBank is committed to providing the right tools and support to achieve them"}}
                                     customClass= "container2_firstDiv"/>
                                 <div className="container2_secondDiv">
                                     <Card section={{
-                                        titleSpan: "78%",
-                                        desc: "Secure Retirement Planning"}}
+                                        titleSpan: "65%",
+                                        desc: "Cash Flow Management"}}
                                     customClass= "container2_secondDiv_children"/>
                                     <Card section={{
-                                        titleSpan: "63%",
-                                        desc: "Manageable Debt Consolidation"}}
+                                        titleSpan: "70%",
+                                        desc: "Drive Business Expansion"}}
                                     customClass= "container2_secondDiv_children middle"/>
                                     <Card section={{
-                                        titleSpan: "91%",
-                                        desc: "Reducing financial burdens"}}
+                                        titleSpan: "45%",
+                                        desc: "Streamline payroll processing"}}
                                         customClass= "container2_secondDiv_children"/>
                                 </div>
                                 <TitleDev 
@@ -91,24 +91,24 @@ const Home = () => {
                             <div className="container1">
                             <Card 
                             section={{
-                                imageUrl: "UseCasesSection/use_cases_icon1.png",
+                                imageUrl: "UseCasesSection/use_cases_icon5.png",
                                 imageAlt: "use_cases_icon1",
-                                title: "Managing Personal Finances"}}/>
+                                title: "Startups and Entrepreneurs"}}/>
                             <Card 
                             section={{
-                                imageUrl: "UseCasesSection/use_cases_icon2.png",
+                                imageUrl: "UseCasesSection/use_cases_icon6.png",
                                 imageAlt: "use_cases_icon2",
-                                title: "Saving for the Future"}}/>
+                                title: "Cash Flow Management"}}/>
                             <Card 
                             section={{
-                                imageUrl: "UseCasesSection/use_cases_icon3.png",
+                                imageUrl: "UseCasesSection/use_cases_icon7.png",
                                 imageAlt: "use_cases_icon3",
-                                title: "Homeownership"}}/>
+                                title: "Business Expansion"}}/>
                             <Card 
                             section={{
-                                imageUrl: "UseCasesSection/use_cases_icon4.png",
+                                imageUrl: "UseCasesSection/use_cases_icon8.png",
                                 imageAlt: "use_cases_icon4",
-                                title: "Education Funding"}}/>
+                                title: "Payment Solutions"}}/>
                             </div>
                         </div>
                     </div>
