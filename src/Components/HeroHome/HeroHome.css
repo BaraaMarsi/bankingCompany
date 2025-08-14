@@ -1,5 +1,6 @@
 .MA-herohome {
     height: 100vh;
+    margin-top: 53px;
 }
 
 .MA-herohome.flex {
@@ -53,7 +54,7 @@
     background-repeat: no-repeat;
     width: 420px;
     height: 420px;
-    top: 100px;
+    top: 60px;
     right: -100px;
     z-index: -1;
 }
@@ -206,8 +207,12 @@
 }
 
 @media screen and (max-width: 1439px) {
+    .MA-herohome {
+        margin-top: 30px;
+    }
+
     .MA-herohome .MA-left {
-        max-width: 649.80px;
+        max-width: 45.125vw;
         padding-top: 60px;
     }
 
@@ -322,7 +327,7 @@
     .MA-herohome .MA-right .MA-currency {
         margin-top: 13.95px;
         padding: 6.89px 6.89px 6.89px 16.53px;
-        border-radius: 55.09pxpx;
+        border-radius: 55.09px;
         gap: 9.66px;
         transform: translateX(150px);
     }
@@ -345,13 +350,14 @@
 
 @media screen and (max-width: 992px) {
     .MA-herohome {
+        margin-top: 50px;
         flex-direction: column;
+        height: fit-content;
     }
 
     .MA-herohome .MA-left {
-        max-width: 358px;
+        max-width: 91.7948vw;
         padding-top: 50px;
-        margin: auto;
         text-align: center;
     }
 
@@ -378,17 +384,19 @@
     }
 
     .MA-herohome .MA-right {
-        max-width: 305.45px;
+        max-width: 78.3205vw;
         padding-top: 80px;
         margin: auto;
+        display: flex;
+        flex-direction: column;
     }
 
     .MA-herohome .MA-right::before {
         background-image: url(/bankingCompany/HeroHome/ArrowsMobile.png);
         width: 220px;
         height: 201px;
-        top: 40px;
-        right: -10px;
+        top: 60px;
+        right: -40px;
     }
 
     .MA-herohome .MA-right .MA-income {
@@ -433,6 +441,10 @@
         margin-bottom: 14.87px;
     }
 
+    .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change {
+        flex-grow: 1;
+    }
+
     .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change span {
         font-size: 12.4px;
     }
@@ -453,7 +465,8 @@
     } 
 
     .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change input {
-        max-width: 132.21px;
+        width: 100%;
+        max-width: 100%;
         padding: 15.38px 10.26px;
         font-size: 10.26px;
     } 
@@ -463,18 +476,21 @@
     }
 
     .MA-herohome .MA-right .MA-transExchange .MA-exchange button {
-        max-width: 264.43px;
+        max-width: 100%;
         padding: 8.2px 0px;
         font-size: 9.23px;
         border-radius: 42.05px;
     }
 
     .MA-herohome .MA-right .MA-currency {
+        max-width: 219.57px;
+        /* width: 219.57px; */
+        align-self: flex-end;
         margin-top: 10.64px;
         padding: 5.13px 5.13px 5.13px 12.31px;
-        border-radius: 41.02pxpxpx;
+        border-radius: 41.02px;
         gap: 5.3px;
-        transform: translateX(100px);
+        transform: translateX(20%);
     }
 
     .MA-herohome .MA-right .MA-currency p {
