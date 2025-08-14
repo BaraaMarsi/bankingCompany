@@ -113,7 +113,7 @@ const Home = () => {
                         </div>
                     </div>
             </section>
-            <Faq/>
+            {/* <Faq/> */}
             <Testimonials/>
             <Start 
             title="Start your financial journey with " titlespan="Your Bank today!"
