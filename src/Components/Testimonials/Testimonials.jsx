@@ -14,31 +14,30 @@ const Testimonials = () => {
   const [sliderData, setSliderData] = useState([]);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [activeCategory, setActiveCategory] = useState('individuals');
-  const swiperRef = useRef(null);  // مرجع للسويبر
+  const swiperRef = useRef(null);  
 
   useEffect(() => {
     setSliderData(TestiData.individualsData);
   }, []);
 
-  const handleChangeData = (category) => {
-    setIsTransitioning(true);
-    setActiveCategory(category);
+const handleChangeData = (category) => {
+  setIsTransitioning(true);
+  setActiveCategory(category);
 
-    setTimeout(() => {
-      if (category === 'individuals') {
-        setSliderData(TestiData.individualsData);
-      } else if (category === 'businesses') {
-        setSliderData(TestiData.businessesData);
-      }
-      setIsTransitioning(false);
+  let newData = [];
 
-      // تحديث السويبر بعد تغيير البيانات
-      if (swiperRef.current && swiperRef.current.swiper) {
-        swiperRef.current.swiper.update();
-        swiperRef.current.swiper.slideTo(0); // أرجع للسلايد الأول بعد التحديث
-      }
-    }, 300);
-  };
+  if (category === 'individuals') {
+    newData = TestiData.individualsData;
+  } else if (category === 'businesses') {
+    newData = TestiData.businessesData;
+  }
+
+  
+  setTimeout(() => {
+    setSliderData(newData);
+    setIsTransitioning(false);
+  }, 300);
+};
 
   return (
     <div className="testimonials-section container padding_Buttom">
@@ -66,36 +65,51 @@ const Testimonials = () => {
           </div>
         </div>
 
-        <Swiper
-          ref={swiperRef}
-          className={isTransitioning ? 'slider-fade' : 'slider-show'}
-          modules={[Navigation, Pagination]}
-          spaceBetween={50}
-          loop={sliderData.length > 3}
-          slidesPerView={sliderData.length < 3 ? sliderData.length : 3}
-          slidesPerGroup={1}
-          centeredSlides={true}
-          key={activeCategory} // يعيد تهيئة السويبر عند تغيير القيمة
-          navigation={{
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          }}
-          pagination={{ clickable: true }}
-          breakpoints={{
-            0: {
-              slidesPerView: 1,
-              centeredSlides: false,
-              spaceBetween: 20,
-            },
-            992: {
-              slidesPerView: 3,
-              centeredSlides: true,
-              spaceBetween: 50,
-            },
-          }}
-        >
+          <Swiper
+            key={activeCategory} 
+            className={isTransitioning ? 'slider-fade' : 'slider-show'}
+            ref={swiperRef}
+            modules={[Navigation, Pagination]}
+            spaceBetween={50}
+            loop={sliderData.length > 3}
+            slidesPerGroup={1}
+            centeredSlides={true}
+            navigation={{
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            }}
+            pagination={{ clickable: true }}
+           breakpoints={{
+              0: {
+                slidesPerView: 1,
+                centeredSlides: false,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                centeredSlides: false,
+                spaceBetween: 30,
+              },
+              992: {
+                slidesPerView: 2,
+                centeredSlides: true,
+                spaceBetween: 40,
+              },
+              1200: {
+                slidesPerView: 3,
+                centeredSlides: true,
+                spaceBetween: 50,
+              },
+              1439: {
+                slidesPerView: 3,
+                centeredSlides: true,
+                spaceBetween: 60,
+              },
+            }}
+          >
           {sliderData.map((item, index) => (
             <SwiperSlide key={index}>
+            
               <Card
                 section={{
                   imageUrl: item.imageUrl,

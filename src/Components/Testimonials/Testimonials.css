@@ -1,5 +1,5 @@
 .testimonials-section {
-  background-color: #000;
+  background-color: var(--black11-color);
   color: var( --white-color);
 }
 
@@ -9,7 +9,7 @@
   align-items: center; 
   flex-wrap: nowrap; 
   height: 140px;
-  padding: 80px 0;
+  padding: 100px 0;
   width: fit-content;
   border-radius: 20px;
   color: var( --white-color);
@@ -52,12 +52,11 @@
   padding: 12px;
   border-radius: 82px;
   background-color: var(--gray10-color);
-  margin-top: 70px;
 }
 .testimonials-header .MA-title > div:last-child {
   display: flex;
   align-items: center;
-  gap: 1rem; /* بين النص والأزرار (إذا وضعت داخله هنا) */
+  gap: 1rem; 
 }
 .slider-fade {
   opacity: 0;
@@ -90,17 +89,17 @@
 
 .swiper::before {
   left: 0;
-  background: linear-gradient(to right, #000, transparent);
+  background: linear-gradient(to right, #191919, transparent);
 }
 
 .swiper::after {
   right: 0;
-  background: linear-gradient(to left, #000, transparent);
+  background: linear-gradient(to left, #191919, transparent);
 }
 
 .swiper-slide {
   background: transparent;
-  width: 300px;
+  width: 404px;
   height: auto;
   display: flex;
   justify-content: center;
@@ -205,8 +204,36 @@
   background: var(--green60-color);
 }
 
+@media screen and (max-width: 1439px){
+  .testimonials-header{
+      padding: 80px 0;
+
+  }
+  .testimonials-header .MA-title h1 {
+    font-size: 38px;
+  }
+  /*.header-left {
+   width: 100%;
+    padding: 20px 10px;
+    align-items: center;
+  }*/
+  .swiper-slide {
+    width: 325.33px;
+  }
+  .swiper-slide .desc {
+  font-size: 16px;
+}
+.swiper-slide img {
+  width: 44px;
+  height: 44px;
+}
+.swiper-slide .testName{
+  font-size: 16px ;
+}
+}
+
 @media screen and (max-width: 992px) {  
-  .testimonials-header {
+    .testimonials-header {
     width: 100%;
     padding-bottom: 40px;
     max-width: none;
@@ -216,16 +243,15 @@
     align-items: center;
     text-align: center;
   }
-
   .header-left {
    width: 100%;
-    padding: 20px 10px;
+  padding: 20px 10px;
     align-items: center;
   }
-
 .testimonials-header .MA-title h1 {
     font-size: 28px;
     word-spacing: normal;
+    text-align: center;
   }
 
   .testimonials-header .MA-title .desc {
@@ -253,16 +279,11 @@
     border: 1px solid var(  --gray15-color);
     border-radius: 12px;
   }
-.swiper-slide img {
-  width: 44px;
-  height: 44px;
-}
+
 .swiper-slide .desc {
   font-size: 14px;
 }
-.swiper-slide .testName{
-  font-size: 16px ;
-}
+
   .swiper::before,
   .swiper::after {
     display: none;

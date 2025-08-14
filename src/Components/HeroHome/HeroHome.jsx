@@ -2,11 +2,9 @@ import Button from "../Button/Button"
 import Section from "../Section/Section"
 import "./HeroHome.css"
 
-// {transText, image, moneyText}
 const HeroHome = () => {
     return (
         <div className="container padding_Buttom">  
-            {/* <img src="HeroHome/checked.png" alt="" />heroHome */}
             <div className="MA-herohome flex">
                 <div className="MA-left">
                 <Section
@@ -32,55 +30,7 @@ const HeroHome = () => {
                 <div className="MA-transExchange">
                     <div className="MA-Transactions">
                         <h2>Your Transactions</h2>
-                        <img src="HeroHome/transaction.png" alt="" />
-                        {/* <div className="MA-transform">
-                            <div className="MA-iconAndText">
-                                <div className="img">
-                                    <img src="HeroHome/change.png" alt="" />
-                                </div>
-                                <div className="text">
-                                    <h3>Transaction</h3>
-                                    <h4>Joel Kenley</h4>
-                                </div>
-                            </div>
-                            <p>-$68.00</p>
-                        </div>
-                        <div className="MA-transform width">
-                            <div className="MA-iconAndText">
-                                <div className="img">
-                                    <img src="HeroHome/change.png" alt="" />
-                                </div>
-                                <div className="text">
-                                    <h3>Transaction</h3>
-                                    <h4>Joel Kenley</h4>
-                                </div>
-                            </div>
-                            <p>-$68.00</p>
-                        </div>
-                        <div className="MA-transform">
-                            <div className="MA-iconAndText">
-                                <div className="img">
-                                    <img src="HeroHome/change.png" alt="" />
-                                </div>
-                                <div className="text">
-                                    <h3>Transaction</h3>
-                                    <h4>Joel Kenley</h4>
-                                </div>
-                            </div>
-                            <p>-$68.00</p>
-                        </div> */}
-                        {/* <div>
-                            <img src="HeroHome/change.png" alt="" />
-                            <h3>Transaction</h3>
-                            <h4>Joel Kenley</h4>
-                            <p>-$68.00</p>
-                        </div>
-                        <div>
-                            <img src="HeroHome/change.png" alt="" />
-                            <h3>Transaction</h3>
-                            <h4>Joel Kenley</h4>
-                            <p>-$68.00</p>
-                        </div> */}
+                        <img src="HeroHome/transaction.png" alt="transaction image" />
                     </div>
                     <div className="MA-exchange">
                         <h2>Money Exchange</h2>

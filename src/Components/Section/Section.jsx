@@ -7,7 +7,7 @@ const Section = ({welcome, welcomeImage, title, titleSpan, secTitle, desc, rever
                 {welcome && <p>{welcome}</p>}
             </div>
             <div className={`${reverse ||''} ${flex ||''}`}>
-                {(imageUrl || imageAlt) && (<img src={imageUrl} alt={imageAlt}  />)}
+                {(imageUrl || imageAlt) && (<img src={imageUrl} alt={imageAlt}/>)}
                 <h1>
                     {title}
                     {titleSpan && <span>{titleSpan}</span>}
