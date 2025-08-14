@@ -3,6 +3,7 @@ import Start from "../../Components/Start/Start";
 import TestiData from '../../Data/TestiData';
 import Testimonials from "../../Components/Testimonials/Testimonials";
 import Faq from "../../Components/Faq/Faq";
+import HeroHome from "../../Components/HeroHome/HeroHome";
 import Card from "../../Components/Card/Card";
 import TitleDev from "../../Components/TitleDev/TitleDev";
 import "./Home.css"
@@ -12,6 +13,7 @@ if (!localStorage.getItem('Testimonials')) {
 const Home = () => {
     return (
         <>
+            <HeroHome/>
             <section className="use_cases container padding_Buttom">
                 <Card section = {{
                     titleSpan: "Use Cases",
