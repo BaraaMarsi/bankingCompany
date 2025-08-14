@@ -23,7 +23,7 @@
 
 .MA-hero .MA-title {
     /* max-width: 791px; */
-    width: 41.198vw;
+    width: 791px;
     padding: 80px;
     border-radius: 20px 0px 80px;
     background-color: var(--gray10-color);
@@ -62,7 +62,7 @@
 
     .MA-hero .MA-title {
         /* max-width: 658px; */
-        width: 45.6944vw;
+        width: 658px;
         padding: 60px;
         border-bottom-right-radius: 60px;
     }
