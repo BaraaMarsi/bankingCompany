@@ -8,7 +8,7 @@
 
     .BL-card .MA-title {
         padding: 50px;
-        width: 38.9583vw;
+        width: 38.9583vw !important;
         height: 336px;
         border: 1px solid linear-gradient(280.49deg, rgba(202, 255, 51, 0.1) 0%, rgba(38, 38, 38, 0) 17.02%, rgba(38, 38, 38, 0) 68.88%, rgba(38, 38, 38, 0.8) 100%);
         border-radius: 20px;
@@ -40,11 +40,14 @@
             gap: 4.1667vw;
 
         }
-   .MA-title {
-        height: fit-content;
-    }
+
+        .MA-title {
+            height: fit-content;
+        }
+
         .BL-card .MA-title {
-            width: 42.3611vw;
+            /* width: 42.3611vw !important; */
+            width: 41.3611vw !important;
             height: 348px;
             padding: 40px;
         }
@@ -71,7 +74,7 @@
         }
 
         .BL-card .MA-title {
-            width: 91.7948vw;
+            width: 91.7948vw !important;
             height: fit-content;
             padding: 24px;
         }
