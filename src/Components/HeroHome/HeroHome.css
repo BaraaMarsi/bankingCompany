@@ -61,7 +61,7 @@
 .MA-herohome .MA-right .MA-income {
     width: fit-content;
     padding: 13.87px 17.34px;
-    background-color: #22251B;
+    background-color: var(--dark-green);
     display: flex;
     gap: 8.67px;
     border-radius: 10.4px;
@@ -165,7 +165,7 @@
     margin: auto;
     font-size: 15.61px;
     color: var(--green65-color);
-    background-color: #22251B;
+    background-color: var(--dark-green);
     border: none;
     border-radius: 71.1px;
     cursor: pointer;
@@ -176,7 +176,7 @@
     margin-top: 12.52px;
     padding: 8.67px 8.67px 8.67px 20.81px;
     border-radius: 69.36px;
-    background-color: #22251B;
+    background-color: var(--dark-green);
     display: flex;
     align-items: center;
     gap: 10.87px;
