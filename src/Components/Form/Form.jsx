@@ -9,7 +9,7 @@ const Form = ({ isRegister, title, description }) => {
 
         <div className="BL-formContainer ">
             <div className='Am-overlay'></div>
-<img src="./public/FormIcons/startpic.png" alt="checkmark" className="BL-checkmark" />
+<img src="FormIcons/startpic.png" alt="checkmark" className="BL-checkmark" />
 
 
             <div className='BL-formHeader'>

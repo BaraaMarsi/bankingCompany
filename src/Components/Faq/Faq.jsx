@@ -59,7 +59,7 @@ const Faq = () => {
 <button onClick={() => setisOpen(!isOpen)} className="faq-button">
   {buttonText}
   <img
-    src="public/assets/Faq-Icon.svg"
+    src="assets/Faq-Icon.svg"
     alt="icon"
     className={`faq-img ${isOpen ? "rotated" : ""}`}
   />
