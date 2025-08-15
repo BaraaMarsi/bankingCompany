@@ -46,7 +46,7 @@ const Faq = () => {
                         faqRows.map((row, rowIndex) => (
                             <div className="faq-row" key={rowIndex}>
                                 {row.map((faq, i) => (
-                                    <div className="faq-card" key={i}>
+                                    <div className="faq-card faq-space" key={i}>
                                         <TitleDev title={faq.question} div1={faq.answer} />
                                     </div>
                                 ))}

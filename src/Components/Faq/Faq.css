@@ -110,6 +110,7 @@ font-size: 18px;
   transition: transform 0.3s ease;
 }
 
+
 .faq-img.rotated {
   transform: rotate(180deg);
 }
