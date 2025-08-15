@@ -3,7 +3,11 @@ import Button from '../Button/Button';
 
 const Form = ({ isRegister, title, description }) => {
     return (
-        <div className="BL-formContainer">
+
+
+
+
+        <div className="BL-formContainer ">
             <div className='Am-overlay'></div>
 <img src="./public/FormIcons/startpic.png" alt="checkmark" className="BL-checkmark" />
 
@@ -50,6 +54,11 @@ const Form = ({ isRegister, title, description }) => {
                 </div>
             </div>
         </div>
+
+
+
+
+
     );
 }
 
