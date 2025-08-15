@@ -9,7 +9,7 @@
     font-family: "Lexend", sans-serif;
 }
 body{
-  background-color: #1A1A1A;
+  background-color: var(--gray10-color);
 }
 :root {
     --white-color: #fff;
@@ -19,6 +19,7 @@ body{
     --green65-color: #d1ff4c;
     --green70-color: #d8ff66;
     --green80-color: #e5ff99;
+    --dark-green: #22251B;
 
     --light-green-90-color: #f2ffcc;
     --light-green-95-color: #f2ffe5;
@@ -51,10 +52,7 @@ body{
 .padding_Buttom{
   padding-bottom: 150.52px;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> ac0b2e4a27670adbe12cf5da66db26c5c2434034
 @media screen and (max-width: 1439px) {
   .container{
   padding-right: 5.555%;

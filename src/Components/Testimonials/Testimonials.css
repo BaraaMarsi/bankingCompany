@@ -1,47 +1,79 @@
-/* القسم الكامل */
 .testimonials-section {
-  background-color: #000;
-  padding: 60px 20px;
-  color: white;
+  background-color: var(--black11-color);
+  color: var( --white-color);
 }
 
-/* رأس القسم */
 .testimonials-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin-bottom: 2rem;
-  background-color: var(--black11-color);
+  align-items: center; 
+  flex-wrap: nowrap; 
+  height: 140px;
+  padding: 100px 0;
+  width: fit-content;
+  border-radius: 20px;
+  color: var( --white-color);
 }
 
 .header-left {
-  min-width: 250px;
-  flex: 1;
+  width: 100%;
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-start;
+  text-align: start;
+  flex-wrap: nowrap;
 }
 
 .testimonials-header .MA-title h1 {
+  font-size: 48px;
+  font-weight: 500;
   margin-bottom: 1rem;
+  word-spacing: 8px;
+  color: var( --white-color);
+  text-align: left;
 }
 
 .testimonials-header .MA-title .desc {
-  margin-top: 0.5rem;
+  color: var( --white-color);
+  max-height: 2.8em;       
+  white-space: normal;
+  text-overflow: ellipsis;  
+  margin-top: 20px;
+  max-width: 100%;
+  text-align: left;
 }
 
 .header-right {
   display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  min-width: 200px;
+  align-items: center;
+  border: 1px solid var(--gray15-color);
+  width: fit-content;
+  padding: 12px;
+  border-radius: 82px;
+  background-color: var(--gray10-color);
+}
+.testimonials-header .MA-title > div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 1rem; 
+}
+.slider-fade {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
-/* السلايدر */
+.slider-show {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
 .swiper {
   min-height: 200px;
-  padding: 40px 0;
+  padding: 40px 60px;
   position: relative;
+  overflow: hidden;
 }
 
 .swiper::before,
@@ -50,80 +82,118 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 60px;
+  width: 80px;
   z-index: 10;
   pointer-events: none;
 }
 
 .swiper::before {
   left: 0;
-  background: linear-gradient(to right, #000, transparent);
+  background: linear-gradient(to right, #191919, transparent);
 }
 
 .swiper::after {
   right: 0;
-  background: linear-gradient(to left, #000, transparent);
+  background: linear-gradient(to left, #191919, transparent);
 }
 
 .swiper-slide {
+  background: transparent;
+  width: 404px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.3s ease;
+  filter: blur(1px);
+  opacity: 0.6;
+  transform: scale(0.95);
+  position: relative;
+  border-radius: 12px;
 }
-
-/* تعديل عناصر Section داخل Card */
-.MA-title {
-  background-color: transparent;
+.swiper-slide .testName {
+  color: var(--green60-color);
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
   text-align: center;
-  padding: 20px;
-  color: white;
 }
 
-.MA-title img {
-  width: 180px;
-  height: 180px;
+.swiper-slide img {
+  width: 60px;
+  height: 60px;
   object-fit: cover;
   border-radius: 12px;
-  z-index: 2;
   display: block;
   margin: 0 auto;
   position: relative;
+  z-index: 2;
 }
-/* الوصف */
-.MA-title .desc {
-  font-size: 1rem;
-  color: #ccc;
-  margin-top: 20px;
+.swiper-slide-active {
+  filter: none;
+  opacity: 1;
+  transform: scale(1.05);
+  z-index: 2;
 }
 
-/* اسم العميل */
-.MA-title .testName {
-  color: var(--green60-color);
-  font-weight: bold;
-  font-size: 1.1rem;
+.swiper-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.3), transparent 30%, transparent 70%, rgba(0,0,0,0.3));
+  pointer-events: none;
+  z-index: 1;
+  border-radius: 12px;
+}
+
+.swiper-slide .desc {
+  text-align: center !important;
+  font-weight: 400;
+  color: var( --white-color);
+  font-size: 16px;
+  line-height: 1.5em;
   margin-top: 10px;
+  max-height: none;
+  white-space: normal;
+  overflow: visible;
 }
 
-/* الأسهم */
-.swiper-button-next,
-.swiper-button-prev {
-  background-color: #444;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+.swiper-slide h1,
+.swiper-slide .title {
+  text-align: center !important;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  width: 52px;
+  height: 52px;
+  background-color: var(--black11-color);
+  background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 20px 20px;
+  border-radius: 50%;
   border: none;
   color: transparent;
+  cursor: pointer;
+}
+
+.swiper-button-prev {
+  left: 10px;
+  background-image: url('/leftarrowicon.png');
 }
 
 .swiper-button-next {
+  right: 10px;
   background-image: url('/rightarrowicon.png');
-}
-
-.swiper-button-prev {
-  background-image: url('/leftarrowicon.png');
 }
 
 .swiper-pagination-bullet {
@@ -132,4 +202,114 @@
 
 .swiper-pagination-bullet-active {
   background: var(--green60-color);
+}
+
+@media screen and (max-width: 1439px){
+  .testimonials-header{
+      padding: 80px 0;
+
+  }
+  .testimonials-header .MA-title h1 {
+    font-size: 38px;
+  }
+  /*.header-left {
+   width: 100%;
+    padding: 20px 10px;
+    align-items: center;
+  }*/
+  .swiper-slide {
+    width: 325.33px;
+  }
+  .swiper-slide .desc {
+  font-size: 16px;
+}
+.swiper-slide img {
+  width: 44px;
+  height: 44px;
+}
+.swiper-slide .testName{
+  font-size: 16px ;
+}
+}
+
+@media screen and (max-width: 992px) {  
+    .testimonials-header {
+    width: 100%;
+    padding-bottom: 40px;
+    max-width: none;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+  .header-left {
+   width: 100%;
+  padding: 20px 10px;
+    align-items: center;
+  }
+.testimonials-header .MA-title h1 {
+    font-size: 28px;
+    word-spacing: normal;
+    text-align: center;
+  }
+
+  .testimonials-header .MA-title .desc {
+    max-height: none; 
+    margin-top: 10px;
+    text-align: center;
+    align-items: center;
+      flex-wrap: wrap;
+
+  }
+
+  .header-right {
+   width: 299px;
+   height: 65px;
+   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .swiper {
+    overflow: hidden;
+    padding: 0px;
+  }
+  .swiper-slide{
+    border: 1px solid var(  --gray15-color);
+    border-radius: 12px;
+  }
+
+.swiper-slide .desc {
+  font-size: 14px;
+}
+
+  .swiper::before,
+  .swiper::after {
+    display: none;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: static;
+    transform: none;
+    margin: 10px auto;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+  }
+.swiper-pagination-bullet {
+display: none !important;
+}
+  .mobile-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .mobile-nav .swiper-button-prev,
+.mobile-nav .swiper-button-next {
+  flex-shrink: 0; 
+  margin: 0;      
+}
 }

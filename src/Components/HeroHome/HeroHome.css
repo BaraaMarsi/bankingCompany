@@ -1,0 +1,510 @@
+.MA-herohome {
+    height: 100vh;
+    margin-top: 53px;
+}
+
+.MA-herohome.flex {
+    align-items: flex-start;
+}
+
+.MA-herohome .MA-left {
+    max-width: 825.98px;
+    padding-top: 100px;
+}
+
+.MA-herohome .MA-left .MA-title h1 {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.MA-herohome .MA-left .MA-title .welcome {
+    width: fit-content;
+    background-color: var(--gray15-color);
+    border-radius: 61px;
+    padding: 10px 20px 10px 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.MA-herohome .MA-left .MA-title .welcome p {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--white-color);
+}
+
+.MA-herohome .MA-left .MA-title .desc {
+    margin: 14px 0 50px;
+    font-size: 18px;
+    color: var(--offwhite-90-color);
+}
+
+.MA-herohome .MA-right {
+    max-width: 515.02px;
+    padding-top: 100px;
+    color: var(--white-color);
+    position: relative;
+}
+
+.MA-herohome .MA-right::before {
+    content: "";
+    position: absolute;
+    background-image: url(/bankingCompany/HeroHome/arrows.png);
+    background-repeat: no-repeat;
+    width: 420px;
+    height: 420px;
+    top: 60px;
+    right: -100px;
+    z-index: -1;
+}
+
+.MA-herohome .MA-right .MA-income {
+    width: fit-content;
+    padding: 13.87px 17.34px;
+    background-color: var(--dark-green);
+    display: flex;
+    gap: 8.67px;
+    border-radius: 10.4px;
+    position: absolute;
+    top: 60px;
+    left: -15%;
+}
+
+.MA-herohome .MA-right .MA-income .circle {
+    width: 38.15px;
+    height: 38.15px;
+    border-radius: 50%;
+    background-color: var(--green60-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MA-herohome .MA-right .MA-income .text .MA-price {
+    margin-bottom: 2px;
+    font-size: 17.34px;
+} 
+
+.MA-herohome .MA-right .MA-income .text .MA-p {
+    font-size: 13.87px;
+    font-weight: 300;
+    color: var(--offwhite-90-color);
+}
+
+.MA-herohome .MA-right .MA-transExchange {
+    padding: 34.68px;
+    border: 0.87px solid var(--green60-color);
+    border-radius: 10.4px;
+    background-color: var(--gray10-color);
+}
+
+.MA-herohome .MA-right .MA-transExchange .MA-Transactions h2 {
+    margin-bottom: 17.34px;
+    font-size: 17.34px;
+    font-weight: 500;
+}
+.MA-herohome .MA-right .MA-transExchange .MA-Transactions img {
+    max-width: 100%;
+}
+
+.MA-herohome .MA-right .MA-transExchange .MA-exchange h2 {
+    margin: 26.01px 0 25.14px;
+    font-size: 17.34px;
+    font-weight: 500;
+}
+
+.MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes {
+    margin-bottom: 25.14px;
+    display: flex;
+}
+
+.MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change span {
+    font-size: 15.61px;
+}
+
+.MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change p {
+    font-size: 13.87px;
+    font-weight: 300;
+    color: var(--offwhite-90-color);
+}
+
+.MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change .MA-india,
+.MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change .MA-usa {
+    padding: 17px;
+    border: 1px solid var(--gray15-color);
+}
+
+.MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change .MA-india div,
+.MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change .MA-usa div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+} 
+
+.MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change input {
+    max-width: 220px;
+    padding: 26.01px 17.34px;
+    background-color: var(--black11-color);
+    border: 1px solid var(--gray15-color);
+    outline: none;
+    font-size: 17.34px;
+    font-weight: 500;
+    color: var(--white-color);
+} 
+
+.MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change input::placeholder {
+    color: var(--white-color);
+    font-size: 17.34px;
+    font-weight: 500;
+}
+
+.MA-herohome .MA-right .MA-transExchange .MA-exchange button {
+    width: 445.66px;
+    padding: 13.87px 0px;
+    margin: auto;
+    font-size: 15.61px;
+    color: var(--green65-color);
+    background-color: var(--dark-green);
+    border: none;
+    border-radius: 71.1px;
+    cursor: pointer;
+}
+
+.MA-herohome .MA-right .MA-currency {
+    width: fit-content;
+    margin-top: 12.52px;
+    padding: 8.67px 8.67px 8.67px 20.81px;
+    border-radius: 69.36px;
+    background-color: var(--dark-green);
+    display: flex;
+    align-items: center;
+    gap: 10.87px;
+    transform: translateX(200px);
+}
+
+.MA-herohome .MA-right .MA-currency p {
+    font-size: 15.61px;
+}
+
+.MA-herohome .MA-right .MA-currency .MA-icons {
+    padding: 8.67px;
+    background-color: var(--gray10-color);
+    border-radius: 47.69px;
+    display: flex;
+    gap: 6.94px;
+}
+
+.MA-herohome .MA-right .MA-currency .MA-icons div {
+    width: 34.68px;
+    height: 34.68px;
+    border-radius: 50%;
+    background-color: var(--gray15-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1439px) {
+    .MA-herohome {
+        margin-top: 30px;
+    }
+
+    .MA-herohome .MA-left {
+        max-width: 45.125vw;
+        padding-top: 60px;
+    }
+
+    .MA-herohome .MA-left .MA-title h1 {
+        font-size: 38px;
+    }
+
+    .MA-herohome .MA-left .MA-title .welcome {
+        padding: 8px 16px 8px 8px;
+        margin-bottom: 16px;
+        gap: 4px;
+    }
+
+    .MA-herohome .MA-left .MA-title .welcome p {
+        font-size: 14px;
+    }
+
+    .MA-herohome .MA-left .MA-title .desc  {
+        margin: 10px 0 40px;
+        font-size: 16px;
+    }
+
+    .MA-herohome .MA-left .Na-linkbutton {
+        width: 144px;
+        height: 49px;
+        font-size: 14px;
+    } 
+
+    .MA-herohome .MA-right {
+        max-width: 410px;
+        padding-top: 60px;
+    }
+
+    .MA-herohome .MA-right .MA-income {
+        padding: 11.02px 13.77px;
+        gap: 6.89px;
+        border-radius: 8.26px;
+        top: 30px;
+    }
+
+    .MA-herohome .MA-right .MA-income .circle {
+        width: 30.35px; 
+        height: 30.35px;
+    }
+
+    .MA-herohome .MA-right .MA-income .text .MA-price {
+        margin-bottom: 0.69px;
+        font-size: 13.77px;
+    } 
+
+    .MA-herohome .MA-right .MA-income .text .MA-p {
+        font-size: 11.02px;
+    }  
+    
+    .MA-herohome .MA-right .MA-transExchange {
+        padding: 27.55px;
+        border-width: 0.69px;
+        border-radius: 8.26px;
+    }
+
+    .MA-herohome .MA-right .MA-transExchange .MA-Transactions h2 {
+        margin-bottom: 13.77px;
+        font-size: 13.77px;
+    }
+
+    .MA-herohome .MA-right .MA-transExchange .MA-exchange h2 {
+        margin: 20.66px 0 19.97px;
+        font-size: 13.77px;
+    }
+
+    .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes {
+        margin-bottom: 19.97px;
+    }
+
+    .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change span {
+        font-size: 12.4px;
+    }
+
+    .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change p {
+        font-size: 11.02px;
+    }
+
+    .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change .MA-india,
+    .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change .MA-usa {
+        padding: 13.77px;
+        border-width: 0.69px;
+    }
+
+    .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change .MA-india div,
+    .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change .MA-usa div {
+        gap: 6.89px;
+        margin-bottom: 6.89px;
+    } 
+
+    .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change input {
+        max-width: 177px;
+        padding: 20.66px 13.77px;
+        font-size: 13.77px;
+    } 
+
+    .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change input::placeholder {
+        font-size: 13.77px;
+    }
+
+    .MA-herohome .MA-right .MA-transExchange .MA-exchange button {
+        max-width: 355px;
+        padding: 11.02px 0px;
+        font-size: 12.4px;
+        border-radius: 56.47px;
+    }
+
+    .MA-herohome .MA-right .MA-currency {
+        margin-top: 13.95px;
+        padding: 6.89px 6.89px 6.89px 16.53px;
+        border-radius: 55.09px;
+        gap: 9.66px;
+        transform: translateX(150px);
+    }
+
+    .MA-herohome .MA-right .MA-currency p {
+        font-size: 12.4px;
+    }
+
+    .MA-herohome .MA-right .MA-currency .MA-icons {
+        padding: 6.89px;
+        border-radius: 37.88px;
+        gap: 5.51px;
+    }
+
+    .MA-herohome .MA-right .MA-currency .MA-icons div {
+        width: 27.62px;
+        height: 27.62px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .MA-herohome {
+        margin-top: 50px;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .MA-herohome .MA-left {
+        max-width: 91.7948vw;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .MA-herohome .MA-left .MA-title h1 {
+        font-size: 28px;
+    }
+
+    .MA-herohome .MA-left .MA-title .welcome {
+        margin: 0 auto 12px;
+        padding: 8px 16px 8px 9.87px;
+    }
+
+    .MA-herohome .MA-left .MA-title .welcome p {
+        font-size: 12px;
+    }
+
+    .MA-herohome .MA-left .MA-title .desc  {
+        margin: 8px 0 30px;
+        font-size: 14px;
+    }
+
+    .MA-herohome .MA-left .Na-linkbutton {
+        margin: auto;
+    }
+
+    .MA-herohome .MA-right {
+        max-width: 78.3205vw;
+        padding-top: 80px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .MA-herohome .MA-right::before {
+        background-image: url(/bankingCompany/HeroHome/ArrowsMobile.png);
+        width: 220px;
+        height: 201px;
+        top: 60px;
+        right: -40px;
+    }
+
+    .MA-herohome .MA-right .MA-income {
+        padding: 8.2px 10.26px;
+        gap: 5.13px;
+        border-radius: 6.15px;
+        top: 50px;
+        left: -15px;
+    }
+
+    .MA-herohome .MA-right .MA-income .circle {
+        width: 22.6px; 
+        height: 22.6px;
+    }
+
+    .MA-herohome .MA-right .MA-income .text .MA-price {
+        margin-bottom: 0.51px;
+        font-size: 10.267px;
+    } 
+
+    .MA-herohome .MA-right .MA-income .text .MA-p {
+        font-size: 8.2px;
+    }  
+    
+    .MA-herohome .MA-right .MA-transExchange {
+        padding: 20.51px;
+        border-width: 0.51px;
+        border-radius: 6.15px;
+    }
+
+    .MA-herohome .MA-right .MA-transExchange .MA-Transactions h2 {
+        margin-bottom: 10.26px;
+        font-size: 10.26px;
+    }
+
+    .MA-herohome .MA-right .MA-transExchange .MA-exchange h2 {
+        margin: 15.38px 0 14.87px;
+        font-size: 10.26px;
+    }
+
+    .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes {
+        margin-bottom: 14.87px;
+    }
+
+    .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change {
+        flex-grow: 1;
+    }
+
+    .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change span {
+        font-size: 12.4px;
+    }
+
+    .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change p {
+        font-size: 9.23px;
+    }
+
+    .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change .MA-india,
+    .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change .MA-usa {
+        padding: 10.26px;
+        border-width: 0.51px;
+    }
+
+    .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change .MA-india div,
+    .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change .MA-usa div {
+        gap: 5.13px;
+    } 
+
+    .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change input {
+        width: 100%;
+        max-width: 100%;
+        padding: 15.38px 10.26px;
+        font-size: 10.26px;
+    } 
+
+    .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change input::placeholder {
+        font-size: 10.26px;
+    }
+
+    .MA-herohome .MA-right .MA-transExchange .MA-exchange button {
+        max-width: 100%;
+        padding: 8.2px 0px;
+        font-size: 9.23px;
+        border-radius: 42.05px;
+    }
+
+    .MA-herohome .MA-right .MA-currency {
+        max-width: 219.57px;
+        /* width: 219.57px; */
+        align-self: flex-end;
+        margin-top: 10.64px;
+        padding: 5.13px 5.13px 5.13px 12.31px;
+        border-radius: 41.02px;
+        gap: 5.3px;
+        transform: translateX(20%);
+    }
+
+    .MA-herohome .MA-right .MA-currency p {
+        font-size: 9.23px;
+    }
+
+    .MA-herohome .MA-right .MA-currency .MA-icons {
+        padding: 5.13px;
+        border-radius: 28.2px;
+        gap: 4.1px;
+    }
+
+    .MA-herohome .MA-right .MA-currency .MA-icons div {
+        width: 20.57px;
+        height: 20.57px;
+    }
+}

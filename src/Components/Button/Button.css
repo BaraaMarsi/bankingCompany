@@ -9,6 +9,7 @@
   transition: background-color 0.3s ease;
   border: none;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 /* زر تسجيل الدخول */
@@ -69,9 +70,9 @@
   }
 
   /* زر Individuals و Businesses */
-  .Na-forindividuals,
-  .Na-forbusinesses {
-    width: 139px;
+  .Na-forindividuals , .Na-forbusinesses {
+    max-width: 139px;
     padding: 10px 18px;
   }
+   
 }

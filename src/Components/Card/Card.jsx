@@ -4,18 +4,22 @@ import Section from "../Section/Section";
 import "./Card.css"
 
 
-const Card = ({section, titleDev, titleUlBtn}) => {
+const Card = ({section, titleDev, titleUlBtn, customClass}) => {
   return (
-    <>
+    <div className={`${customClass || ""}`}>
       {section &&(
       <Section
+        welcome = {section.welcome}
+        welcomeImage={section.welcomeImage}
+        title = {section.title}
+        titleSpan = {section.titleSpan}
+        secTitle = {section.secTitle}
+        desc = {section.desc}
+        reverse = {section.reverse}
+        flex = {section.flex}
         imageUrl = {section.imageUrl}
         imageAlt = {section.imageAlt}
-        title = {section.title}
-        desc = {section.desc}
-        flex = {section.flex}
-        reverse = {section.reverse}
-        testName={section.testName}
+        testName = {section.testName}
       />)}
 
       {titleDev &&(
@@ -31,7 +35,7 @@ const Card = ({section, titleDev, titleUlBtn}) => {
         ul = {titleUlBtn.ul}
         btn = {titleUlBtn.btn}
       />)}
-    </>
+    </div>
   );
 }
 

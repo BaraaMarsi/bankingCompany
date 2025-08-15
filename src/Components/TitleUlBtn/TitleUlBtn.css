@@ -2,7 +2,7 @@
     background-color: var(--gray11-color);
     padding-bottom: 50px;
 }
-.Bm-titleUlBtn h1{
+.Bm-titleUlBtn h2{
     font-size: 24px;
     font-weight: 600;
     padding-bottom: 20px;
@@ -28,7 +28,7 @@
     .Bm-titleUlBtn{
         padding-bottom: 40px;
     }
-    .Bm-titleUlBtn h1{
+    .Bm-titleUlBtn h2{
         font-size: 20px;
         padding-bottom: 16px;
     }
@@ -48,7 +48,7 @@
     .Bm-titleUlBtn{
         padding-bottom: 24px;
     }
-    .Bm-titleUlBtn h1{
+    .Bm-titleUlBtn h2{
         font-size: 18px;
         padding-bottom: 10px;
     }

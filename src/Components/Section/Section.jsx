@@ -1,21 +1,21 @@
 import "./Section.css"
-const Section = ({welcome, title, titleSpan, secTitle, desc, reverse, flex, imageUrl, imageAlt, testName}) => {
+const Section = ({welcome, welcomeImage, title, titleSpan, secTitle, desc, reverse, flex, imageUrl, imageAlt, testName}) => {
     return (
-        <div className="MA-title">
-            <div className={`${reverse?'reverse':''} ${flex?'flex':''}`}>
-                {imageUrl && (<img src={imageUrl} alt={imageAlt}  />)}
+        <div className="MA-title card">
+            <div className="welcome">
+                {welcomeImage && <img src={welcomeImage} alt="icon"/>}
+                {welcome && <p>{welcome}</p>}
+            </div>
+            <div className={`${reverse ||''} ${flex ||''}`}>
+                {(imageUrl || imageAlt) && (<img src={imageUrl} alt={imageAlt}/>)}
                 <h1>
-                    
-                    {welcome && <p className="welcome">{welcome}</p>}
-                    {title && <>{title}</>}
+                    {title}
                     {titleSpan && <span>{titleSpan}</span>}
-                    {secTitle && <>{secTitle}</>}
+                    {secTitle}
                 </h1>
             </div>
-            <div>
-                {desc && <p className="desc">{desc}</p>}
-                {testName && <h1 className="testName">{testName}</h1>}
-            </div>
+            {desc && <p className="desc">{desc}</p>}
+            {testName && <h2 className="testName">{testName}</h2>}
         </div>
     );
 }
