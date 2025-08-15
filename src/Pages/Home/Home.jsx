@@ -6,11 +6,15 @@ import Faq from "../../Components/Faq/Faq";
 import HeroHome from "../../Components/HeroHome/HeroHome";
 import Card from "../../Components/Card/Card";
 import TitleDev from "../../Components/TitleDev/TitleDev";
+import OurFeaturesData from "../../Data/OurFeaturesData"
+import 'swiper/css';
 import "./Home.css"
+import { useState } from "react";
 if (!localStorage.getItem('Testimonials')) {
     localStorage.setItem('Testimonials', JSON.stringify(TestiData));
 }
 const Home = () => {
+    const [selectedType, setSelectedType] = useState("online_Banking");
     return (
         <>
             <HeroHome/>
@@ -113,7 +117,50 @@ const Home = () => {
                         </div>
                     </div>
             </section>
-            {/* <Faq/> */}
+            <section className="our_features container padding_Buttom">
+                <Card section = {{
+                    title: "Our ",
+                    titleSpan: "Features",
+                    desc: "Experience a host of powerful features at YourBank, including seamless online banking, secure transactions, and personalized financial insights, all designed to enhance your banking experience"}}
+                    customClass= "first_card"/>
+                    <div className="container0">
+                        <div className="filtters">
+                                    <div onClick={() => setSelectedType("online_Banking")}>
+                                        <Card
+                                            customClass={selectedType == "online_Banking" ? "active" : ""}
+                                            titleDev={{ div1: "Online Banking" }}
+                                        />
+                                    </div>
+                                    <div onClick={() => setSelectedType("financial_Tools")}>
+                                        <Card
+                                            customClass={selectedType == "financial_Tools" ? "active" : ""}
+                                            titleDev={{ div1: "Financial Tools" }}
+                                        />
+                                    </div>
+                                    <div onClick={() => setSelectedType("customer_Support")}>
+                                        <Card
+                                            customClass={selectedType == "customer_Support" ? "active" : ""}
+                                            titleDev={{ div1: "Customer Support" }}
+                                        />
+                                    </div>
+                        </div>
+                    <div className="cards">
+                            {OurFeaturesData.filter((data) => data.type == selectedType).map((data, index) => (
+                                <Card 
+                                section={{
+                                    key:{index},
+                                    imageUrl:"arrow.png",
+                                    imageAlt:"arrow",
+                                    flex:"flex",
+                                    reverse:"reverse",
+                                    title:data.title,
+                                    desc:data.desc
+                                }}
+                                customClass="features_card"/>))}
+                    </div>
+                </div>
+            </section>
+            <Faq/>
             <Testimonials/>
             <Start 
             title="Start your financial journey with " titlespan="Your Bank today!"
