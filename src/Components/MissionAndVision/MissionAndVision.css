@@ -1,0 +1,140 @@
+.MA-missionAndVision .MA-title h1 {
+    margin-bottom: 14px;
+    color: var(--green60-color);
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.MA-missionAndVision .MA-title .desc {
+    max-width: 1296px;
+    margin-bottom: 80px;
+    color: var(--gray70-color);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 150%;
+}
+
+.MA-missionAndVision .MA-cards .MA-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.MA-missionAndVision .MA-cards .MA-card:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.MA-missionAndVision .MA-cards .MA-card .MA-img {
+    padding: 60px 60px 0px;
+    border: 1px solid var(--gray15-color);
+    border-radius: 50px 50px 20px 20px;
+    background-color: var(--black11-color);
+    background-image: url("assets/images/Abstract Design.png");
+}
+
+.MA-missionAndVision .MA-cards .MA-card .MA-img img {
+    max-width: 100%;
+}
+
+.MA-missionAndVision .MA-cards .MA-card:nth-child(1) .MA-title {
+    padding-left: 50px;
+    border-left: 1px solid var(--green60-color);
+}
+
+.MA-missionAndVision .MA-cards .MA-card:nth-child(2) .MA-title {
+    padding-right: 50px;
+    border-right: 1px solid var(--green60-color);
+}
+
+.MA-missionAndVision .MA-cards .MA-card .MA-title h1 {
+    font-size: 38px;
+    font-weight: 500;
+    color: var(--white-color);
+}
+
+.MA-missionAndVision .MA-cards .MA-card .MA-title .desc {
+    max-width: 882px;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 1439px) {
+    .MA-missionAndVision .MA-title h1 {
+        margin-bottom: 10px;
+        font-size: 38px;
+    }
+
+    .MA-missionAndVision .MA-title .desc {
+        max-width: 1030px;
+        margin-bottom: 60px;
+        font-size: 16px;
+    }
+
+    .MA-missionAndVision .MA-cards .MA-card:nth-child(1) .MA-title {
+        padding-left: 40px;
+    }
+
+    .MA-missionAndVision .MA-cards .MA-card:nth-child(2) .MA-title {
+        padding-right: 40px;
+    }
+
+    .MA-missionAndVision .MA-cards .MA-card .MA-title h1 {
+        font-size: 32px;
+    }
+
+    .MA-missionAndVision .MA-cards .MA-card .MA-title .desc {
+        max-width: 695px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .MA-missionAndVision .MA-title {
+        text-align: center;
+    }
+
+    .MA-missionAndVision .MA-title h1 {
+        font-size: 28px;
+    }
+
+    .MA-missionAndVision .MA-title .desc {
+        font-size: 14px;
+    }
+
+    .MA-missionAndVision .MA-cards .MA-card,
+    .MA-missionAndVision .MA-cards .MA-card:nth-child(2) {
+        flex-direction: column;
+    }   
+
+    .MA-missionAndVision .MA-cards .MA-card .MA-img {
+        padding: 20px 20px 0px;
+        border-radius: 50px 50px 0px 0px;
+        border-bottom: 1px solid var(--green60-color);
+        margin-bottom: 30px;
+    }
+
+    .MA-missionAndVision .MA-cards .MA-card .MA-img img {
+        max-width: 100%;
+    }
+
+    .MA-missionAndVision .MA-cards .MA-card:nth-child(1) .MA-title {
+        padding-left: 0px;
+        border-left: none;
+    }
+
+    .MA-missionAndVision .MA-cards .MA-card:nth-child(2) .MA-title {
+        padding-right: 0px;
+        border-right: none;
+    }
+
+    .MA-missionAndVision .MA-cards .MA-card .MA-title h1 {
+        font-size: 26px;
+    }
+
+    .MA-missionAndVision .MA-cards .MA-card .MA-title .desc {
+        max-width: 91.7948vw;
+        margin-bottom: 50px;
+    }
+
+    .MA-missionAndVision .MA-cards .MA-card:nth-child(2) .MA-title .desc {
+        margin-bottom: 0px;
+    }
+}
