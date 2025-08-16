@@ -33,7 +33,7 @@ const Careers = () => {
                 yourSecTitle="Careers!"
                 yourDesc="Join our team and embark on a rewarding journey in the banking industry. At YourBank, we are committed to fostering a culture of excellence and providing opportunities for professional growth. With a focus on innovation, customer service, and integrity, we strive to make a positive impact in the lives of our customers and communities. Join us today and be a part of our mission to shape the future of banking."
             />
-            <div className="container padding_Buttom">
+            <section className="container padding_Buttom">
                 <Section title={"Our "} titleSpan={"Benefits"} desc={"At YourBank, we value our employees and are dedicated to their well-being and success. We offer a comprehensive range of benefits designed to support their personal and professional growth."} />
                 <div className="BL-benefits-container">
                     {
@@ -52,8 +52,8 @@ const Careers = () => {
                         ))
                     }
                 </div>
-            </div>
-            {/* <Faq /> */}
+            </section>
+            <Faq />
             <div>
                 <Start
                     title="Start your financial journey with " titlespan="Your Bank today!"
