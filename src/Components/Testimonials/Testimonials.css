@@ -1,18 +1,17 @@
 .testimonials-section {
-  background-color: var(--black11-color);
-  color: var( --white-color);
+  color: var(--white-color);
 }
 
 .testimonials-header {
   display: flex;
   justify-content: space-between;
-  align-items: center; 
-  flex-wrap: nowrap; 
+  align-items: center;
+  flex-wrap: nowrap;
   height: 140px;
   padding: 100px 0;
   width: fit-content;
   border-radius: 20px;
-  color: var( --white-color);
+  color: var(--white-color);
 }
 
 .header-left {
@@ -25,25 +24,6 @@
   flex-wrap: nowrap;
 }
 
-.testimonials-header .MA-title h1 {
-  font-size: 48px;
-  font-weight: 500;
-  margin-bottom: 1rem;
-  word-spacing: 8px;
-  color: var( --white-color);
-  text-align: left;
-}
-
-.testimonials-header .MA-title .desc {
-  color: var( --white-color);
-  max-height: 2.8em;       
-  white-space: normal;
-  text-overflow: ellipsis;  
-  margin-top: 20px;
-  max-width: 100%;
-  text-align: left;
-}
-
 .header-right {
   display: flex;
   align-items: center;
@@ -53,11 +33,51 @@
   border-radius: 82px;
   background-color: var(--gray10-color);
 }
+
+/* العناوين والوصف */
+.testimonials-header .MA-title h1 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  word-spacing: 8px;
+  color: var(--white-color);
+  text-align: left;
+}
+
+.testimonials-header .MA-title .desc {
+  color: var(--white-color);
+  max-height: 2.8em;
+  white-space: normal;
+  text-overflow: ellipsis;
+  margin-top: 20px;
+  max-width: 100%;
+  text-align: left;
+}
+
 .testimonials-header .MA-title > div:last-child {
   display: flex;
   align-items: center;
-  gap: 1rem; 
+  gap: 1rem;
 }
+
+/* أزرار التبديل */
+.header-right .Na-linkbutton {
+  background-color: var(--black11-color);
+  color: white;
+}
+
+.Na-forindividuals,
+.Na-forbusinesses {
+  border: none;
+  cursor: pointer;
+}
+
+.header-right .Na-linkbutton.active-button {
+  background-color: var(--green60-color);
+  color: var(--black11-color);
+}
+
+/*  تأثيرات السلايدر  */
 .slider-fade {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -68,7 +88,7 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-
+/*  إعدادات السويبر  */
 .swiper {
   min-height: 200px;
   padding: 40px 60px;
@@ -87,16 +107,7 @@
   pointer-events: none;
 }
 
-.swiper::before {
-  left: 0;
-  background: linear-gradient(to right, #191919, transparent);
-}
-
-.swiper::after {
-  right: 0;
-  background: linear-gradient(to left, #191919, transparent);
-}
-
+/*  الشرائح  */
 .swiper-slide {
   background: transparent;
   width: 404px;
@@ -111,12 +122,12 @@
   position: relative;
   border-radius: 12px;
 }
-.swiper-slide .testName {
-  color: var(--green60-color);
-  font-weight: bold;
-  font-size: 18px;
-  margin-top: 10px;
-  text-align: center;
+
+.swiper-slide-active {
+  filter: none;
+  opacity: 1;
+  transform: scale(1.05);
+  z-index: 2;
 }
 
 .swiper-slide img {
@@ -129,30 +140,19 @@
   position: relative;
   z-index: 2;
 }
-.swiper-slide-active {
-  filter: none;
-  opacity: 1;
-  transform: scale(1.05);
-  z-index: 2;
-}
 
-.swiper-slide::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(to right, rgba(0,0,0,0.3), transparent 30%, transparent 70%, rgba(0,0,0,0.3));
-  pointer-events: none;
-  z-index: 1;
-  border-radius: 12px;
+.swiper-slide .testName {
+  color: var(--green60-color);
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .swiper-slide .desc {
   text-align: center !important;
   font-weight: 400;
-  color: var( --white-color);
+  color: var(--white-color);
   font-size: 16px;
   line-height: 1.5em;
   margin-top: 10px;
@@ -168,6 +168,7 @@
   margin-bottom: 0.5rem;
 }
 
+/* أزرار التنقل */
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
@@ -196,6 +197,7 @@
   background-image: url('/rightarrowicon.png');
 }
 
+/* النقاط */
 .swiper-pagination-bullet {
   background: #999;
 }
@@ -204,36 +206,35 @@
   background: var(--green60-color);
 }
 
-@media screen and (max-width: 1439px){
-  .testimonials-header{
-      padding: 80px 0;
-
+@media screen and (max-width: 1439px) {
+  .testimonials-header {
+    padding: 80px 0;
   }
+
   .testimonials-header .MA-title h1 {
     font-size: 38px;
   }
-  /*.header-left {
-   width: 100%;
-    padding: 20px 10px;
-    align-items: center;
-  }*/
+
   .swiper-slide {
     width: 325.33px;
   }
+
   .swiper-slide .desc {
-  font-size: 16px;
-}
+    font-size: 16px;
+  }
+
 .swiper-slide img {
-  width: 44px;
-  height: 44px;
-}
-.swiper-slide .testName{
-  font-size: 16px ;
-}
+    width: 44px;
+    height: 44px;
+  }
+
+  .swiper-slide .testName {
+    font-size: 16px;
+  }
 }
 
-@media screen and (max-width: 992px) {  
-    .testimonials-header {
+@media screen and (max-width: 992px) {
+  .testimonials-header {
     width: 100%;
     padding-bottom: 40px;
     max-width: none;
@@ -243,46 +244,48 @@
     align-items: center;
     text-align: center;
   }
+
   .header-left {
-   width: 100%;
-  padding: 20px 10px;
+    width: 100%;
+    padding: 20px 10px;
     align-items: center;
   }
-.testimonials-header .MA-title h1 {
+
+  .testimonials-header .MA-title h1 {
     font-size: 28px;
     word-spacing: normal;
     text-align: center;
   }
 
   .testimonials-header .MA-title .desc {
-    max-height: none; 
+    max-height: none;
     margin-top: 10px;
     text-align: center;
     align-items: center;
-      flex-wrap: wrap;
-
+    flex-wrap: wrap;
   }
 
   .header-right {
-   width: 299px;
-   height: 65px;
-   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+    width: 299px;
+    height: 65px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 
   .swiper {
     overflow: hidden;
     padding: 0px;
   }
-  .swiper-slide{
-    border: 1px solid var(  --gray15-color);
+
+  .swiper-slide {
+    border: 1px solid var(--gray15-color);
     border-radius: 12px;
   }
 
-.swiper-slide .desc {
-  font-size: 14px;
-}
+  .swiper-slide .desc {
+    font-size: 14px;
+  }
 
   .swiper::before,
   .swiper::after {
@@ -298,18 +301,21 @@
     width: 36px;
     height: 36px;
   }
-.swiper-pagination-bullet {
-display: none !important;
-}
+
+  .swiper-pagination-bullet {
+    display: none !important;
+  }
+
   .mobile-nav {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-top: 10px;
   }
+
   .mobile-nav .swiper-button-prev,
-.mobile-nav .swiper-button-next {
-  flex-shrink: 0; 
-  margin: 0;      
-}
+  .mobile-nav .swiper-button-next {
+    flex-shrink: 0;
+    margin: 0;
+  }
 }
