@@ -48,9 +48,6 @@
   color: var(--black11-color);
 }
 
-.Na-linkbutton:hover {
-    background-color: var( --green70-color); 
-}
 @media screen and (max-width: 1493px) {
   /* الخصائص المشتركة */
   .Na-linkbutton {

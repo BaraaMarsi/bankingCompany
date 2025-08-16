@@ -1,9 +1,8 @@
 import { Link } from 'react-router-dom';
 import './Button.css';
 
-const Button = ({ text, to, className = '', onClick }) => {
-  const combinedClass = `Na-linkbutton${className ? ' ' + className : ''}`;
-
+const Button = ({ text, to, className = '', onClick, isActive }) => {
+  const combinedClass =` Na-linkbutton ${className} ${isActive ? 'active-button' : ''}`;
 
   return to ? (
     <Link to={to} className={combinedClass} onClick={onClick}>
