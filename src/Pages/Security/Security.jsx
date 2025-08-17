@@ -21,7 +21,7 @@ const Security = () => {
                 yourTitleSpan= "Top Priority"
                 yourDesc= "At YourBank, we understand the importance of keeping your financial information secure. We employ robust security measures and advanced technologies to protect your personal and financial data. Rest assured that when you bank with us, your security is our utmost priority."
             />
-              <section className="container padding_Buttom">
+              <section className="protect container padding_Buttom">
                 <Section title={"How We "} titleSpan={"Protect You"} desc={"At YourBank, we prioritize the security and confidentiality of your financial information. Our state-of-the-art encryption technology and stringent data protection measures ensure your assets and transactions are safeguarded at all times"} />
                 <div className="BL-protect">
                     {
