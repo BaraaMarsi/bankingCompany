@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+    .BL-benefits-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5.2083vw;
+        align-items: center;
+        margin-top: 80px;
+        justify-content: center;
+    }
+=======
 .BL-benefits-container {
   display: flex;
   flex-wrap: wrap;
@@ -5,6 +15,7 @@
   align-items: center;
   margin-top: 80px;
 }
+>>>>>>> 02672613c173912576a2eb9a8fdc9dc0e4413f6e
 
 .BL-card .MA-title {
   padding: 50px;
