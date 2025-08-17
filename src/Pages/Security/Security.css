@@ -4,8 +4,24 @@
     gap: 1.5625vw;
     justify-content: center;
     align-items: center;
-    /* margin-top: 80px; */
+    margin-top: 120px;
+    position: relative;
 }
+
+.BL-protect::before {
+    content: '';
+    position: absolute;
+    transform: translateY(-30%);
+    width: 82.9687vw;
+    height: 32.8703vw;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: url('ProtectIcons/protect_background.png') no-repeat center center / cover;
+    z-index: -1;
+}
+
 
 .BL-protect .BL-protectcard .MA-title {
     padding: 50px;
@@ -35,15 +51,14 @@
 
 
 @media screen and (max-width: 1439px) {
-
-    .BL-protect {
-        margin-top: 60px;
-        gap: 1.3888vw;
-
+    .BL-protect::before {
+        width: 88.125vw;
+        height: 38.125vw;
     }
 
-    .BL-protect .MA-title {
-        height: fit-content;
+    .BL-protect {
+        gap: 1.3888vw;
+        margin-top: 58px;
     }
 
     .BL-protectcard .MA-title {
@@ -68,9 +83,13 @@
 }
 
 @media screen and (max-width: 992px) {
+    .BL-protect::before {
+        display: none;
+    }
+
     .BL-protect {
         flex-direction: column;
-        margin-top: 60px;
+        margin-top: 40px;
     }
 
     .BL-protectcard .MA-title {
