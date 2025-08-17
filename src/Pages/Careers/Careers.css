@@ -4,6 +4,7 @@
         gap: 5.2083vw;
         align-items: center;
         margin-top: 80px;
+        justify-content: center;
     }
 
     .BL-card .MA-title {
