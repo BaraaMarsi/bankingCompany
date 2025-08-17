@@ -53,17 +53,19 @@ const handleChangeData = (category) => {
 
           <div className="header-right">
             <Button
-              text={"For Individuals"}
-              className={`Na-forindividuals ${activeCategory === 'individuals' ? 'active-button' : ''}`}
+              text="For Individuals"
+              className="Na-forindividuals"
+              isActive={activeCategory === 'individuals'}
               onClick={() => handleChangeData('individuals')}
             />
             <Button
-              text={"For Businesses"}
-              className={`Na-forbusinesses ${activeCategory === 'businesses' ? 'active-button' : ''}`}
+              text="For Businesses"
+              className="Na-forbusinesses"
+              isActive={activeCategory === 'businesses'}
               onClick={() => handleChangeData('businesses')}
             />
-          </div>
         </div>
+      </div>
 
           <Swiper
             key={activeCategory} 
@@ -83,27 +85,12 @@ const handleChangeData = (category) => {
               0: {
                 slidesPerView: 1,
                 centeredSlides: false,
-                spaceBetween: 20,
-              },
-              768: {
-                slidesPerView: 2,
-                centeredSlides: false,
-                spaceBetween: 30,
+                spaceBetween: 35,
               },
               992: {
-                slidesPerView: 2,
-                centeredSlides: true,
-                spaceBetween: 40,
-              },
-              1200: {
                 slidesPerView: 3,
                 centeredSlides: true,
                 spaceBetween: 50,
-              },
-              1439: {
-                slidesPerView: 3,
-                centeredSlides: true,
-                spaceBetween: 60,
               },
             }}
           >
