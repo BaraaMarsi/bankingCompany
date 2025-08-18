@@ -1,7 +1,7 @@
 import Button from "../Button/Button"
 import "./TitleUlBtn.css"
 
-const TitleUlBtn = ({title, ul, btn}) => {
+const TitleUlBtn = ({title, ul, btn , btnClass}) => {
     return (
         <div className = "Bm-titleUlBtn">
             <h2>{title}</h2>
@@ -15,7 +15,7 @@ const TitleUlBtn = ({title, ul, btn}) => {
                     )
                 })}
             </ul>
-            <Button text={btn}/>
+            <Button text={btn} className = {btnClass}/>
         </div>
     )
 }
