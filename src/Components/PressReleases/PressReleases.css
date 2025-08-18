@@ -1,6 +1,6 @@
 .MA-preesReleases .MA-title h1 {
     margin-bottom: 14px;
-    color: #CAFF33;
+    color: var(--green60-color);
     font-size: 48px;
     font-weight: 400;
 }
@@ -19,9 +19,9 @@
 .MA-preesReleases .MA-cards .MA-card {
     max-width: 39.7812vw;
     padding: 30px;
-    border: 1px solid #262626;
+    border: 1px solid var(--gray15-color);
     border-radius: 40px 40px 16px 16px;
-    background-color: #1C1C1C;    
+    background-color: var(--black11-color);    
 }
 
 .MA-preesReleases .MA-cards .MA-card .MA-img {
@@ -44,7 +44,7 @@
     max-width: 663px;
     padding: 0px 30px;
     margin-top: 30px;
-    color: #B3B3B3;
+    color: var(--gray70-color);
     font-size: 18px;
     font-weight: 300;
     line-height: 150%;
