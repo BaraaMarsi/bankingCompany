@@ -119,6 +119,10 @@
     display: flex;
 }
 
+.MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change.MA-flexShrink {
+    flex-shrink: 5;
+}
+
 .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change span {
     font-size: 15.61px;
 }
