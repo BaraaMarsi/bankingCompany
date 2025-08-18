@@ -47,6 +47,13 @@
   background-color: var(--green60-color);
   color: var(--black11-color);
 }
+.Na-applynow{
+  width: 157;
+  padding: 16px 30px;
+  border-radius: 82px;
+  background-color: var(--green60-color);
+  color: var(--black11-color);
+}
 
 @media screen and (max-width: 1493px) {
   /* الخصائص المشتركة */
@@ -70,6 +77,10 @@
   .Na-forindividuals , .Na-forbusinesses {
     max-width: 139px;
     padding: 10px 18px;
+  }
+  .Na-applynow{
+    width: 115px;
+    padding: 12px 20px;
   }
    
 }
