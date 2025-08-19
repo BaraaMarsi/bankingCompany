@@ -40,7 +40,7 @@ const handleChangeData = (category) => {
 };
 
   return (
-    <div className="testimonials-section container padding_Buttom">
+    <div className="testimonials-section  padding_Buttom">
       <div className="testimonials">
         <div className="testimonials-header">
           <div className="header-left">

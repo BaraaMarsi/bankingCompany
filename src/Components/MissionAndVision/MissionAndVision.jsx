@@ -11,15 +11,14 @@ const MissionAndVision = () => {
             />
             <div className="MA-cards">
                 {missionData.map((card, index) => {
-                    console.log(card)
                 return(
                     <div className="MA-card" key={index}>
                         <div className="MA-img">
-                            <img src={card.imageUrl}/>
+                            <img src={card.imageUrl} alt="image about mission&vision"/>
                         </div>
                         <Section 
                             title={card.title} desc={card.desc}
-                    />
+                        />
                     </div>
                     
                 )

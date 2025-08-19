@@ -11,8 +11,22 @@
     text-align: center;
     width: 100%;
 }
-.form-card,
+
+
 .list-card {
+    flex-direction: column;
+    display: flex
+;
+    border: 1px solid var(--gray20-color);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 133px;
+    background-color: var(--black10-color);
+    color: var(--white-color);
+    gap: 20px;
+}
+.form-card
+{
   border: 1px solid var(--gray20-color);
   border-radius: 8px;
   padding: 16px;
@@ -36,7 +50,7 @@ input,
 textarea,
 select {
   width: 100%;
- background-color: var(--black10-color);
+  background-color: var(--black10-color);
     border: 1px solid var(--gray20-color);
     border-radius: 50px;
     color: var(--white-color);
@@ -51,7 +65,7 @@ select {
   gap: 8px;
 }
 .buttons button {
- width: 109px;
+  width: 109px;
   padding: 14px 30px;
   border-radius: 82px;
   background-color: var(--green60-color);
@@ -60,33 +74,65 @@ select {
 .buttons button[type="button"] {
   background: #6c757d;
 }
-.list-header {
+  .list-header {
   display: flex;
   gap: 8px;
   margin-bottom: 12px;
 }
+
+
 .faq-list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 25px;
 }
-.faq-item {
-  border: 1px solid #eee;
-  border-radius: 6px;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
+.faq-item{
+      padding: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--gray20-color);
+    display: flex
+;
+    flex-direction: column;
+    gap: 14px;
 }
+.faq-item h4{
+  color: var(--green60-color);
+  
+}
+.faq-item p{
+  color: var(--gray60-color);
+}
+
+  .list-card {
+  border: 1px solid var(--gray20-color);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  background-color: var(--black10-color);
+  color: var(--white-color);
+} 
+
+
+
+
 .item-actions button {
   margin-left: 8px;
-  background: none;
+  padding: 6px 14px;
+  border-radius: 50px;
+  background-color: var(--green60-color);
+  color: var(--black11-color);
   border: none;
-  color: #007bff;
   cursor: pointer;
 }
 .item-actions button:hover {
-  text-decoration: underline;
+  opacity: 0.8;
+  text-decoration: none;
 }
+.item-actions button:nth-child(2) {
+  background-color: var(--gray10-color);
+  color: #fff;
+}
+

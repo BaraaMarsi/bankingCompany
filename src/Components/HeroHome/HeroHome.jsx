@@ -35,7 +35,7 @@ const HeroHome = () => {
                     <div className="MA-exchange">
                         <h2>Money Exchange</h2>
                         <form className="MA-changes">
-                            <div className="MA-change">
+                            <div className="MA-change MA-flexShrink">
                                 <div className="MA-india">
                                     <div>
                                         <img src="HeroHome/india.png" alt="" />

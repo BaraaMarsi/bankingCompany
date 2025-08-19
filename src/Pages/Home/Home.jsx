@@ -7,6 +7,7 @@ import HeroHome from "../../Components/HeroHome/HeroHome";
 import Card from "../../Components/Card/Card";
 import TitleDev from "../../Components/TitleDev/TitleDev";
 import OurFeaturesData from "../../Data/OurFeaturesData";
+import UseCasesData from "../../Data/UseCasesData";
 import ProductsData from "../../Data/ProductsData";
 import 'swiper/css';
 import "./Home.css"
@@ -64,30 +65,14 @@ const Home = () => {
                 <div>
                     <div className="container0">
                         <div className="container1">
+                            {UseCasesData.filter((data) => data.type == "block1").map((data, index) => (
                             <Card
+                                key= { index }
                                 section={{
-                                    imageUrl: "UseCasesSection/use_cases_icon1.png",
-                                    imageAlt: "use_cases_icon1",
-                                    title: "Managing Personal Finances"
-                                }} />
-                            <Card
-                                section={{
-                                    imageUrl: "UseCasesSection/use_cases_icon2.png",
-                                    imageAlt: "use_cases_icon2",
-                                    title: "Saving for the Future"
-                                }} />
-                            <Card
-                                section={{
-                                    imageUrl: "UseCasesSection/use_cases_icon3.png",
-                                    imageAlt: "use_cases_icon3",
-                                    title: "Homeownership"
-                                }} />
-                            <Card
-                                section={{
-                                    imageUrl: "UseCasesSection/use_cases_icon4.png",
-                                    imageAlt: "use_cases_icon4",
-                                    title: "Education Funding"
-                                }} />
+                                    imageUrl: data.imageUrl,
+                                    imageAlt: data.imageAlt,
+                                    title: data.title,
+                                }}/>))}
                         </div>
                         <div className="container2">
                             <Card
@@ -97,21 +82,15 @@ const Home = () => {
                                 }}
                                 customClass="container2_firstDiv" />
                             <div className="container2_secondDiv">
-                                <Card section={{
-                                    titleSpan: "78%",
-                                    desc: "Secure Retirement Planning"
-                                }}
-                                    customClass="container2_secondDiv_children" />
-                                <Card section={{
-                                    titleSpan: "63%",
-                                    desc: "Manageable Debt Consolidation"
-                                }}
-                                    customClass="container2_secondDiv_children middle" />
-                                <Card section={{
-                                    titleSpan: "91%",
-                                    desc: "Reducing financial burdens"
-                                }}
-                                    customClass="container2_secondDiv_children" />
+                                {UseCasesData.filter((data) => data.type == "block2").map((data, index) => (
+                                <Card
+                                    key= { index }
+                                    section={{
+                                        titleSpan: data.title,
+                                        desc: data.desc,
+                                    }}
+                                    customClass={data.customClass}
+                                    />))}
                             </div>
                             <TitleDev div1="Learn More" />
                         </div>
@@ -124,50 +103,28 @@ const Home = () => {
                             }}
                                 customClass="container2_firstDiv" />
                             <div className="container2_secondDiv">
-                                <Card section={{
-                                    titleSpan: "65%",
-                                    desc: "Cash Flow Management"
-                                }}
-                                    customClass="container2_secondDiv_children" />
-                                <Card section={{
-                                    titleSpan: "70%",
-                                    desc: "Drive Business Expansion"
-                                }}
-                                    customClass="container2_secondDiv_children middle" />
-                                <Card section={{
-                                    titleSpan: "45%",
-                                    desc: "Streamline payroll processing"
-                                }}
-                                    customClass="container2_secondDiv_children" />
+                                {UseCasesData.filter((data) => data.type == "block3").map((data, index) => (
+                                <Card
+                                    key= { index }
+                                    section={{
+                                        titleSpan: data.title,
+                                        desc: data.desc,
+                                    }}
+                                    customClass={data.customClass}
+                                    />))}
                             </div>
                             <TitleDev
                                 div1="Learn More" />
                         </div>
                         <div className="container1">
+                            {UseCasesData.filter((data) => data.type == "block4").map((data, index) => (
                             <Card
+                                key= { index }
                                 section={{
-                                    imageUrl: "UseCasesSection/use_cases_icon5.png",
-                                    imageAlt: "use_cases_icon1",
-                                    title: "Startups and Entrepreneurs"
-                                }} />
-                            <Card
-                                section={{
-                                    imageUrl: "UseCasesSection/use_cases_icon6.png",
-                                    imageAlt: "use_cases_icon2",
-                                    title: "Cash Flow Management"
-                                }} />
-                            <Card
-                                section={{
-                                    imageUrl: "UseCasesSection/use_cases_icon7.png",
-                                    imageAlt: "use_cases_icon3",
-                                    title: "Business Expansion"
-                                }} />
-                            <Card
-                                section={{
-                                    imageUrl: "UseCasesSection/use_cases_icon8.png",
-                                    imageAlt: "use_cases_icon4",
-                                    title: "Payment Solutions"
-                                }} />
+                                    imageUrl: data.imageUrl,
+                                    imageAlt: data.imageAlt,
+                                    title: data.title,
+                                }}/>))}
                         </div>
                     </div>
                 </div>
@@ -203,8 +160,8 @@ const Home = () => {
                     <div className="cards">
                         {OurFeaturesData.filter((data) => data.type == selectedType).map((data, index) => (
                             <Card
+                                key= { index }
                                 section={{
-                                    key: { index },
                                     imageUrl: "arrow.png",
                                     imageAlt: "arrow",
                                     flex: "flex",
@@ -217,7 +174,9 @@ const Home = () => {
                 </div>
             </section>
             <Faq />
-            <Testimonials />
+            <div className="container">
+                <Testimonials />
+            </div>
             <Start
                 title="Start your financial journey with " titlespan="Your Bank today!"
                 description="Ready to take control of your finances? Join YourBank now, and let us help you achieve your financial goals with our tailored solutions and exceptional customer service"

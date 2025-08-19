@@ -115,13 +115,9 @@
     padding: 18px 24px;
     font-weight: 400;
     color: var(--white-color);
+    background-color: var(--black11-color);
     cursor: pointer;
     transition: 0.5s all;
-}
-
-.use_cases .Bm-titleDev .divs p:hover {
-    color: var(--black-color);
-    background-color: var(--green60-color);
 }
 
 .our_features .Bm-titleDev {
@@ -129,18 +125,15 @@
 }
 
 .our_features .Bm-titleDev p {
+    background-color: transparent;
     color: var(--white-color);
     transition: 0.5s all;
-}
-
-.our_features .Bm-titleDev p:hover {
-    color: black !important;
-    font-weight: bold;
-    background-color: var(--green60-color);
+    cursor: pointer;
 }
 
 .our_features .active .Bm-titleDev p {
     color: var(--green60-color);
+    background-color: var(--gray10-color);
 }
 
 .our_features .first_card {
