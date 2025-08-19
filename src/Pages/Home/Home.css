@@ -463,6 +463,7 @@
     .use_cases .container1 {
         width: 91.7949vw;
         padding: 20px;
+        margin-bottom: 30px;
     }
 
     .use_cases .container1 .card {
