@@ -60,23 +60,23 @@ export default function FaqDashboard() {
     }, [faqs, search, sortBy]);
 
     return (
-        <div className="faq-dashboard container">
+        <div className="Am-faq-dashboard container">
             <h2>FAQ Dashboard</h2>
 
-            <form onSubmit={handleSubmit} className="form-card">
+            <form onSubmit={handleSubmit} className="Am-form-card">
                 <h3>{editingId ? "Edit FAQ" : "Add New FAQ"}</h3>
                 <label>Question</label>
                 <input value={question} onChange={e => setQuestion(e.target.value)} />
                 <label>Answer</label>
                 <textarea value={answer} onChange={e => setAnswer(e.target.value)} />
-                <div className="buttons">
+                <div className="Am-buttons">
                     <button type="submit">{editingId ? "Save" : "Add"}</button>
                     {editingId && <button type="button" onClick={() => { setEditingId(null); clearForm(); }}>Cancel</button>}
                 </div>
             </form>
 
-            <div className="list-card">
-                <div className="list-header">
+            <div className="Am-list-card">
+                <div className="Am-list-header">
                     <input value={search} onChange={e => setSearch(e.target.value)} placeholder="Search..." />
                     <select value={sortBy} onChange={e => setSortBy(e.target.value)}>
                         <option value="newest">Newest</option>
@@ -86,14 +86,14 @@ export default function FaqDashboard() {
                     </select>
                 </div>
 
-                <ul className="faq-list">
+                <ul className="Am-faq-list">
                     {filtered.map(f => (
-                        <li key={f.id} className="faq-item">
+                        <li key={f.id} className="Am-faq-item">
                             <div>
                                 <h4>Q: {f.question}</h4>
                                 <p>A: {f.answer}</p>
                             </div>
-                            <div className="item-actions">
+                            <div className="Am-item-actions">
                                 <button onClick={() => { setEditingId(f.id); setQuestion(f.question); setAnswer(f.answer); }}>Edit</button>
                                 <button onClick={() => setFaqs(faqs.filter(x => x.id !== f.id))}>Delete</button>
                             </div>
@@ -104,4 +104,3 @@ export default function FaqDashboard() {
         </div>
     );
 }
-

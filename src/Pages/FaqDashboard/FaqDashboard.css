@@ -1,22 +1,19 @@
-
-.faq-dashboard .container {
+.Am-faq-dashboard .container {
   max-width: 800px;
   margin: auto;
   padding: 20px;
   font-family: sans-serif;
 }
-.faq-dashboard h2{
+.Am-faq-dashboard h2{
   color: var(--green60-color);
     font-size: 48px;
     text-align: center;
     width: 100%;
 }
 
-
-.list-card {
+.Am-list-card {
     flex-direction: column;
-    display: flex
-;
+    display: flex;
     border: 1px solid var(--gray20-color);
     border-radius: 8px;
     padding: 16px;
@@ -25,15 +22,13 @@
     color: var(--white-color);
     gap: 20px;
 }
-.form-card
-{
+.Am-form-card {
   border: 1px solid var(--gray20-color);
   border-radius: 8px;
   padding: 16px;
-
   margin-bottom: 20px;
 }
-.form-card h3{
+.Am-form-card h3{
   text-align: center;
   color: var(--green60-color);
 }
@@ -51,37 +46,36 @@ textarea,
 select {
   width: 100%;
   background-color: var(--black10-color);
-    border: 1px solid var(--gray20-color);
-    border-radius: 50px;
-    color: var(--white-color);
-    font-size: 18px;
-    outline: none;
-    padding: 24px;
+  border: 1px solid var(--gray20-color);
+  border-radius: 50px;
+  color: var(--white-color);
+  font-size: 18px;
+  outline: none;
+  padding: 10px;
 }
-.buttons {
+.Am-buttons {
   justify-content: center;
   margin-top: 12px;
   display: flex;
   gap: 8px;
 }
-.buttons button {
+.Am-buttons button {
   width: 109px;
   padding: 14px 30px;
   border-radius: 82px;
   background-color: var(--green60-color);
   color: var(--black11-color);
 }
-.buttons button[type="button"] {
+.Am-buttons button[type="button"] {
   background: #6c757d;
 }
-  .list-header {
+.Am-list-header {
   display: flex;
   gap: 8px;
   margin-bottom: 12px;
 }
 
-
-.faq-list {
+.Am-faq-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -89,24 +83,22 @@ select {
   flex-direction: column;
   gap: 25px;
 }
-.faq-item{
-      padding: 15px;
-    border-radius: 8px;
-    border: 1px solid var(--gray20-color);
-    display: flex
-;
-    flex-direction: column;
-    gap: 14px;
+.Am-faq-item {
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid var(--gray20-color);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
-.faq-item h4{
+.Am-faq-item h4{
   color: var(--green60-color);
-  
 }
-.faq-item p{
+.Am-faq-item p{
   color: var(--gray60-color);
 }
 
-  .list-card {
+.Am-list-card {
   border: 1px solid var(--gray20-color);
   border-radius: 8px;
   padding: 16px;
@@ -115,10 +107,7 @@ select {
   color: var(--white-color);
 } 
 
-
-
-
-.item-actions button {
+.Am-item-actions button {
   margin-left: 8px;
   padding: 6px 14px;
   border-radius: 50px;
@@ -127,12 +116,11 @@ select {
   border: none;
   cursor: pointer;
 }
-.item-actions button:hover {
+.Am-item-actions button:hover {
   opacity: 0.8;
   text-decoration: none;
 }
-.item-actions button:nth-child(2) {
+.Am-item-actions button:nth-child(2) {
   background-color: var(--gray10-color);
   color: #fff;
 }
-
