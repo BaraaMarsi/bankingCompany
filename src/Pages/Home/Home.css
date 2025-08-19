@@ -182,7 +182,7 @@
 }
 
 .our_features .features_card {
-    width: 31.6146vw;
+    width: 31.2vw;
     padding: 2.6042vw;
     background-color: var(--black11-color);
     border: 1px solid var(--gray15-color);
@@ -383,7 +383,7 @@
     }
 
     .our_features .features_card {
-        width: 33.2497vw;
+        width: 32vw;
         padding: 2.7778vw;
     }
 
