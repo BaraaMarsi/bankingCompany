@@ -140,19 +140,19 @@ const Home = () => {
                     <div className="filtters">
                         <div onClick={() => setSelectedType("online_Banking")}>
                             <Card
-                                customClass={selectedType == "online_Banking" ? "active" : ""}
+                                customClass={selectedType == "online_Banking" ? "active btn1" : "btn1"}
                                 titleDev={{ div1: "Online Banking" }}
                             />
                         </div>
                         <div onClick={() => setSelectedType("financial_Tools")}>
                             <Card
-                                customClass={selectedType == "financial_Tools" ? "active" : ""}
+                                customClass={selectedType == "financial_Tools" ? "active btn2" : "btn2"}
                                 titleDev={{ div1: "Financial Tools" }}
                             />
                         </div>
                         <div onClick={() => setSelectedType("customer_Support")}>
                             <Card
-                                customClass={selectedType == "customer_Support" ? "active" : ""}
+                                customClass={selectedType == "customer_Support" ? "active btn3" : "btn3"}
                                 titleDev={{ div1: "Customer Support" }}
                             />
                         </div>
