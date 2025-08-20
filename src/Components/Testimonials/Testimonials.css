@@ -31,7 +31,7 @@
   width: fit-content;
   padding: 12px;
   border-radius: 82px;
-  background-color: var(--gray10-color);
+  background-color: var(--gray11-color);
 }
 
 /* العناوين والوصف */
@@ -111,7 +111,7 @@
 .swiper-slide {
   background: transparent;
   width: 404px;
-  height: auto;
+  height: 322px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,7 +182,7 @@
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
-  border: none;
+  border: 2px solid var(--gray15-color);
   color: transparent;
   cursor: pointer;
 }
@@ -197,14 +197,6 @@
   background-image: url('/rightarrowicon.png');
 }
 
-/* النقاط */
-.swiper-pagination-bullet {
-  background: #999;
-}
-
-.swiper-pagination-bullet-active {
-  background: var(--green60-color);
-}
 
 @media screen and (max-width: 1439px) {
   .testimonials-header {
@@ -268,6 +260,7 @@
   .header-right {
     width: 299px;
     height: 65px;
+    padding: 12px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -281,6 +274,7 @@
   .swiper-slide {
     border: 1px solid var(--gray15-color);
     border-radius: 12px;
+    padding: 20px;
   }
 
   .swiper-slide .desc {
@@ -302,10 +296,7 @@
     height: 36px;
   }
 
-  .swiper-pagination-bullet {
-    display: none !important;
-  }
-
+ 
   .mobile-nav {
     display: flex;
     justify-content: center;

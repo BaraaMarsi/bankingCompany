@@ -1,9 +1,8 @@
-import Start from "../../Components/Start/Start";
+import StartSection from "../../Components/StartSection/StartSection";
 import TestiData from '../../Data/TestiData';
 import Testimonials from "../../Components/Testimonials/Testimonials";
 import Faq from "../../Components/Faq/Faq";
 import HeroHome from "../../Components/HeroHome/HeroHome";
-import 'swiper/css';
 import "./Home.css"
 import UseCases from "../../Components/UseCases/UseCases";
 import OurFeatures from "../../Components/OurFeatures/OurFeatures";
@@ -22,13 +21,7 @@ const Home = () => {
             <div className="container">
                 <Testimonials />
             </div>
-            <Start
-                title="Start your financial journey with " titlespan="Your Bank today!"
-                description="Ready to take control of your finances? Join YourBank now, and let us help you achieve your financial goals with our tailored solutions and exceptional customer service"
-                buttonText="Open Account"
-                buttonTo="/signup"
-                buttonClass="Na-openaccount"
-            />
+                <StartSection/>
         </>
     );
 }

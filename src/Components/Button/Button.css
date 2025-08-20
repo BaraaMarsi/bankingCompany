@@ -84,3 +84,8 @@
   }
    
 }
+@media screen and (max-width: 992px) {
+    .Na-forindividuals , .Na-forbusinesses {
+      padding: 10px 18px;
+    }
+}

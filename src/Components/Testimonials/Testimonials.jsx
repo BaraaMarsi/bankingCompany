@@ -80,7 +80,7 @@ const handleChangeData = (category) => {
               nextEl: '.swiper-button-next',
               prevEl: '.swiper-button-prev',
             }}
-            pagination={{ clickable: true }}
+            pagination={false}
            breakpoints={{
               0: {
                 slidesPerView: 1,
@@ -96,7 +96,7 @@ const handleChangeData = (category) => {
           >
           {sliderData.map((item, index) => (
             <SwiperSlide key={index}>
-            
+          
               <Card
                 section={{
                   imageUrl: item.imageUrl,

@@ -1,0 +1,92 @@
+/* القسم الأساسي */
+.jobHead {
+  padding-bottom: 80px; /* أو أي قيمة تناسب التصميم */
+}
+
+/* العنوان والوصف داخل Section الأول */
+.jobHead h1 {
+  font-size: 48px;
+  margin-bottom: 14px;
+}
+
+/* قسم الكروت */
+.career-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 30px;
+}
+
+/* الكرت الواحد */
+.career-card {
+  width: 100%;
+  max-width: 800px;
+  background-color: var(--black11-color);
+  border: 1px solid var(--gray15-color);
+  border-radius: 16px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* الكومبوننت الثاني داخل الكرت */
+.career-card .section-desc {
+  margin-bottom: 40px;
+}
+
+.Na-applynow:hover {
+  background-color: var(--gray15-color);
+}
+@media screen and (max-width: 1439px) {
+ .job.container{
+    padding: 0 2%;
+  }
+ .jobHead{
+  padding: 3.5vw;
+ }
+  .career-section {
+    gap: 2.016vw;
+  }
+
+  .career-card {
+    width: 100%;
+    max-width: 500px;
+    padding: 32px ;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 992px) {
+  .job.container{
+    padding: 0 1%;
+  }
+    .jobHead {
+    width: 100%;
+    padding-bottom: 50px;
+    max-width: none;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+  .jobHead h1 {
+  font-size: 30px;
+}
+
+  .career-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.016vw;
+    place-items: center; 
+
+  }
+
+  .career-card {
+    width: 100vw;
+    max-width: 750px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 24px;
+
+ }
+}
