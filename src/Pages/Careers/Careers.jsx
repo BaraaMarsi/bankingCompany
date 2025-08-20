@@ -1,12 +1,10 @@
 import Hero from "../../Components/Hero/Hero.jsx";
 import "./Careers.css"
-import Section from "../../Components/Section/Section.jsx";
+import OurBenefits from "../../Components/OurBenefits/OurBenefits.jsx"
 import StartSection from "../../Components/StartSection/StartSection";
 import Faq from "../../Components/Faq/Faq.jsx";
-import Card from "../../Components/Card/Card.jsx";
 import OurValuesSection from "../../Components/OurValuesSection/OurValuesSection.jsx";
 import JobOpenings from "../../Components/JobOpenings/JobOpenings.jsx";
-import Faq from "../../Components/Faq/Faq.jsx";
 const Careers = () => {
     return (
         <>
