@@ -40,7 +40,7 @@
 .Na-start-left::before {
   content: "";
   position: absolute;
-  top: -25px;
+  top: -25%;
   left: -60px;
   width: 250px;
   height: 250px;
@@ -53,6 +53,7 @@
 .Na-start-left h1 {
   font-size: 40px;
   color: var(--white-color);
+  margin-bottom: 14px;
 }
 
 .Na-start-left h1 span {
@@ -83,7 +84,7 @@
   }
 
   .Na-start-left::before {
-    top: -50px;
+    top: -64%;
     left: -60px;
     width: 200px;
     height: 200px;
