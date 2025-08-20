@@ -8,7 +8,7 @@
 }
 
 .MA-herohome .MA-left {
-    max-width: 825.98px;
+    max-width: 43.01979vw;
     padding-top: 100px;
 }
 
@@ -50,12 +50,12 @@
 .MA-herohome .MA-right::before {
     content: "";
     position: absolute;
-    background-image: url(/bankingCompany/HeroHome/arrows.png);
+    background-image: url(/bankingCompany/HeroHome/ArrowsDesktop.png);
     background-repeat: no-repeat;
-    width: 420px;
-    height: 420px;
-    top: 60px;
-    right: -100px;
+    width: 417px;
+    height: 417px;
+    top: 100px;
+    right: -120px;
     z-index: -1;
 }
 
@@ -248,6 +248,14 @@
     .MA-herohome .MA-right {
         max-width: 410px;
         padding-top: 60px;
+    }
+
+    .MA-herohome .MA-right::before {
+        background-image: url(/bankingCompany/HeroHome/ArrowsLaptop.png);
+        width: 300px;
+        height: 395px;
+        top: 60px;
+        right: -65px;
     }
 
     .MA-herohome .MA-right .MA-income {
@@ -488,7 +496,6 @@
 
     .MA-herohome .MA-right .MA-currency {
         max-width: 219.57px;
-        /* width: 219.57px; */
         align-self: flex-end;
         margin-top: 10.64px;
         padding: 5.13px 5.13px 5.13px 12.31px;
@@ -511,4 +518,10 @@
         width: 20.57px;
         height: 20.57px;
     }
+}
+
+@media screen and (max-width: 310px) {
+        .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change p {
+            font-size: 8.5px;
+        }
 }

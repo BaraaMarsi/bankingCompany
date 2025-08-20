@@ -1,7 +1,6 @@
 import Hero from "../../Components/Hero/Hero";
 import MissionAndVision from "../../Components/MissionAndVision/MissionAndVision";
 import PressReleases from "../../Components/PressReleases/PressReleases";
-import PressReleasesData from "../../Data/PressReleasesData"
 
 const About = () => {
     return (
