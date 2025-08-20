@@ -5,11 +5,11 @@ import Start from "../../Components/Start/Start";
 
 import Faq from "../../Components/Faq/Faq.jsx";
 import Card from "../../Components/Card/Card.jsx";
-import BenefitsData from "./../../Data/BenefitsData";
 import OurJobData from './../../Data/OurJobData';
 import TitleDev from '../../Components/TitleDev/TitleDev';
 import TitleUlBtn from '../../Components/TitleUlBtn/TitleUlBtn.jsx';
 import { useState } from "react";
+import OurBenefits from "../../Components/OurBenefits/OurBenefits.jsx";
 const Careers = () => {
     // const info = {
     //     title: "Welcome to ",
@@ -21,13 +21,6 @@ const Careers = () => {
     // let isShow = {
     //     isTitle: true, isTitleSpan: true, isSecTitle: true
     // }
-    const [benefits, setbenefits] = useState(() => {
-        const storedBenefits = localStorage.getItem('benefits');
-        if (storedBenefits) {
-            return JSON.parse(storedBenefits);
-        }
-        return BenefitsData;
-    });
     return (
         <>
             <Hero image="assets/images/HeroImage1.webp"
@@ -66,26 +59,7 @@ const Careers = () => {
                     </div>
                 </div>
             </div>
-            <section className="container padding_Buttom">
-                <Section title={"Our "} titleSpan={"Benefits"} desc={"At YourBank, we value our employees and are dedicated to their well-being and success. We offer a comprehensive range of benefits designed to support their personal and professional growth."} />
-                <div className="BL-benefits-container">
-                    {
-                        benefits.map((benefit, index) => (
-                            <div className="BL-card" key={index}>
-                                <Card key={index}
-                                    section={{
-                                        title: benefit.title,
-                                        desc: benefit.desc,
-                                        imageUrl: benefit.imageUrl,
-                                        imageAlt: `Icon for ${benefit.title}`,
-                                        flex: 'flex',
-                                    }}
-                                />
-                            </div>
-                        ))
-                    }
-                </div>
-            </section>
+            <OurBenefits />
             <div className="job container ">
                 <div className="jobHead">
                 < Section
