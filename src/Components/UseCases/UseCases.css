@@ -29,11 +29,11 @@
 }
 
 .use_cases .container1:nth-child(1) {
-    background-image: url("UseCasesSection/background_image.png");
+    background-image: url("startpic.png");
 }
 
 .use_cases .container1:nth-child(2) {
-    background-image: url("UseCasesSection/background_image2.png");
+    background-image: url("startpic2.png");
     background-position: top right;
 }
 
