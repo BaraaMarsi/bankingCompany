@@ -29,11 +29,11 @@
 }
 
 .use_cases .container1:nth-child(1) {
-    background-image: url("startpic.png");
+    background-image: url("/bankingCompany/startpic.png");
 }
 
 .use_cases .container1:nth-child(2) {
-    background-image: url("startpic2.png");
+    background-image: url("/bankingCompany/startpic2.png");
     background-position: top right;
 }
 
