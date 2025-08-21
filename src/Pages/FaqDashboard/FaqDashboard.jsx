@@ -1,21 +1,13 @@
 import { useState, useEffect, useMemo } from "react";
 import "./FaqDashboard.css";
-
-const FaqData = [
-    { id: 1, question: "How can I return an order?", answer: "You can request a return within 14 days with the invoice." },
-    { id: 2, question: "How long does shipping take?", answer: "Usually 2-5 business days within the same country." },
-];
-
-const LS_FAQS = "faqs";
-const LS_LAST_ID = "faqs_lastId";
-
+import FaqData from "./../../Data/FaqData";
 export default function FaqDashboard() {
     const [faqs, setFaqs] = useState(() => {
-        const saved = localStorage.getItem(LS_FAQS);
+        const saved = localStorage.getItem('faqs');
         return saved ? JSON.parse(saved) : FaqData;
     });
     const [lastId, setLastId] = useState(() => {
-        const saved = localStorage.getItem(LS_LAST_ID);
+        const saved = localStorage.getItem('lastId');
         return saved ? parseInt(saved) : FaqData.length;
     });
     const [editingId, setEditingId] = useState(null);
@@ -25,11 +17,11 @@ export default function FaqDashboard() {
     const [sortBy, setSortBy] = useState("newest");
 
     useEffect(() => {
-        localStorage.setItem(LS_FAQS, JSON.stringify(faqs));
+        localStorage.setItem('faqs', JSON.stringify(faqs));
     }, [faqs]);
 
     useEffect(() => {
-        localStorage.setItem(LS_LAST_ID, lastId);
+        localStorage.setItem('lastId', lastId);
     }, [lastId]);
 
     const clearForm = () => { setQuestion(""); setAnswer(""); };
