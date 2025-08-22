@@ -1,73 +1,63 @@
-/* القسم الأساسي */
 .jobHead {
-  padding-bottom: 80px; /* أو أي قيمة تناسب التصميم */
+  padding-bottom: 80px; 
 }
 
-/* العنوان والوصف داخل Section الأول */
 .jobHead h1 {
   font-size: 48px;
   margin-bottom: 14px;
 }
 
-/* قسم الكروت */
 .career-section {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2 , 1fr);
   grid-template-rows: auto auto;
   gap: 30px;
 }
-
-/* الكرت الواحد */
+.career-section .career-card:nth-child(3) {
+  grid-column: 1 / 2; 
+}
 .career-card {
   width: 100%;
-  max-width: 800px;
   background-color: var(--black11-color);
   border: 1px solid var(--gray15-color);
   border-radius: 16px;
-  padding: 50px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
 }
 
-/* الكومبوننت الثاني داخل الكرت */
 .career-card .section-desc {
   margin-bottom: 40px;
+  max-width: 100%;
 }
 
 .Na-applynow:hover {
   background-color: var(--gray15-color);
 }
 @media screen and (max-width: 1439px) {
- .job.container{
-    padding: 0 1.8%;
-  }
- .jobHead{
-  padding: 3.5vw;
- }
-  .career-section {
-    gap: 1.5vw;
-  }
 
   .career-card {
     width: 100%;
-    max-width: 500px;
-    padding: 32px ;
+    max-width: 40vw;
     margin: 0 auto;
+    box-sizing: border-box;
+    height: auto;
   }
 }
 @media screen and (max-width: 992px) {
-  .job.container{
+  /*.job.container{
     padding: 0 1%;
-  }
+  }*/
     .jobHead {
     width: 100%;
     padding-bottom: 50px;
-    max-width: none;
+    display: flex;
     flex-direction: column;
     height: auto;
+    justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 24px; 
   }
   .jobHead h1 {
   font-size: 30px;
@@ -92,22 +82,22 @@
 }
 @media screen and (max-width: 370px) {
   .career-section {
-    padding-inline: 12px;
     gap: 12px;
   }
 
   .career-card {
-    max-width: 280px;
-    padding: 20px;
+    width: 100%;
+    max-width: 275px;
     margin: 0 auto;
     box-sizing: border-box;
   }
 
   .jobHead h1 {
-    font-size: 14px;
+    font-size: 24px;
   }
 
   .jobHead {
-    padding-bottom: 30px;
+    padding : 0 30px 30px 30px;
+   
   }
 }
