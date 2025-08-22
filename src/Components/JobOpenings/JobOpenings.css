@@ -40,13 +40,13 @@
 }
 @media screen and (max-width: 1439px) {
  .job.container{
-    padding: 0 2%;
+    padding: 0 1.8%;
   }
  .jobHead{
   padding: 3.5vw;
  }
   .career-section {
-    gap: 2.016vw;
+    gap: 1.5vw;
   }
 
   .career-card {
@@ -89,4 +89,25 @@
     padding: 24px;
 
  }
+}
+@media screen and (max-width: 370px) {
+  .career-section {
+    padding-inline: 12px;
+    gap: 12px;
+  }
+
+  .career-card {
+    max-width: 280px;
+    padding: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .jobHead h1 {
+    font-size: 14px;
+  }
+
+  .jobHead {
+    padding-bottom: 30px;
+  }
 }
