@@ -17,7 +17,6 @@
 .use_cases .container1 {
     flex-shrink: 0;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 1.0412vw;
     width: 38.9583vw;
@@ -148,7 +147,7 @@
     .use_cases .container1 .card {
         height: 216px;
         width: 17vw;
-        padding: 1vw 0;
+        padding: 24px;
     }
 
     .use_cases .container1 .card img {
@@ -198,6 +197,11 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .use_cases .container1 .card h1 {
+        font-size: 16px;
+    }
+}
 @media screen and (max-width: 992px) {
     .use_cases {
         text-align: center;
@@ -228,7 +232,7 @@
 
     .use_cases .container1 .card {
         height: 187px;
-        width: 35vw;
+        width: 42vw;
         padding: 20px 14px;
     }
 
@@ -283,5 +287,11 @@
 
     .use_cases .Bm-titleDev .divs p {
         margin: 0;
+    }
+}
+
+@media screen and (max-width: 641px) {
+    .use_cases .container1 .card {
+        width: 37.5vw;
     }
 }
