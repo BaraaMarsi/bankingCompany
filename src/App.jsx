@@ -3,9 +3,20 @@ import Navbar from './Components/Navbar/Navbar'
 import Footer from './Components/Footer/Footer'
 import Header from './Components/Header/Header'
 import Main from './Components/Main/Main'
+import { useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 
 
 function App() {
+  const location = useLocation()
+
+  useEffect(() => {
+    if (location.pathname === "/") {
+      document.body.classList.add("body_bg")
+    } else {
+      document.body.classList.remove("body_bg")
+    }
+  }, [location])
   return (
     <>
       <Header Nav={<Navbar />}/>
