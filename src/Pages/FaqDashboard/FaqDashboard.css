@@ -1,10 +1,11 @@
 .Am-faq-dashboard .container {
+
   max-width: 800px;
-  margin: auto;
   padding: 20px;
   font-family: sans-serif;
 }
 .Am-faq-dashboard h2{
+  margin-top: 150px;
   color: var(--green60-color);
     font-size: 48px;
     text-align: center;
@@ -67,7 +68,9 @@ select {
   color: var(--black11-color);
 }
 .Am-buttons button[type="button"] {
-  background: #6c757d;
+  border: 1px solid var(--gray10-color);
+  background:var(--gray20-color);
+  color: var(--white-color);
 }
 .Am-list-header {
   display: flex;

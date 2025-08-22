@@ -1,18 +1,17 @@
 .Am-navbar {
-  margin-top: 50px;
+  
   background-color: #1C1C1C;
   color: #FFFFFF;
   padding: 24px 32px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
   border-radius: 100px;
-  z-index: 9999999;
-}
-
-.Am-logo {
-  font-size: small;
+top:0;
+  position: fixed;
+    z-index: 999999999;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
 }
 
 .Am-links-large {
@@ -46,7 +45,7 @@
   width: 100px;
   height: 51px;
   border-radius: 82px;
-  padding-top: 12px 24px;
+  padding: 12px 24px;
   gap: 10px;
 }
 
@@ -55,26 +54,16 @@
   gap: 30px;
 }
 .Na-signup {
-  width: 114px;
-  font-size: 18px;
-  padding: 14px 30px;
-  border-radius: 82px;
-  background-color: var( --black11-color);
-  color: var(--white-color);
+
+    padding: 14px 30px;
+    border-radius: 82px;
+    background-color: var(--black11-color) !important;
+    color: var(--white-color) !important;
 }
 
 .Na-signup:hover {
   background-color: var(--green70-color);
   color: var(--black11-color);
-}
-
-
-.Am-btn-outline {
-  background-color: #1C1C1C;
-  padding: 8px 16px;
-  border: none;
-  color: #ffff;
-  cursor: pointer;
 }
 
 .Am-btn-outline:hover {
@@ -91,7 +80,6 @@
   border-radius: 82px;
   padding: 14px 30px;
   font-weight: bold;
-  font-style: 16px;
   cursor: pointer;
 }
 
@@ -173,5 +161,8 @@
 
   .Am-button-large {
     display: none;
+  }
+  .Na-login-mobile{
+    color: var(--black11-color) !important;
   }
 }

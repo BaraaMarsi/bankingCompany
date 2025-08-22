@@ -40,6 +40,7 @@
 .BL-products-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .BL-product-card {
@@ -145,6 +146,7 @@
     border-right: none;
     border-bottom: 1px solid var(--gray15-color);
     padding-bottom:30px; 
+    padding-right: 0px;
 }
     .BL-product-card img {
         margin-bottom: 20px;

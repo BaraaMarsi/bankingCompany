@@ -1,114 +1,148 @@
-.BL-protect {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5625vw;
-    justify-content: center;
-    align-items: center;
-    margin-top: 120px;
-    position: relative;
-}
-
-.BL-protect::before {
-    content: '';
-    position: absolute;
-    transform: translateY(-30%);
-    width: 82.9687vw;
-    height: 32.8703vw;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    background: url('ProtectIcons/protect_background.png') no-repeat center center / cover;
-    z-index: -1;
-}
-
-
-.BL-protect .BL-protectcard .MA-title {
-    padding: 50px;
-    width: 35.8333vw !important;
-    height: 375px;
-    border: 1px solid linear-gradient(280.49deg, rgba(202, 255, 51, 0.1) 0%, rgba(38, 38, 38, 0) 17.02%, rgba(38, 38, 38, 0) 68.88%, rgba(38, 38, 38, 0.8) 100%);
-    border-radius: 20px;
-    background: linear-gradient(267.5deg, #1C1C1C 40.67%, rgba(28, 28, 28, 0) 99.81%),
-        linear-gradient(106.06deg, rgba(202, 255, 51, 0.05) -29.45%, rgba(202, 255, 51, 0) 27.86%);
-}
-
-.BL-protectcard .flex {
-    justify-content: start;
-    gap: 31px;
-    margin-bottom: 24px;
-}
-
-.BL-protectcard .MA-title h1 {
-    font-weight: 400;
-    font-size: 24px;
-}
-
-.BL-protectcard .MA-title img {
-    width: 98px;
-    height: 98px;
-}
-
-
-@media screen and (max-width: 1439px) {
-    .BL-protect::before {
-        width: 88.125vw;
-        height: 38.125vw;
+    .protect h1 {
+        font-size: 48px;
+        font-weight: 500;
+        padding-bottom: 14px;
     }
 
     .BL-protect {
-        gap: 1.3888vw;
-        margin-top: 58px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5625vw;
+        justify-content: center;
+        margin-top: 200px;
+        position: relative;
     }
 
-    .BL-protectcard .MA-title {
-        width: 38.1944vw !important;
-        height: 388px;
-        padding: 40px;
-    }
-
-    .BL-protectcard .flex {
-        gap: 14px;
-        margin-bottom: 20px;
-    }
-
-    .BL-protectcard .MA-title h1 {
-        font-size: 20px;
-    }
-
-    .BL-protectcard .MA-title img {
-        width: 76px;
-        height: 76px;
-    }
-}
-
-@media screen and (max-width: 992px) {
     .BL-protect::before {
-        display: none;
+        content: '';
+        position: absolute;
+        transform: translateY(-30%);
+        width: 82.9687vw;
+        height: 32.8703vw;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background: url('ProtectIcons/protect_background.png') no-repeat center center / cover;
+        z-index: -1;
     }
 
-    .BL-protect {
+    .BL-protect .BL-protectcard .MA-title {
+        padding: 50px;
+        width: 35.8333vw;
+        background: linear-gradient(267.5deg, #1C1C1C 40.67%, rgba(28, 28, 28, 0) 99.81%),
+            linear-gradient(106.06deg, rgba(202, 255, 51, 0.05) -29.45%, rgba(202, 255, 51, 0) 27.86%);
+        border: 1px solid #262626;
+        border-radius: 20px;
+        flex-grow: 1;
+    }
+
+    .BL-protectcard {
+        display: flex;
         flex-direction: column;
-        margin-top: 40px;
     }
 
-    .BL-protectcard .MA-title {
-        width: 91.7948vw !important;
-        height: fit-content;
-        padding: 24px;
+    .BL-protectcard>div {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
     }
 
     .BL-protectcard .flex {
-        gap: 14px;
-        margin-bottom: 18px;
+        justify-content: start;
+        gap: 31px;
+        margin-bottom: 24px;
     }
 
     .BL-protectcard .MA-title h1 {
-        font-size: 18px;
+        font-weight: 400;
+        font-size: 24px;
     }
 
     .BL-protectcard .MA-title img {
-        width: 68px;
-        height: 68px;
+        width: 98px;
+        height: 98px;
     }
-}
+
+
+    @media screen and (max-width: 1439px) {
+        .protect h1 {
+            font-size: 38px;
+            font-weight: 500;
+            padding-bottom: 10px;
+        }
+
+        .BL-protect::before {
+            width: 88.125vw;
+            height: 38.125vw;
+        }
+
+        .BL-protect {
+            gap: 1.3888vw;
+            margin-top: 120px;
+        }
+
+        .BL-protectcard .MA-title {
+            width: 38.1944vw !important;
+            padding: 40px;
+        }
+
+        .BL-protectcard .flex {
+            gap: 14px;
+            margin-bottom: 20px;
+        }
+
+        .BL-protectcard .MA-title h1 {
+            font-size: 20px;
+        }
+
+        .BL-protectcard .MA-title img {
+            width: 76px;
+            height: 76px;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        .protect .MA-title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .protect h1 {
+            font-size: 28px;
+            font-weight: 500;
+            padding-bottom: 10px;
+        }
+
+        .BL-protect::before {
+            display: none;
+        }
+
+        .BL-protect {
+            flex-direction: column;
+            margin-top: 40px;
+            position: static;
+
+        }
+
+        .BL-protectcard .MA-title {
+            width: 91.7948vw !important;
+            padding: 24px;
+        }
+
+        .BL-protectcard .flex {
+            gap: 14px;
+            margin-bottom: 18px;
+        }
+
+        .BL-protectcard .MA-title h1 {
+            font-size: 18px;
+        }
+
+        .BL-protectcard .MA-title img {
+            width: 68px;
+            height: 68px;
+        }
+    }
