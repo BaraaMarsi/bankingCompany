@@ -151,35 +151,12 @@
         height: 89px;
         overflow-x: auto;
         white-space: nowrap;
-        
+        flex-direction: row;
     }
-
-    .our_features .filtters::-webkit-scrollbar {
-        height: 10px;
-        background: var(--gray15-color); 
-        border-radius: 10px;
-    }
-
-    .our_features .filtters::-webkit-scrollbar-thumb {
-        background: linear-gradient(90deg, var(--green60-color), var(--light-green-90-color));
-        border-radius: 10px;
-        }
 
     .our_features .filtters p {
-        position: absolute;
-        top: 30%;
         width: fit-content;
         height: 49px;
-    }
-
-    .our_features .filtters .btn1 p{
-        left: 0;
-    }
-    .our_features .filtters .btn2 p{
-        left: 165px;
-    }
-    .our_features .filtters .btn3 p{
-        left: 330px;
     }
 
     .our_features .cards {
@@ -193,5 +170,35 @@
 
     .our_features .cards .features_card p {
         padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .our_features .filtters p {
+        position: absolute;
+        top: 30%;
+    }
+
+    .our_features .filtters::-webkit-scrollbar {
+        height: 10px;
+        border-radius: 10px;
+    }
+
+    .our_features .filtters::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+    }
+
+    .our_features .filtters::-webkit-scrollbar-thumb:hover{
+        cursor: grab;
+    }
+
+    .our_features .filtters .btn1 p{
+        left: 5px;
+    }
+    .our_features .filtters .btn2 p{
+        left: 170px;
+    }
+    .our_features .filtters .btn3 p{
+        left: 335px;
     }
 }

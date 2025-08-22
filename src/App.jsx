@@ -5,6 +5,7 @@ import Header from './Components/Header/Header'
 import Main from './Components/Main/Main'
 import { useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
+import WelcomeScreen from './Components/WelcomeScreen/WelcomeScreen'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
   }, [location])
   return (
     <>
+    <WelcomeScreen />
       <Header Nav={<Navbar />}/>
       <Main />
       <Footer image="FooterIcons/yourBankLogo.png"

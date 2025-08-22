@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(#121212e6, #121212e6),
-        url("./FormIcons/formBackground.png");
+        url("/bankingCompany/FormIcons/formBackground.png");
     background-size: cover;
     border-radius: 20px;
     /* padding: 100px 150px; */
@@ -22,7 +22,7 @@
 }
 
 .BL-formContainer::before {
-    background-image: url("/public/FormIcons/startpic.png");
+    background-image: url("FormIcons/startpic.png");
     background-size: cover;
     background-repeat: no-repeat;
     border-top-left-radius: 20px;
