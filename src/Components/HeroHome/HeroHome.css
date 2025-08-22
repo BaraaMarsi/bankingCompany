@@ -117,8 +117,11 @@
 .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes {
     margin-bottom: 25.14px;
     display: flex;
+    flex-direction: column;
 }
-
+.MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-inputs-wrapper {
+    display: flex;
+}
 .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change.MA-flexShrink {
     flex-shrink: 5;
 }
