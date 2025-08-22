@@ -1,4 +1,5 @@
 .BL-formContainer {
+    margin-top: 150px;
     gap: 80px;
     position: relative;
     display: flex;

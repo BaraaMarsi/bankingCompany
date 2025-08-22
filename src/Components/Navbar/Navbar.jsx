@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
@@ -28,16 +27,32 @@ const Navbar = () => {
     return (
         <div className="container">
             <div className="Am-NAV">
+                <nav className="Am-navbar">
+                    <div className="Am-logo">
+                        <img className="Am-logo_img" src="./assets/images/Logo.svg" alt="YourBanK Logo" />
+                    </div>
 
+                    <div className="Am-links-large">
+                        <div className="Am-nav-links">
+                            {links.map(({ to, label }) => (
+                                <NavLink
+                                    key={to}
+                                    to={to}
+                                    className={({ isActive }) => (isActive ? "Am-active-link" : "")}
+                                    onClick={() => setOpen(false)}
+                                >
+                                    {label}
+                                </NavLink>
+                            ))}
+                        </div>
+                    </div>
 
+                    <div className="Am-button Am-button-large">
+                        <Button text="Sign Up" to="/signup" className="Na-signup" />
+                        <Button text="Login" to="/login" className="Na-login" />
+                    </div>
 
-            <nav className="Am-navbar">
-                <div className="Am-logo">
-                    <img className="Am-logo_img" src="./assets/images/Logo.svg" alt="YourBanK Logo" />
-                </div>
-
-                <div className="Am-links-large">
-                    <div className="Am-nav-links">
+                    <div className={`Am-nav-mobile ${open ? "Am-active" : ""}`}>
                         {links.map(({ to, label }) => (
                             <NavLink
                                 key={to}
@@ -48,45 +63,30 @@ const Navbar = () => {
                                 {label}
                             </NavLink>
                         ))}
+                        <div className="Am-button-mobile">
+                            <Button
+                                text="Sign Up"
+                                to="/signup"
+                                className="Na-signup"
+                                onClick={() => setOpen(false)}
+                            />
+                            <Button
+                                text="Login"
+                                to="/login"
+                                className="Na-login Na-login-mobile"
+                                onClick={() => setOpen(false)}
+                            />
+                        </div>
+
                     </div>
-                </div>
-<div className="Am-button Am-button-large">
-    <Button text="Sign Up" to="/signup" className="Na-signup" />
-    <Button text="Login" to="/login" className="Na-login" />
-</div>
 
-
-
-
-                <div className={`Am-nav-mobile ${open ? "Am-active" : ""}`}>
-                    {links.map(({ to, label }) => (
-                        <NavLink
-                            key={to}
-                            to={to}
-                            className={({ isActive }) => (isActive ? "Am-active-link" : "")}
-                            onClick={() => setOpen(false)}
-                        >
-                            {label}
-                        </NavLink>
-                    ))}
-              <div className="Am-button-mobile">
- <Button text="Sign Up" to="/signup" className="Na-signup" />
-
-  <Button text="Login" to="/login" className="Na-login" />
-</div>
-
-                </div>
-
-                <div className="Am-burger" onClick={() => setOpen(!open)}>
-                    <img src="./assets/images/Burger.svg" alt="Burger" />
-                </div>
-            </nav>
-
-    
-</div>
+                    <div className="Am-burger" onClick={() => setOpen(!open)}>
+                        <img src="./assets/images/Burger.svg" alt="Burger" />
+                    </div>
+                </nav>
+            </div>
         </div>
     );
 };
 
 export default Navbar;
- 
