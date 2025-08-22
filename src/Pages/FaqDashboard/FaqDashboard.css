@@ -42,7 +42,7 @@ label {
   margin-top: 10px;
   font-weight: bold;
 }
-input,
+.Am-faq-dashboard input,
 textarea,
 select {
   width: 100%;
