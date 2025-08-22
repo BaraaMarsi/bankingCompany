@@ -405,10 +405,10 @@
 
     .MA-herohome .MA-right::before {
         background-image: url(/bankingCompany/HeroHome/ArrowsMobile.png);
-        width: 220px;
+        width: 205px;
         height: 201px;
         top: 60px;
-        right: -40px;
+        right: -30px;
     }
 
     .MA-herohome .MA-right .MA-income {
@@ -501,7 +501,7 @@
         padding: 5.13px 5.13px 5.13px 12.31px;
         border-radius: 41.02px;
         gap: 5.3px;
-        transform: translateX(20%);
+        transform: translateX(15%);
     }
 
     .MA-herohome .MA-right .MA-currency p {
