@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import Hero from "../../Components/Hero/Hero";
 import MissionAndVision from "../../Components/MissionAndVision/MissionAndVision";
 import PressReleases from "../../Components/PressReleases/PressReleases";
 
 const About = () => {
+    useEffect(() => {
+        document.title = "Banking Company / About Page"
+    }, [])
     return (
         <>
             <Hero image="assets/images/HeroImage2.webp" 

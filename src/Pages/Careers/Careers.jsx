@@ -5,7 +5,11 @@ import StartSection from "../../Components/StartSection/StartSection";
 import Faq from "../../Components/Faq/Faq.jsx";
 import OurValuesSection from "../../Components/OurValuesSection/OurValuesSection.jsx";
 import JobOpenings from "../../Components/JobOpenings/JobOpenings.jsx";
+import { useEffect } from "react";
 const Careers = () => {
+    useEffect(() => {
+        document.title = "Banking Company / Carresr Page"
+    }, [])
     return (
         <>
             <Hero image="assets/images/HeroImage1.webp"

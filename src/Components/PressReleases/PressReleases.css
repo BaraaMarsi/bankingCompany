@@ -50,7 +50,7 @@
     line-height: 150%;
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1440px) {
     .MA-preesReleases .MA-title h1 {
         margin-bottom: 10px;
         font-size: 38px;

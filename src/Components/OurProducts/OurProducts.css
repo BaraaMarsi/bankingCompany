@@ -72,7 +72,7 @@
     font-size: 18px;
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1440px) {
     /* our products section */
     .BL-products-head {
         gap: 10.4166vw;

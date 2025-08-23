@@ -55,21 +55,16 @@
     z-index: -1;
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1440px) {
     .MA-hero {
         padding: 40px;
     }
 
     .MA-hero .MA-title {
-        /* max-width: 658px; */
         width: 658px;
         padding: 60px;
         border-bottom-right-radius: 60px;
     }
-
-    /* .MA-hero .MA-title h1,.MA-hero .MA-title .desc {
-        max-width: 538px;
-    } */
 
     .MA-hero .MA-title h1 {
         font-size: 48px;

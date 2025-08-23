@@ -2,7 +2,11 @@ import Faq from "../../Components/Faq/Faq";
 import Hero from "../../Components/Hero/Hero";
 import "./Security.css"
 import Protect from "../../Components/Protect/Protect";
+import { useEffect } from "react";
 const Security = () => {
+    useEffect(() => {
+        document.title = "Banking Company / Security Page"
+    }, [])
     return (
         <>
             <Hero image="assets/images/HeroImage3.webp" 

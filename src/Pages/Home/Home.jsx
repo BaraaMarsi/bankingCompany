@@ -7,10 +7,14 @@ import "./Home.css"
 import UseCases from "../../Components/UseCases/UseCases";
 import OurFeatures from "../../Components/OurFeatures/OurFeatures";
 import OurProducts from "../../Components/OurProducts/OurProducts";
+import { useEffect } from "react";
 if (!localStorage.getItem('Testimonials')) {
     localStorage.setItem('Testimonials', JSON.stringify(TestiData));
 }
 const Home = () => {
+    useEffect(() => {
+        document.title = "Banking Company / Home Page"
+    }, [])
     return (
         <>
             <HeroHome />

@@ -118,7 +118,7 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1440px) {
     .use_cases img {
         width: 64px;
         padding-bottom: 14px;
