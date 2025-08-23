@@ -6,11 +6,13 @@ import Security from "../../Pages/Security/Security"
 import Login from "../../Pages/Login/Login"
 import SignUp from "../../Pages/SignUp/SignUp"
 import FaqDashboard from "../../Pages/FaqDashboard/FaqDashboard"
+import ScrollToTop from "../ScrollToTop/ScrollToTop"
 
 
 const Main = () => {
     return (
         <main>
+            <ScrollToTop />
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/careers' element={<Careers />} />
