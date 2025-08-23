@@ -41,6 +41,18 @@
     gap: 30px;
 }
 
+.faq-card .Bm-titleDev p{
+    padding: 0;
+    padding-top: 30px;
+    border-top: 1px solid var(--gray15-color);
+    border-radius: 0 !important;
+}
+
+.faq-card .Bm-titleDev h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+
 .faq-row {
     display: flex;
     gap: 30px;
@@ -126,9 +138,12 @@
         padding: 40px;
     }
 
-    .faq-card h1 {
+    .faq-card .Bm-titleDev p{
+        padding-top: 24px;
+    }
+
+    .faq-card .Bm-titleDev h2{
         font-size: 18px;
-        max-width: 549.5px;
     }
 
     .faq-card p {
@@ -165,6 +180,10 @@
         width: 91.5385vw;
         height: auto;
         padding: 30px;
+    }
+
+    .faq-card .Bm-titleDev p{
+        padding-top: 20px;
     }
 
     .card0{

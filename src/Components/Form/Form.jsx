@@ -1,7 +1,11 @@
 import './Form.css';
 import Button from '../Button/Button';
+import { useState } from 'react';
+
+
 
 const Form = ({ isRegister, title, description }) => {
+    const [showPassword, setShowPassword] = useState(false);
     return (
 
 
@@ -29,8 +33,8 @@ const Form = ({ isRegister, title, description }) => {
                         <div className="BL-emailInput">
                             <input type="email" placeholder="Enter Your Email" />
                             <div className='BL-passwordInput'>
-                                <input type="password" id="password" placeholder="Enter your Password" />
-                                <img src="./FormIcons/password.svg" alt="eye" className="BL-passwordIcon" />
+                                <input type={showPassword ? "text" : "password"} id="password" placeholder="Enter your Password" />
+                                <img className="toggle-password BL-passwordIcon" onClick={() => setShowPassword(!showPassword)} src="./FormIcons/password.svg" alt="eye"/>
                             </div>
                         </div>
                     </div>
