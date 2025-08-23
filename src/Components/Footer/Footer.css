@@ -93,7 +93,7 @@ footer .MA-container .MA-bottom .MA-terms p:first-child {
 }
 
 /* laptop */
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1440px) {
     footer .MA-container {
         width: 100%;
         padding-top: 60px;

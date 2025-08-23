@@ -241,7 +241,7 @@ BL-nameInput .Am-overlay {
     box-shadow: 0 0 15px #caff33;
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1440px) {
     .BL-formContainer {
         gap: 60px;
     }

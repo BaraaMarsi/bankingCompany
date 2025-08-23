@@ -115,17 +115,13 @@
 }
 
 .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes {
-    margin-bottom: 25.14px;
     display: flex;
     flex-direction: column;
 }
+
 .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-inputs-wrapper {
     display: flex;
 }
-.MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change.MA-flexShrink {
-    flex-shrink: 5;
-}
-
 .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change span {
     font-size: 15.61px;
 }
@@ -170,7 +166,7 @@
 .MA-herohome .MA-right .MA-transExchange .MA-exchange button {
     width: 445.66px;
     padding: 13.87px 0px;
-    margin: auto;
+    margin: 25.14px auto 0px; 
     font-size: 15.61px;
     color: var(--green65-color);
     background-color: var(--dark-green);
@@ -213,7 +209,7 @@
     align-items: center;
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1440px) {
     .MA-herohome {
         margin-top: 30px;
     }
@@ -298,10 +294,6 @@
         font-size: 13.77px;
     }
 
-    .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes {
-        margin-bottom: 19.97px;
-    }
-
     .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change span {
         font-size: 12.4px;
     }
@@ -335,6 +327,7 @@
     .MA-herohome .MA-right .MA-transExchange .MA-exchange button {
         max-width: 355px;
         padding: 11.02px 0px;
+        margin-top: 19.97px;
         font-size: 12.4px;
         border-radius: 56.47px;
     }
@@ -452,10 +445,6 @@
         font-size: 10.26px;
     }
 
-    .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes {
-        margin-bottom: 14.87px;
-    }
-
     .MA-herohome .MA-right .MA-transExchange .MA-exchange .MA-changes .MA-change {
         flex-grow: 1;
     }
@@ -493,6 +482,7 @@
     .MA-herohome .MA-right .MA-transExchange .MA-exchange button {
         max-width: 100%;
         padding: 8.2px 0px;
+        margin-top: 14.87px;
         font-size: 9.23px;
         border-radius: 42.05px;
     }

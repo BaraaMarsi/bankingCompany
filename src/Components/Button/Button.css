@@ -55,7 +55,7 @@
   color: var(--black11-color);
 }
 
-@media screen and (max-width: 1493px) {
+@media screen and (max-width: 1440px) {
   /* الخصائص المشتركة */
   .Na-linkbutton {
     font-size: 14px;

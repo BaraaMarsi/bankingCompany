@@ -106,7 +106,7 @@
     transform: rotate(180deg);
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1440px) {
     .Am-faqTitle {
         gap: 10px;
     }
