@@ -46,7 +46,7 @@ const Faq = () => {
                         faqRows.map((row, rowIndex) => (
                             <div className="faq-row" key={rowIndex}>
                                 {row.map((faq, i) => (
-                                    <div className="faq-card faq-space" key={i}>
+                                    <div className={`faq-card faq-space card${i}`} key={i}>
                                         <TitleDev title={faq.question} div1={faq.answer} />
                                     </div>
                                 ))}
@@ -55,7 +55,7 @@ const Faq = () => {
                     )}
                 </div>
             </div>
-<div className="FaqBtn">
+<div className="FaqBtn padding_Buttom">
 <button onClick={() => setisOpen(!isOpen)} className="faq-button">
   {buttonText}
   <img

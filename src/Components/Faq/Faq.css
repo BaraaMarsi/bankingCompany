@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     gap: 80px;
-    margin-top: 120px;
     display: flex;
     flex-wrap: wrap;
     cursor: pointer;
@@ -14,15 +13,12 @@
     gap: 14px;
 }
 
-.Am-faqTitle h2 {
+.Am-faqTitle h1 {
     color: var(--white-color);
-    font-family: Lexend;
     font-weight: 500;
-    font-style: Medium;
     font-size: 48px;
     line-height: 150%;
-    letter-spacing: 0%;
-
+    padding-bottom: 14px;
 }
 
 .Am-faqTitle span {
@@ -33,19 +29,19 @@
     color: var(--gray70-color);
     max-width: 1295px;
     font-size: 18px;
-    font-family: Lexend;
     font-weight: 300;
-
     line-height: 150%;
     letter-spacing: 0%;
 
 }
 
-
 .faq-cards {
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+.card0,.card1{
 }
 
 .faq-row {
@@ -55,21 +51,17 @@
 }
 
 .faq-card {
-    max-width: 782.5px;
+    width: 40.9115vw;
     border-radius: 14px;
     border: 1px solid var(--gray15-color);
-    min-height: 347px;
+    height: 347px;
     flex: 1 1 calc(50% - 30px);
     box-sizing: border-box;
     padding: 50px;
     color: linear-gradient(to bottom, 180deg, rgba(25, 25, 25, 0) 0%, #191919 100%);
-
-
-
-
 }
 
-.faq-card h2 {
+.faq-card h1 {
     max-width: 682.5px;
     border-bottom: 1px solid var(--gray15-color);
     width: 100%;
@@ -89,7 +81,6 @@
 }
 
 .FaqBtn {
-
     justify-content: center;
     display: flex;
     width: 100%;
@@ -110,27 +101,22 @@
     text-align: center;
     align-items: center;
     color: var(--white-color);
-
 }
 
 .faq-img {
     transition: transform 0.3s ease;
 }
 
-
 .faq-img.rotated {
     transform: rotate(180deg);
 }
-
-
-
 
 @media screen and (max-width: 1439px) {
     .Am-faqTitle {
         gap: 10px;
     }
 
-    .Am-faqTitle h2 {
+    .Am-faqTitle h1 {
         max-width: 979px;
         font-size: 38px;
     }
@@ -141,11 +127,11 @@
     }
 
     .faq-card {
-
-        max-width: 629px;
+        width: 43.7153vw;
+        padding: 40px;
     }
 
-    .faq-card h2 {
+    .faq-card h1 {
         font-size: 18px;
         max-width: 549.5px;
     }
@@ -154,7 +140,6 @@
         font-size: 16px;
         max-width: 549.5px;
     }
-
 }
 
 @media screen and (max-width: 992px) {
@@ -165,31 +150,30 @@
         gap: 10px;
     }
 
-    .Am-faqTitle h2 {
+    .Am-faqTitle h1 {
         max-width: 979px;
         text-align: center;
         font-size: 28px;
     }
 
     .Am-faqTitle p {
-
         text-align: center;
         max-width: 979px;
         font-size: 14px;
+    }
 
+    .faq-row {
+        flex-wrap: nowrap;
     }
 
     .faq-card {
-        width: 100%;
-
-        flex: 1 1 100%;
+        width: 91.5385vw;
+        height: auto;
+        padding: 30px;
     }
 
     .faq-card p {
         font-size: 14px;
         width: 100%;
     }
-
-
-
 }

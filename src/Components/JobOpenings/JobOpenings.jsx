@@ -6,7 +6,7 @@ import Section from "../../Components/Section/Section.jsx";
 
 const JobOpenings = () => {
     return(
-         <div className="job container  ">
+         <div className="job container padding_Buttom">
                 <div className="jobHead">
                 < Section
                     titleSpan={"Job Openings"}
