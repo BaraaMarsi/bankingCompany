@@ -51,6 +51,10 @@ export default function FaqDashboard() {
         return list;
     }, [faqs, search, sortBy]);
 
+    useEffect(() => {
+        document.title = "Banking Company / FaqDasboard Page"
+    }, [])
+
     return (
         <div className="Am-faq-dashboard container">
             <h2>FAQ Dashboard</h2>

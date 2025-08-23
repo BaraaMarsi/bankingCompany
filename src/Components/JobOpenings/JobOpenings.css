@@ -34,7 +34,7 @@
 .Na-applynow:hover {
   background-color: var(--gray15-color);
 }
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1440px) {
 
   .career-card {
     width: 100%;
