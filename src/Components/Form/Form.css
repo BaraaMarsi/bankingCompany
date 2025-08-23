@@ -10,7 +10,6 @@
         url("/bankingCompany/FormIcons/formBackground.png");
     background-size: cover;
     border-radius: 20px;
-    /* padding: 100px 150px; */
 }
 
 .BL-formContainer::before {
@@ -98,7 +97,7 @@
     color: var(--gray40-color);
 }
 
-.BL-formInput input:focus {
+.BL-formInput input:focus, #password:focus {
     border-color: var(--green60-color);
 }
 
@@ -107,7 +106,7 @@
     width: 50%;
 }
 
-.BL-formInput input[type="password"] {
+#password {
     height: 75px;
     background-color: var(--black10-color);
     border: 1px solid var(--gray20-color);
