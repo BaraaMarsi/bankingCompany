@@ -1,4 +1,4 @@
-import MissionAndVisionData from "../../Data/MissionAndVisionData"
+import MissionAndVisionData from "./../../Data/MissionAndVisionData"
 import Section from "../Section/Section"
 import "./MissionAndVision.css"
 
