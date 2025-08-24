@@ -1,4 +1,3 @@
-import React from 'react';
 import Card from "../../Components/Card/Card.jsx";
 import BenefitsData from "./../../Data/BenefitsData";
 import { useState } from "react";

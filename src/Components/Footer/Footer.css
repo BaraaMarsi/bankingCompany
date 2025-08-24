@@ -92,7 +92,6 @@ footer .MA-container .MA-bottom .MA-terms p:first-child {
     padding-right: 12px;
 }
 
-/* laptop */
 @media screen and (max-width: 1440px) {
     footer .MA-container {
         width: 100%;
@@ -143,7 +142,6 @@ footer .MA-container .MA-bottom .MA-terms p:first-child {
         padding-right: 8px;
     }
 }
-/* mobile */
 @media screen and (max-width: 992px) {
     footer .MA-container {
         width: 100%;
