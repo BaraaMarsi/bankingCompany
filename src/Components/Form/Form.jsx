@@ -38,9 +38,9 @@ const Form = ({ isRegister, title, description }) => {
                             </div>
                         </div>
                     </div>
+                    <a href="#">Forgot Password?</a>
                 </form>
-
-                <div className='BL-buttonGroup'>
+                <div className='BL-buttonGroup' id='formBtn'>
                     <Button text="Sign Up" to="/signup" className="Na-signup_form" />
                     <Button text="Login" to="/login" className="Na-login_form" />
                 </div>
