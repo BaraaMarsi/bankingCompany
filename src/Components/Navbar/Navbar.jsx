@@ -5,7 +5,7 @@ import Button from '../Button/Button';
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
-    const [active, setActive] = useState(null);
+    const [active, setActive] = useState("login");
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth > 992) {
