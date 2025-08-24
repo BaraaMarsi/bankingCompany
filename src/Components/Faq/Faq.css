@@ -36,9 +36,27 @@
 }
 
 .faq-cards {
+    position: relative;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+.shaddow{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 210px;
+    background: linear-gradient(
+    to top,
+    rgba(26, 26, 26 , 1),
+    rgba(26, 26, 26 , 0.8),
+    rgba(26, 26, 26 , 0.6)
+    );
+    z-index: 5;
+    pointer-events: none;
+    opacity: 0.9;
 }
 
 .faq-card .Bm-titleDev p{

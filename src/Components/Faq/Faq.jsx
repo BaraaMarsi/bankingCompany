@@ -14,7 +14,6 @@ const Faq = () => {
     const [isOpen, setisOpen] = useState(false);
     const showFaqs = isOpen ? faqs : faqs.slice(0, 4);
     const buttonText = isOpen ? "Show Less" : "Load All FAQ's";
-
     const handleContainerClick = () => {
         navigate('/dashboard');
     }
@@ -37,8 +36,6 @@ const Faq = () => {
                         desc={"Still you have any questions? Contact our Team via support@yourbank.com"}
                     />
                 </div>
-
-            
                 <div className="faq-cards">
                     {showFaqs.length === 0 ? (
                         <p>There Is No Data</p>
@@ -53,21 +50,20 @@ const Faq = () => {
                             </div>
                         ))
                     )}
+                    <div className={`${isOpen?'':'shaddow'}`}></div>
                 </div>
             </div>
-<div className="FaqBtn padding_Buttom">
-<button onClick={() => setisOpen(!isOpen)} className="faq-button">
-  {buttonText}
-  <img
-    src="assets/Faq-Icon.svg"
-    alt="icon"
-    className={`faq-img ${isOpen ? "rotated" : ""}`}
-  />
-</button>
-
-</div>
-
-           
+            <div className="FaqBtn padding_Buttom">
+                
+                <button onClick={() => setisOpen(!isOpen)} className="faq-button">
+                    {buttonText}
+                    <img
+                        src="assets/Faq-Icon.svg"
+                        alt="icon"
+                        className={`faq-img ${isOpen ? "rotated" : ""}`}
+                    />
+                </button>
+            </div>
         </>
     );
 }
