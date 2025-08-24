@@ -2,6 +2,13 @@ header {
   margin-bottom: 198px;
 }
 
+.active.Na-login{
+  width: fit-content !important;
+}
+.active1.Na-login{
+  color: var(--black-color);
+}
+
 .Am-navbar {
   background-color: var(--black11-color);
   color: var(--white-color);

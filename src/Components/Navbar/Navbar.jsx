@@ -5,7 +5,7 @@ import Button from '../Button/Button';
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
-
+    const [active, setActive] = useState(null);
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth > 992) {
@@ -48,8 +48,8 @@ const Navbar = () => {
                     </div>
 
                     <div className="Am-button Am-button-large">
-                        <Button text="Sign Up" to="/signup" className="Na-signup" />
-                        <Button text="Login" to="/login" className="Na-login" />
+                        <Button text="Sign Up" to="/signup" className={` ${active === "signup" ? "active Na-login" : "Na-signup"}`} onClick={() => setActive("signup")} />
+                        <Button text="Login" to="/login" className={` ${active === "login" ? "active Na-login" : "Na-signup"}`} onClick={() => setActive("login")} />
                     </div>
 
                     <div className={`Am-nav-mobile ${open ? "Am-active" : ""}`}>
@@ -67,14 +67,14 @@ const Navbar = () => {
                             <Button
                                 text="Sign Up"
                                 to="/signup"
-                                className="Na-signup"
-                                onClick={() => setOpen(false)}
+                                className={` ${active === "signup" ? "active1 Na-login" : "Na-signup"}`}
+                                onClick={() => {setOpen(false);setActive("signup")}}
                             />
                             <Button
                                 text="Login"
                                 to="/login"
-                                className="Na-login Na-login-mobile"
-                                onClick={() => setOpen(false)}
+                                className={` ${active === "login" ? "active1 Na-login" : "Na-signup"}`}
+                                onClick={() => {setOpen(false);setActive("login")}}
                             />
                         </div>
 
