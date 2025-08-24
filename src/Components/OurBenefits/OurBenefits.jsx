@@ -15,7 +15,9 @@ function OurBenefits() {
     });
   return (
       <section className="our_benefits container padding_Buttom">
+        <div className="BL-head">
                 <Section title={"Our "} titleSpan={"Benefits"} desc={"At YourBank, we value our employees and are dedicated to their well-being and success. We offer a comprehensive range of benefits designed to support their personal and professional growth."} />
+                </div>
                 <div className="BL-benefits-container">
                     {
                         benefits.map((benefit, index) => (
