@@ -2,10 +2,12 @@ header {
   margin-bottom: 198px;
 }
 
-.active.Na-login{
+.Am-button .active.Na-login{
   width: fit-content !important;
+  color: var(--black-color);
 }
-.active1.Na-login{
+.active.Na-login{
+  width: 87px !important;
   color: var(--black-color);
 }
 
