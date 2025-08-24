@@ -37,6 +37,7 @@
 .BL-formHeader h1 {
     color: var(--green60-color);
     font-size: 48px;
+    font-weight: 500;
     padding-bottom: 20px;
 }
 
@@ -48,7 +49,7 @@
 
 .BL-form {
     gap: 40px;
-    width: 100%;
+    width: 1026px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,7 +63,6 @@
 .BL-formInput {
     flex-wrap: wrap;
     display: flex;
-
     gap: 30px;
     padding-bottom: 40px;
     width: 100%;
@@ -101,6 +101,15 @@
     border-color: var(--green60-color);
 }
 
+form a{
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+}
+
 .BL-passwordInput {
     position: relative;
     width: 50%;
@@ -137,7 +146,11 @@ img.BL-passwordIcon {
     gap: 24px;
 }
 
-BL-nameInput .Am-overlay {
+#formBtn.BL-buttonGroup .Na-linkbutton{
+    width: 518px;
+}
+
+.BL-nameInput .Am-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -251,6 +264,7 @@ BL-nameInput .Am-overlay {
 
     .BL-form {
         gap: 30px;
+        width: 800px;
     }
 
     .BL-checkmark {
@@ -263,6 +277,18 @@ BL-nameInput .Am-overlay {
     }
 
     .BL-formHeader p {
+        font-size: 16px;
+    }
+
+    .BL-formInput input{
+        height: 64px !important;
+    }
+
+    #formBtn.BL-buttonGroup .Na-linkbutton{
+        width: 400px;
+    }
+
+    form a{
         font-size: 16px;
     }
 
@@ -301,8 +327,17 @@ BL-nameInput .Am-overlay {
         max-width: 298px;
     }
 
-    .BL-form {
+    .BL-form, #formBtn.BL-buttonGroup .Na-linkbutton{
         gap: 24px;
+        width: 76.41vw;
+    }
+
+    .BL-formInput input{
+        height: 56px !important;
+    }
+
+    form a{
+        font-size: 14px;
     }
 
     .BL-checkmark {
@@ -349,51 +384,3 @@ BL-nameInput .Am-overlay {
         width: 100% !important;
     }
 }
-
-/*     .BL-formContainer {
-      gap: 40px;
-      width: 100%; 
-      padding: 40px 20px; 
-    }
-
-    .BL-formHeader {
-      max-width: 298px;
-    }
-
-    .BL-form {
-      gap: 24px;
-    }
-
-    .BL-checkmark {
-      width: 167px;
-      height: 159px;
-    }
-
-    .BL-formHeader h1 {
-      font-size: 28px;
-    }
-    .BL-formHeader p {
-      font-size: 14px;
-    }
-
-    .BL-formInput {
-      gap: 20px;
-    }
-
-    .BL-formInput .BL-nameInput {
-      flex-wrap: wrap;
-      width: 100%;
-    }
-
-    .BL-emailInput {
-      flex-direction: column;
-    }
-
-    .Na-signup_form,
-    .Na-login_form {
-      width: 208px;
-    }
-
-    .line {
-      width: 76px;
-    } */
