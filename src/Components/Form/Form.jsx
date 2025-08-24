@@ -38,7 +38,7 @@ const Form = ({ isRegister, title, description }) => {
                             </div>
                         </div>
                     </div>
-                    <a href="#">Forgot Password?</a>
+                    {!isRegister && <a href="#">Forgot Password?</a>}
                 </form>
                 <div className='BL-buttonGroup' id='formBtn'>
                     <Button text="Sign Up" to="/signup" className="Na-signup_form" />
