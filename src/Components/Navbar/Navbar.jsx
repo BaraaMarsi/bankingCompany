@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import "./Navbar.css";
 import Button from '../Button/Button';
 
 const Navbar = () => {
+    const location = useLocation();
     const [open, setOpen] = useState(false);
     const [active, setActive] = useState("login");
     useEffect(() => {
@@ -31,7 +32,6 @@ const Navbar = () => {
                     <div className="Am-logo">
                         <img className="Am-logo_img" src="./assets/images/Logo.svg" alt="YourBanK Logo" />
                     </div>
-
                     <div className="Am-links-large">
                         <div className="Am-nav-links">
                             {links.map(({ to, label }) => (
@@ -39,8 +39,7 @@ const Navbar = () => {
                                     key={to}
                                     to={to}
                                     className={({ isActive }) => (isActive ? "Am-active-link" : "")}
-                                    onClick={() => setOpen(false)}
-                                >
+                                    onClick={() => setOpen(false)}>
                                     {label}
                                 </NavLink>
                             ))}
@@ -48,8 +47,8 @@ const Navbar = () => {
                     </div>
 
                     <div className="Am-button Am-button-large">
-                        <Button text="Sign Up" to="/signup" className={` ${active === "signup" ? "active Na-login" : "Na-signup"}`} onClick={() => setActive("signup")} />
-                        <Button text="Login" to="/login" className={` ${active === "login" ? "active Na-login" : "Na-signup"}`} onClick={() => setActive("login")} />
+                        <Button text="Sign Up" to="/signup" className={location.pathname === "/signup" ? "active Na-login" : "Na-signup"} onClick={() => setActive("signup")} />
+                        <Button text="Login" to="/login" className={location.pathname !== "/signup" ? "active Na-login" : "Na-signup"} onClick={() => setActive("login")} />
                     </div>
 
                     <div className={`Am-nav-mobile ${open ? "Am-active" : ""}`}>
@@ -67,13 +66,13 @@ const Navbar = () => {
                             <Button
                                 text="Sign Up"
                                 to="/signup"
-                                className={` ${active === "signup" ? "active1 Na-login" : "Na-signup"}`}
+                                className={location.pathname === "/signup" ? "active Na-login" : "Na-signup"}
                                 onClick={() => {setOpen(false);setActive("signup")}}
                             />
                             <Button
                                 text="Login"
                                 to="/login"
-                                className={` ${active === "login" ? "active1 Na-login" : "Na-signup"}`}
+                                className={location.pathname !== "/signup" ? "active Na-login" : "Na-signup"}
                                 onClick={() => {setOpen(false);setActive("login")}}
                             />
                         </div>

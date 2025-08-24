@@ -7,20 +7,13 @@ import { useState } from 'react';
 const Form = ({ isRegister, title, description }) => {
     const [showPassword, setShowPassword] = useState(false);
     return (
-
-
-
-
         <div className="BL-formContainer ">
             <div className='Am-overlay'></div>
-<img src="FormIcons/startpic.png" alt="checkmark" className="BL-checkmark" />
-
-
+                <img src="FormIcons/startpic.png" alt="checkmark" className="BL-checkmark" />
             <div className='BL-formHeader'>
                 <h1>{title}</h1>
                 <p>{description}</p>
             </div>
-
             <div className="BL-form">
                 <form>
                     <div className='BL-formInput'>
@@ -41,16 +34,20 @@ const Form = ({ isRegister, title, description }) => {
                     {!isRegister && <a href="#">Forgot Password?</a>}
                 </form>
                 <div className='BL-buttonGroup' id='formBtn'>
+                    {isRegister && <>
                     <Button text="Sign Up" to="/signup" className="Na-signup_form" />
                     <Button text="Login" to="/login" className="Na-login_form" />
+                    </>}
+                    {!isRegister && <>
+                    <Button text="Login" to="/login" className="Na-signup_form" />
+                    <Button text="Sign Up" to="/signup" className="Na-login_form" />
+                    </>}
                 </div>
-
                 <div className="BL-separator">
                     <div className="line"></div>
                     <span>Or Continue with</span>
                     <div className="line"></div>
                 </div>
-
                 <div className="BL-social">
                     <div className="BL-icon"><img src="./FormIcons/gmail.svg" alt="gmail" /></div>
                     <div className="BL-icon"><img src="./FormIcons/facebook.svg" alt="facebook" /></div>
@@ -58,11 +55,6 @@ const Form = ({ isRegister, title, description }) => {
                 </div>
             </div>
         </div>
-
-
-
-
-
     );
 }
 
