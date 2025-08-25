@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Section from '../Section/Section';
 import Card from '../Card/Card';
 import ProtectData from "./../../Data/ProtectData";
 import "./Protect.css";
@@ -13,7 +12,12 @@ function Protect() {
     });
     return (
         <section className="protect container padding_Buttom">
-            <Section title={"How We "} titleSpan={"Protect You"} desc={"At YourBank, we prioritize the security and confidentiality of your financial information. Our state-of-the-art encryption technology and stringent data protection measures ensure your assets and transactions are safeguarded at all times"} />
+            <Card section={{
+                title:"How We ",
+                titleSpan:"Protect You",
+                desc:"At YourBank, we prioritize the security and confidentiality of your financial information. Our state-of-the-art encryption technology and stringent data protection measures ensure your assets and transactions are safeguarded at all times"
+            }} customClass="protectHead"
+            />
             <div className="BL-protect">
                 {
                     protect.map((protect, index) => (

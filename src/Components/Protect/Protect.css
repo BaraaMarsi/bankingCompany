@@ -1,3 +1,6 @@
+    .protectHead{
+        padding-bottom: 120px;
+    }
     .protect h1 {
         font-size: 48px;
         font-weight: 500;
@@ -66,6 +69,9 @@
 
 
     @media screen and (max-width: 1440px) {
+        .protectHead{
+            padding-bottom: 120px;
+        }
         .protect h1 {
             font-size: 38px;
             font-weight: 500;
@@ -103,6 +109,10 @@
     }
 
     @media screen and (max-width: 992px) {
+        .protectHead{
+            text-align: center;
+            padding-bottom: 40px;
+        }
         .protect .MA-title {
             flex-direction: column;
             justify-content: center;
@@ -125,7 +135,8 @@
         }
 
         .BL-protectcard .MA-title {
-            width: 91.7948vw !important;
+            margin: 0 auto;
+            width: 750px !important;
             padding: 24px !important;
         }
 
@@ -143,3 +154,9 @@
             height: 68px;
         }
     }
+
+@media screen and (max-width: 830px) {
+    .BL-protectcard .MA-title {
+            width: 90.036vw !important;
+        }
+}
