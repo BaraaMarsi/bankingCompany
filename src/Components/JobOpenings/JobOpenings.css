@@ -69,25 +69,21 @@
     padding: 24px; 
   }
   .jobHead h1 {
-  font-size: 30px;
-}
-
+    font-size: 30px;
+  }
   .career-section {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2.016vw;
-    place-items: center; 
-    padding-inline: 20px;
+    place-items: center;
   }
-
   .career-card {
     width: 100%;
     max-width: 750px;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 24px;
-
- }
+  }
 }
 @media screen and (max-width: 370px) {
     .career-card .MA-title h1{
@@ -99,20 +95,16 @@
   .career-section {
     gap: 12px;
   }
-
   .career-card {
     width: 100%;
     max-width: 85vw;
     margin: 0 auto;
     box-sizing: border-box;
   }
-
   .jobHead h1 {
     font-size: 24px;
   }
-
   .jobHead {
     padding : 0 30px 30px 30px;
-   
   }
 }

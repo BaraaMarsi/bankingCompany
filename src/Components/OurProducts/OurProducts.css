@@ -133,18 +133,18 @@
     .BL-products-head .BL-products-buttons {
         margin-top: 20px;
         padding: 12px;
-
     }
 
     .BL-product-card {
         width: 100%;
     }
-.BL-product-card:not(:last-child) {
-    border-right: none;
-    border-bottom: 1px solid var(--gray15-color);
-    padding-bottom:30px; 
-    padding-right: 0px;
-}
+
+    .BL-product-card:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid var(--gray15-color);
+        padding-bottom:30px; 
+        padding-right: 0px;
+    }
     .BL-product-card img {
         margin-bottom: 20px;
     }

@@ -97,7 +97,7 @@
     text-align: center;
    }
        .our_benefits h1 {
-    font-size: 28px;
+    font-size: 28px !important;
     font-weight: 500;
     padding-bottom: 10px;
 
@@ -105,6 +105,9 @@
   .BL-benefits-container {
     flex-direction: column;
     margin-top: 60px;
+  }
+  .BL-benefits-container h1 {
+    font-size: 18px !important;
   }
 
   .BL-card .MA-title {
