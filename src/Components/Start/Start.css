@@ -93,10 +93,12 @@
 
 @media screen and (max-width: 992px) {
   .Na-start-section {
+    width: 750px;
     flex-direction: column;
     gap: 20px;
     padding: 30px;
     height: auto;
+    margin: 0 auto;
   }
 
   .Na-start-left {
@@ -123,5 +125,11 @@
   .Na-start-right {
     width: 100%;
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .Na-start-section {
+    width: 90.036vw;
   }
 }

@@ -157,6 +157,7 @@
     .our_features .filtters p {
         width: fit-content;
         height: 49px;
+        font-size: 14px;
     }
 
     .our_features .cards {
@@ -164,7 +165,7 @@
     }
 
     .our_features .features_card {
-        width: 93vw;
+        width: 90.036vw;
         padding: 30px;
     }
 
